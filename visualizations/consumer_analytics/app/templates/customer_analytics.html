@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <!-- App features section-->
+    <section id="features">
+        <div class="container px-5">
+            <h1 class="text-center text-black font-alt mb-4 mt-5">Customer Analtyics</h1>
+            <h2 class="text-center text-black font-alt mb-4 mt-5">Customer Churn Analysis</h2>
+            
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                    <div class="container-fluid px-5">
+                        <canvas id="matrix-chart">
+                        </canvas>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-lg-0">
+                    <!-- Features section device mockup-->
+                    <div class="features-device-mockup">
+                        <img src="{{url_for('static', filename='assets/img/customer_leaving.svg')}}" width="400px">
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-muted mt-5">As the churn probability of a customer increases, consider marketing intervention to prevent customer churn. Continue below to customer lieftime value to determine how much you should consider spending on marketing.</p>
+            <p class="text-center text-muted mt-5">{{ data.foo }}</p>
+            <table>
+                <tr>
+                    <td>
+                        Col 1 
+                    </td>
+                    <td>
+                        Col 2
+                    </td>
+                </tr>
+                {% for item in data.my_array %}
+                <tr>
+                    <td>
+                        {{ item }}
+                    </td>
+                    <td>
+                        {% if item % 2 == 0 %}
+                            Even!
+                        {% else %}
+                            Odd!
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </section>
+    <!-- Basic features section-->
+    <section class="bg-light">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-12 col-lg-5">
+                    <h2 class="display-4 lh-1 mb-4">Customer Lifetime Value</h2>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">Select some values below to see the expected customer lifetime value:</p>
+                    <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Most Recent Transaction</label>
+                        <input type="range" class="form-range" min="0" max="39" id="recencyRange">
+                        <p id="recencyRangeValue"></p>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Number of Transactions</label>
+                        <input type="range" class="form-range" min="0" max="40" id="frequencyRange">
+                        <p id="frequencyRangeValue"></p>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Average Transaction Spend </label>
+                        <input type="range" class="form-range" min="0" max="100" step="10" id="transactionSpendRange">
+                        <p id="transactionSpendRangeValue"></p>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Time Since First Transaction </label>
+                        <input type="range" class="form-range" min="0" max="40" id="ageRange">
+                        <p id="ageRangeValue"></p>
+                    </div>
+                    <br>
+                    </form>
+                    <div class="card">
+                    <h5 class="card-header">Customer Lifetime Value</h5>
+                    <div class="card-body">
+                        <p class="card-text" id="customer-lifetime-value">£180.00</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6">
+                    <div class="px-5 px-sm-0"><img class="img-fluid" src="{{url_for('static', filename='assets/img/successful_purchase.svg')}}" alt="..." /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+{% block custom_js %}
+<script>
+    const data = {
+        datasets: [{
+            label: 'Churn Probability',
+            data: {{ data.churn_probability | safe }},
+            backgroundColor(context) {
+            const value = context.dataset.data[context.dataIndex].churn_probability / 100;
+            return 'rgba(0,89,77,' + value + ')';
+            },
+            borderColor(context) {
+            return 'rgba(0,89,77,0.1)';
+            },
+            borderWidth: 1,
+            width: ({chart}) => (chart.chartArea || {}).width / 30 - 1,
+            height: ({chart}) =>(chart.chartArea || {}).height / 39 - 1
+        }]
+    };
+    const config = {
+        type: 'matrix',
+        data: data,
+        options: {
+            plugins: {
+            legend: false,
+            tooltip: {
+                callbacks: {
+                title() {
+                    return '';
+                },
+                label(context) {
+                    const v = context.dataset.data[context.dataIndex];
+                    return ['Frequency: ' + v.x, 'Recency: ' + v.y, 'Churn Probability: ' + v.churn_probability + '%'];
+                }
+                }
+            }
+            },
+            scales: {
+            x: {
+                ticks: {
+                stepSize: 2
+                },
+                grid: {
+                display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Customer Historical Purchase Frequency'
+                }
+            },
+            y: {
+                offset: true,
+                ticks: {
+                stepSize: 1,
+                },
+                grid: {
+                display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Most Recent Purchase (Weeks)'
+                }
+            },
+            }
+        }
+    };
+    const chart = new Chart('matrix-chart', config);
+</script>
+<script>
+    var recencySlider = document.getElementById("recencyRange");
+    var recencyVal = document.getElementById("recencyRangeValue");
+    recencyVal.innerHTML = recencySlider.value + ' Weeks';
+    var frequencySlider = document.getElementById("frequencyRange");
+    var frequencyVal = document.getElementById("frequencyRangeValue");
+    frequencyVal.innerHTML = frequencySlider.value + ' Transactions';
+    frequencySlider.oninput = function() {
+        frequencyVal.innerHTML = frequencySlider.value + ' Transactions';
+    }
+    var transactionSpendSlider = document.getElementById("transactionSpendRange");
+    var transactionSpendVal = document.getElementById("transactionSpendRangeValue");
+    transactionSpendVal.innerHTML = '£ ' + transactionSpendSlider.value;
+    transactionSpendSlider.oninput = function() {
+        transactionSpendVal.innerHTML = '£ ' + transactionSpendSlider.value;
+    }
+    var ageSlider = document.getElementById("ageRange");
+    var ageVal = document.getElementById("ageRangeValue");
+    ageVal.innerHTML = ageSlider.value + ' Weeks';
+
+    recencySlider.oninput = function() {
+        recencyVal.innerHTML = recencySlider.value + ' Weeks';
+        if (ageSlider.value < recencySlider.value) {
+            ageSlider.value = recencySlider.value
+            ageVal.innerHTML = recencySlider.value + ' Weeks';
+        }
+    }
+    ageSlider.oninput = function() {
+        ageVal.innerHTML = ageSlider.value + ' Weeks';
+        if (ageSlider.value < recencySlider.value) {
+            recencySlider.value = ageSlider.value
+            recencyVal.innerHTML = ageSlider.value + ' Weeks';
+        }
+    }
+
+</script>
+{% endblock %}

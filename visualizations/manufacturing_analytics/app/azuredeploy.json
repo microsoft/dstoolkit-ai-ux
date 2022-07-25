@@ -47,7 +47,7 @@
     },
     "repoUrl": {
       "type": "string",
-      "defaultValue": "https://github.com/dstoolkit-ai-ux/tree/gallery-dev/visualizations/consumer_analytics/app",
+      "defaultValue": "https://github.com/dstoolkit-ai-ux/tree/gallery-dev/visualizations/manufacturing_analtyics/app",
       "metadata": {
         "description": "Git Repo URL"
       }

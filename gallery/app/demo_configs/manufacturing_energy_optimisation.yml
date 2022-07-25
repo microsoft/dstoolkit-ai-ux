@@ -17,6 +17,6 @@ images:
   screenshot_filename: "manufacturing_energy_optimisation.png"
   thumbnail_filename: "manufacturing_energy_optimisation.png"
 links:
-  demo: "#"
-  source_code: '#'
+  demo: "http://localhost:8501"
+  source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/gallery-dev/visualizations/manufacturing_analytics'
   download: '#'

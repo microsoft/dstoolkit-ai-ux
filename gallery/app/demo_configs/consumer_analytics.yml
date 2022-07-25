@@ -16,6 +16,6 @@ images:
   screenshot_filename: "consumer_analytics.png"
   thumbnail_filename: "consumer_analytics.png"
 links:
-  demo: "#"
-  source_code: '#'
+  demo: "http://localhost:5001"
+  source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/gallery-dev/visualizations/consumer_analytics'
   download: '#'

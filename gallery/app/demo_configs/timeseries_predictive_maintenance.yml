@@ -1,0 +1,20 @@
+name: "Predictive Maintenance Timeseries"
+tagline: "Predict Engine Failure from TimeSeries Data"
+industry: "Manufacturing"
+use_case_type: "Regression"
+license: "MIT license"
+main_technology: "Streamlit"
+released: "2022-08-01"
+updated: "2022-08-01"
+author: "Suparno Datta"
+description: TBD
+feature_bullets:
+  - TBD
+  - TBD
+images:
+  screenshot_filename: "timeseries_predictive_maintenance.png"
+  thumbnail_filename: "timeseries_predictive_maintenance.png"
+links:
+  demo: "http://localhost:5001"
+  source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/gallery-dev/visualizations/consumer_analytics'
+  download: '#'

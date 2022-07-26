@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid">
+    <header class="masthead">
+        <div class="container px-8">
+            <div class="row gx-8 align-items-center">
+                <div class="col-lg-6">
+                    <!-- Mashead text and app badges-->
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-3 lh-1 mb-3">{{ data.demo_config.name }}</h1>
+                        <p class="lead fw-normal text-muted mb-5">{{ data.demo_config.tagline }}</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="use-case-screenshot">
+                        {% if data['demo_config']['links']['demo'] %}
+                            <a href="{{ data['demo_config']['links']['demo'] }}">
+                                <img src="{{url_for('static', filename='assets/img/demo_screenshots/' + data['demo_config']['images']['screenshot_filename'])}}" alt="{{ data.demo_config.name }} Use Case Screenshot" class="img-fluid card-img-top">
+                                <div class="screenshot-overlay">
+                                    <div class="screenshot-overlay-text">Live Demo</div>
+                                </div>
+                            </a>
+                        {% else %}
+                        <img src="{{url_for('static', filename='assets/img/demo_screenshots/' + data['demo_config']['images']['screenshot_filename'])}}" alt="{{ data.demo_config.name }} Use Case Screenshot" class="img-fluid card-img-top">
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="container-fluid">
+        <div class="container px-8">
+            <div class="row gx-8 align-items-center">
+                <div class="col-lg-8">
+                    <!-- Mashead text and app badges-->
+                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                        <h1 class="display-8 lh-1 mb-3">Description</h1>
+                        <p class="lead fw-normal">
+                            {{ data['demo_config']['description'] }}
+                        </p>
+                        <h1 class="display-8 lh-1 mb-3">Features</h1>
+                        <p class="lead fw-normal text-xs ">
+                            This UI features:
+                            <ul>
+                                {% for feature in data['demo_config']['feature_bullets'] %}
+                                <li>{{ feature }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    {% if data['demo_config']['links']['demo'] %}
+                    <div class="mb-4">
+                        <a href="{{ data['demo_config']['links']['demo'] }}">
+                            <span class="btn form-control btn-danger">Live Demo</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% if data['demo_config']['links']['source_code'] %}
+                    <div class="mb-4">
+                        <a href="{{ data['demo_config']['links']['source_code'] }}">
+                            <span class="btn form-control btn-dark">View Source Code</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% if data['demo_config']['links']['download'] %}
+                    <div class="mb-4">
+                        <a href="{{ data['demo_config']['links']['source_code'] }}">
+                            <span class="btn form-control btn-success">Download</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">License</div>
+                                <div>
+                                    {{ data['demo_config']['license'] }}
+                                </div>
+                            </div>
+                            <hr>
+                            <!---->
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">Use Case Type</div>
+                                <div>
+                                    {{ data['demo_config']['use_case_type'] }}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">Industry</div>
+                                <div>
+                                    {{ data['demo_config']['industry'] }}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">Technology</div>
+                                <div>
+                                    {{ data['demo_config']['main_technology'] }}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">Released</div>
+                                <div>
+                                    {{ data['demo_config']['released'] }}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">Last Update</div>
+                                <div>
+                                    {{ data['demo_config']['updated'] }}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500">Author</div>
+                                <div>
+                                    {{ data['demo_config']['author'] }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}

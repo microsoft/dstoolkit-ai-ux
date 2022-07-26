@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.1",
+    "parameters": {
+        "webAppName": {
+            "value": "ds-toolkit-ai-ux-web-app"
+        },
+        "sku": {
+            "value": "B1"
+        },
+        "linuxFxVersion": {
+            "value": "PYTHON|3.7"
+        },
+        "repoUrl": {
+            "value": "https://github.com/microsoft/dstoolkit-ai-ux.git"
+        },
+        "repoBranch": {
+            "value": "gallery-dev"
+        }
+    }
+}

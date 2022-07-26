@@ -1,0 +1,22 @@
+name: "Verseagility"
+tagline: "Text classification, named entity recognition and answer suggestions for support emails and attachments."
+industry: ""
+use_case_type: "NLP"
+license: "MIT license"
+main_technology: "Streamlit"
+released: "2020-01-24"
+updated: "2021-12-09"
+author: "Timm Walz"
+description: Verseagility is a Python-based toolkit to ramp up your custom natural language processing (NLP) task, allowing you to bring your own data, use your preferred frameworks and bring models into production. It is a central component of the Microsoft Data Science Toolkit.
+feature_bullets:
+  - Binary, multi-class & multi-label classification
+  - Named entity recognition
+  - Question answering
+  - Opinion mining
+images:
+  thumbnail_filename: "verseagility.png"
+  screenshot_filename: "verseagility.png"
+links:
+  demo: "https://verseagility.azurewebsites.net/"
+  source_code: 'https://github.com/microsoft/verseagility'
+  download: 'https://github.com/microsoft/verseagility/archive/refs/heads/main.zip'

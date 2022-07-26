@@ -1,0 +1,21 @@
+name: "Consumer Analytics"
+tagline: "Analyse customer lifetime value and customer churn rates"
+industry: "Retail"
+use_case_type: "Regression"
+license: "MIT license"
+main_technology: "Flask"
+released: "2022-06-01"
+updated: "2022-06-01"
+author: "Benjamin Keen"
+description: Learn more about your customers today, how likely are they to churn and what will their customer lifetime value be. As the churn probability of a customer increases, consider marketing intervention to prevent customer churn. This tool can be used to learn about the churn rate and customer lieftime value to determine how much you should consider spending on marketing.
+feature_bullets:
+  - Self service to allow you to upload your own customer data or use sample data to see customer insights
+  - A quick overview of customer churn rate at different purchase recency and frequencies
+  - An interactive tool to allow you to determine customer lifetime value given a customer's spending habits
+images:
+  screenshot_filename: "consumer_analytics.png"
+  thumbnail_filename: "consumer_analytics.png"
+links:
+  demo: "http://localhost:5001"
+  source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/gallery-dev/visualizations/consumer_analytics'
+  download: '#'

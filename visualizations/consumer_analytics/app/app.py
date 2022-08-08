@@ -29,7 +29,6 @@ def customer_analytics():
         'foo': 'bar',
         'my_array': [1, 2, 3]
     }
-    import pdb; pdb.set_trace()
     return render_template('customer_analytics.html', data=data)
 
 

@@ -3,11 +3,12 @@
 name: CICD testing
 
 on:
-  push:
-    branches:
-      - florian/cicdpipeline
-    paths:
-      - gallery/app/demo_configs
+ workflow_dispatch:
+  # push:
+  #   branches:
+  #     - florian/cicdpipeline
+  #   paths:
+  #     - gallery/app/demo_configs
 
 jobs:
   build:

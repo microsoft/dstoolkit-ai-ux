@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Mashead header-->
+<header class="masthead">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <!-- Mashead text and app badges-->
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xl-8">
+                            <h1 class="display-1 lh-1 mb-3 text-center">Gallery</h1>
+                            <p class="lead fw-normal text-muted mb-5 text-center">View a selection of reusable user experiences created for different data science use cases below.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="container-fluid">
+        <div class="px-lg-5">
+            <div class="row">
+                {% for demo_config in data.demo_configs %}
+                <!-- Gallery item -->
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white rounded shadow-sm"><a href="{{url_for('use_case', use_case_name=demo_config['filename'])}}"><img src="{{url_for('static', filename='assets/img/demo_thumbnails/' + demo_config['images']['thumbnail_filename'])}}" alt="{{demo_config['name']}} Use Case Thumbnail" class="img-fluid card-img-top"></a>
+                    <div class="p-4">
+                        <h5> <a href="{{url_for('use_case', use_case_name=demo_config['filename'])}}" class="text-dark">{{demo_config['name']}}</a></h5>
+                        <p class="small text-muted mb-0">{{demo_config['tagline']}}</p>
+                        <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+                        <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">{{demo_config['industry']}}</span></p>
+                        {% if demo_config['use_case_type'] == 'Optimisation' %}
+                            <span class="btn btn-danger px-3 rounded-pill font-weight-normal">{{demo_config['use_case_type']}}</span>
+                        {% elif demo_config['use_case_type'] == 'Regression' %}
+                            <span class="btn btn-success px-3 px-3 rounded-pill font-weight-normal">{{demo_config['use_case_type']}}</span>
+                        {% elif demo_config['use_case_type'] == 'Classification' %}
+                            <div class="btn btn-info px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                        {% elif demo_config['use_case_type'] == 'Clustering' %}
+                            <div class="btn btn-warning px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                        {% else %}
+                            <div class="btn btn-primary px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                        {% endif %}
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- End -->
+                {% endfor %}
+        
+            </div>
+        </div>
+        </div>
+{% endblock %}

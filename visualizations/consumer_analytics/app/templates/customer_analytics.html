@@ -23,31 +23,6 @@
                 </div>
             </div>
             <p class="text-center text-muted mt-5">As the churn probability of a customer increases, consider marketing intervention to prevent customer churn. Continue below to customer lieftime value to determine how much you should consider spending on marketing.</p>
-            <p class="text-center text-muted mt-5">{{ data.foo }}</p>
-            <table>
-                <tr>
-                    <td>
-                        Col 1 
-                    </td>
-                    <td>
-                        Col 2
-                    </td>
-                </tr>
-                {% for item in data.my_array %}
-                <tr>
-                    <td>
-                        {{ item }}
-                    </td>
-                    <td>
-                        {% if item % 2 == 0 %}
-                            Even!
-                        {% else %}
-                            Odd!
-                        {% endif %}
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
         </div>
     </section>
     <!-- Basic features section-->
@@ -60,25 +35,25 @@
                     <form>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Most Recent Transaction</label>
-                        <input type="range" class="form-range" min="0" max="39" id="recencyRange">
+                        <input type="range" class="form-range" min="0" max="40" step="2" value="4" id="recencyRange">
                         <p id="recencyRangeValue"></p>
                     </div>
                     <br>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Number of Transactions</label>
-                        <input type="range" class="form-range" min="0" max="40" id="frequencyRange">
+                        <input type="range" class="form-range" min="0" max="50" step="5" value="20" id="frequencyRange">
                         <p id="frequencyRangeValue"></p>
                     </div>
                     <br>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Average Transaction Spend </label>
-                        <input type="range" class="form-range" min="0" max="100" step="10" id="transactionSpendRange">
+                        <input type="range" class="form-range" min="10" max="100" step="10" value="50" id="transactionSpendRange">
                         <p id="transactionSpendRangeValue"></p>
                     </div>
                     <br>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">Time Since First Transaction </label>
-                        <input type="range" class="form-range" min="0" max="40" id="ageRange">
+                        <input type="range" class="form-range" min="0" max="40" step="2" value="30" id="ageRange">
                         <p id="ageRangeValue"></p>
                     </div>
                     <br>
@@ -172,32 +147,40 @@
     var frequencySlider = document.getElementById("frequencyRange");
     var frequencyVal = document.getElementById("frequencyRangeValue");
     frequencyVal.innerHTML = frequencySlider.value + ' Transactions';
-    frequencySlider.oninput = function() {
-        frequencyVal.innerHTML = frequencySlider.value + ' Transactions';
-    }
     var transactionSpendSlider = document.getElementById("transactionSpendRange");
     var transactionSpendVal = document.getElementById("transactionSpendRangeValue");
     transactionSpendVal.innerHTML = '£ ' + transactionSpendSlider.value;
-    transactionSpendSlider.oninput = function() {
-        transactionSpendVal.innerHTML = '£ ' + transactionSpendSlider.value;
-    }
     var ageSlider = document.getElementById("ageRange");
     var ageVal = document.getElementById("ageRangeValue");
     ageVal.innerHTML = ageSlider.value + ' Weeks';
 
+    var clv_data = {{ data.clv_data | safe }}
+    var clvVal = document.getElementById("customer-lifetime-value")
+    clvVal.innerHTML = '£ ' + clv_data[frequencySlider.value][recencySlider.value][ageSlider.value][transactionSpendSlider.value]
+
     recencySlider.oninput = function() {
         recencyVal.innerHTML = recencySlider.value + ' Weeks';
-        if (ageSlider.value < recencySlider.value) {
+        if (parseFloat(ageSlider.value) < parseFloat(recencySlider.value)) {
             ageSlider.value = recencySlider.value
             ageVal.innerHTML = recencySlider.value + ' Weeks';
         }
+        clvVal.innerHTML = '£ ' + clv_data[frequencySlider.value][recencySlider.value][ageSlider.value][transactionSpendSlider.value]
     }
     ageSlider.oninput = function() {
         ageVal.innerHTML = ageSlider.value + ' Weeks';
-        if (ageSlider.value < recencySlider.value) {
+        if (parseFloat(ageSlider.value) < parseFloat(recencySlider.value)) {
             recencySlider.value = ageSlider.value
             recencyVal.innerHTML = ageSlider.value + ' Weeks';
         }
+        clvVal.innerHTML = '£ ' + clv_data[frequencySlider.value][recencySlider.value][ageSlider.value][transactionSpendSlider.value]
+    }
+    frequencySlider.oninput = function() {
+        frequencyVal.innerHTML = frequencySlider.value + ' Transactions';
+        clvVal.innerHTML = '£ ' + clv_data[frequencySlider.value][recencySlider.value][ageSlider.value][transactionSpendSlider.value]
+    }
+    transactionSpendSlider.oninput = function() {
+        transactionSpendVal.innerHTML = '£ ' + transactionSpendSlider.value;
+        clvVal.innerHTML = '£ ' + clv_data[frequencySlider.value][recencySlider.value][ageSlider.value][transactionSpendSlider.value]
     }
 
 </script>

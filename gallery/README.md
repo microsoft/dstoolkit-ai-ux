@@ -1,8 +1,4 @@
 
-# Deployment
-
-[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fdstoolkit-ai-ux%2Fgallery-dev%2Fgallery%2Fapp%2Fazuredeploy.json)
-
 # Adding your demo link to the gallery 
 
 This application is fully config driven, making it easy to add your own demo in here.

@@ -1,5 +1,5 @@
 
-# Adding your demo link to the gallery 
+# Adding your demo to the gallery
 
 This application is fully config driven, making it easy to add your own demo in here.
 
@@ -11,4 +11,4 @@ To add your UI demo, the steps you need to take are:
 - Add the name of the `yml` file to the `demo_configs/.order` file in the position you'd like it to appear
 - Create a pull request
 
-# [COMING SOON] Hosting your demo in ACR and adding it to the gallery 
+## [COMING SOON] Hosting your demo in an ACR and adding it to the gallery 

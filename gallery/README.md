@@ -10,5 +10,3 @@ To add your UI demo, the steps you need to take are:
 - Add a new yaml file to `demo_configs`, following the yaml structure of the other demo configs
 - Add the name of the `yml` file to the `demo_configs/.order` file in the position you'd like it to appear
 - Create a pull request
-
-## [COMING SOON] Hosting your demo in an ACR and adding it to the gallery 

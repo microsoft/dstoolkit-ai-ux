@@ -1,0 +1,22 @@
+name: "Use Case 12"
+tagline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+industry: "Agriculture"
+use_case_type: "Clustering"
+license: "MIT license"
+main_technology: "Flask"
+released: "2022-01-01"
+updated: "2022-01-01"
+author: "John Smith"
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus augue, vulputate id elementum non, eleifend et ante. Nunc porttitor urna vel lectus vestibulum, nec blandit nibh pharetra. Cras pretium ligula at dolor ultrices, semper consequat sapien aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+feature_bullets:
+  - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - Maecenas vestibulum sapien eget massa posuere, sed dapibus lectus tempor
+  - Nullam id sem semper, ullamcorper ligula eget, iaculis ligula
+  - Curabitur efficitur erat sit amet laoreet hendrerit
+images:
+  thumbnail_filename: "use_case_4.jpg"
+  screenshot_filename: "placeholder_screenshot.png"
+links:
+  demo: "#"
+  source_code: '#'
+  download: '#'

@@ -1,0 +1,15 @@
+[datasets] # Toy datasets
+[datasets.Manufacturing]
+name = "Machine Consumption"
+url = ""
+date = "date"
+date_format = "%Y-%m-%d"
+columns = ["energy", "condition", "volume",	"weight","machine_id","speed"]
+target = "energy"
+
+
+[plots]
+colors = ["#002244", "#ff0066", "#66cccc", "#ff9933", "#337788",
+          "#429e79", "#474747", "#f7d126", "#ee5eab", "#b8b8b8"] # Color palette for visualizations
+color_axis = '#d62728' # Color for axis on residuals chart and scatter plot
+waterfall_digits = 2 # Number of digits in waterfall chart

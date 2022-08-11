@@ -8,7 +8,7 @@
 This application is fully config driven, making it easy to add your own demo in here.
 
 To add your UI demo, the steps you need to take are:
-- Create your own branch: <your-name>/<your-demo>
+- Create your own branch: "your-name"/"your-demo"
 - Add a thumbnail of your UI (600 pixels x 400 pixels) to `static/assets/img/demo_thumbnails`
 - Add a screenshot of your UI (1600 pixels x 900 pixels) to `static/assets/img/demo_screenshots`
 - Add a new yaml file to `demo_configs`, following the yaml structure of the other demo configs

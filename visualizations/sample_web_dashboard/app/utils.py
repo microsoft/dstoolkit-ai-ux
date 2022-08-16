@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-mappings1 = {
+MAPPINGS = {
     'check_0_18': (0, 18),
     'check_18_35': (18, 35),
     'check_35_55': (35, 55),
@@ -25,10 +25,9 @@ mappings1 = {
     'checkMiss': 'YoungWomen',
     'checkMrs': 'MarriedWomen',
     'checkRare': 'RareHonorific'
-}
+    }
 
-
-def getCount(dict_, x, mappings_= mappings1):
+def getCount(dict_, x, mappings_= MAPPINGS):
     pairs = { 
         'gender': ('checkMale', 'checkFemale'), 
         'class': ('checkClass1', 'checkClass2', 'checkClass3'), 
@@ -39,7 +38,6 @@ def getCount(dict_, x, mappings_= mappings1):
     vec_ = np.array([True]*x.shape[0])
     for p in pairs.keys():
         l_main = [False]*x.shape[0]
-        # print(pairs[p])
         for k in pairs[p]: #k_tuple:
             if dict_['vals'][k]:
                 col_name = (mappings_[k])
@@ -52,13 +50,11 @@ def getCount(dict_, x, mappings_= mappings1):
         if dict_['vals'][k]:
             # for the Age column
             splits = k.split('_')
-            # print(splits)
             start_ = int(splits[1])
             end_ = int(splits[2])
             l_ = (x['Age'] > start_) & (x['Age'] <= end_)
             vec_age = vec_age | l_
-    print('total records:', 'Age:',sum(vec_age), "Checks:",sum(vec_))
-    final_ = vec_age&vec_
+    final_ = vec_age & vec_
     number_died = sum(x.loc[final_, "Survived_0"])
     number_survived = sum(x.loc[final_, "Survived_1"])
     # Survival by Age Group
@@ -66,45 +62,42 @@ def getCount(dict_, x, mappings_= mappings1):
     ages = [(0, 18), (18, 35), (35, 55), (55, 100)]
     df = x.loc[final_ , :]
     vec_survAge = []
-    vec_diedAge= []
+    vec_diedAge = []
     for age in ages:
         st_= age[0]
         en_= age[1]
-        ind = (df['Age']>st_) & (df['Age']<=en_)
+        ind = (df['Age'] > st_) & (df['Age'] <= en_)
         vec_survAge.append(sum(df.loc[ind, 'Survived_1']))
         vec_diedAge.append(sum(df.loc[ind, 'Survived_0']))
-
     return sum(final_), number_died, number_survived, vec_survAge, vec_diedAge
 
-# getCount(dict_, mappings_)
-
 def performMapping(inference_set):
-    mappings_ = {
-        "class": {"first": "Pclass_1", "second": "Pclass_2", "third": "Pclass_3"},
-        "gender": {"male": "Sex_male", "female": "Sex_female"},
-        "age": {"age" :"Age"},
-        "title" : {
-            "Mr.": "Honorific_Mr.", 
-            "Mrs.": "MarriedWomen", 
-            "Master": "Honorific_Master.",
-            "Miss": "YoungWomen", 
-            "Others": "RareHonorific"} , 
-        "familySize": {
-            "Alone": "FamilySize_Alone",
-            "Medium": "FamilySize_Medium", 
-            "Large": "FamilySize_Large" 
-        },
-        "embarkation": {
-            "Queenstown": "Embarked_Q",
-            "Cherbourg": "Embarked_C",
-            "Southampton": "Embarked_S" 
-        },
-        "fare": {
-            "low": "FareGroup_LowFare" , 
-            "medium": "FareGroup_MediumFare" , 
-            "high" : "FareGroup_HighFare"
+    MAPPINGS_ = {
+            "class": {"first": "Pclass_1", "second": "Pclass_2", "third": "Pclass_3"},
+            "gender": {"male": "Sex_male", "female": "Sex_female"},
+            "age": {"age" :"Age"},
+            "title" : {
+                "Mr.": "Honorific_Mr.", 
+                "Mrs.": "MarriedWomen", 
+                "Master": "Honorific_Master.",
+                "Miss": "YoungWomen", 
+                "Others": "RareHonorific"} , 
+            "familySize": {
+                "Alone": "FamilySize_Alone",
+                "Medium": "FamilySize_Medium", 
+                "Large": "FamilySize_Large" 
+            },
+            "embarkation": {
+                "Queenstown": "Embarked_Q",
+                "Cherbourg": "Embarked_C",
+                "Southampton": "Embarked_S" 
+            },
+            "fare": {
+                "low": "FareGroup_LowFare" , 
+                "medium": "FareGroup_MediumFare" , 
+                "high" : "FareGroup_HighFare"
+            }
         }
-    }
 
     x_columns = (
         'Age', 'Survived_0', 'Survived_1', 'Pclass_1', 'Pclass_2', 'Pclass_3',
@@ -115,12 +108,11 @@ def performMapping(inference_set):
         'RareHonorific')
     inference_set_dic = {}
     for key_ in inference_set.keys():
-        if not ((key_ == "model") or (key_ == "exact_age") or 
-                (key_ == "inference") or (key_ == "marital")):
+        if not key_ in ("model", "exact_age", "inference", "marital"):
             if key_ == "age":
                 inference_set_dic["Age"] = [inference_set["exact_age"]]
             else:
-                sub_dic = mappings_[key_]
+                sub_dic = MAPPINGS_[key_]
                 key_col_set_to_1 = sub_dic[inference_set[key_]]
                 inference_set_dic[key_col_set_to_1] = [1] 
                 # get all cols

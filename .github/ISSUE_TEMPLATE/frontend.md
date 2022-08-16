@@ -1,7 +1,7 @@
 ---
 name: Frontend
 about: Tasks related to the Frontend
-title: "[FRONTEND]"
+title: "[FRONTEND] **Add title**"
 labels: frontend
 assignees: ''
 

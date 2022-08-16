@@ -1,7 +1,7 @@
 ---
 name: Documentation
 about: Tasks related to documentation
-title: "[DOC]"
+title: "[DOC] **Add title**"
 labels: documentation
 assignees: ''
 

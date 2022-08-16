@@ -1,7 +1,7 @@
 ---
 name: Backend
 about: Tasks related to the backend
-title: "[BACKEND]"
+title: "[BACKEND] **Add title**"
 labels: backend
 assignees: ''
 

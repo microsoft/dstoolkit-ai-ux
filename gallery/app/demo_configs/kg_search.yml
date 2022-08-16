@@ -7,7 +7,7 @@ main_technology: "Flask"
 released: "2022-09-01"
 updated: "2022-09-01"
 author: "Andy He & Jin Yu"
-description: This demo implements a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general purpose search engine. The demo implements an example medical document retrieval solution that uses a knowledge graph to expand the scope of search from the original query to semantically related queries to uncover documents that are relevant to the original query but may not contain the exact keywords. 
+description: This demo implements a domain-aware search solution that uses knowledge graph to enrich the organic results of a general purpose search engine. The demo is implemented in the context of medical document retrieval. It uses a medical knowledge graph to expand the scope of search from the original query to semantically related queries to uncover relevant documents that may not contain the exact keywords specified in the original query. 
 feature_bullets:
   - Modularized code template to implement a domain-aware search solution with knowledge graph
   - An interactive frontend to compare the search results with and without knowledge graph 

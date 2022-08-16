@@ -1,5 +1,5 @@
 ---
-name: Documetations
+name: Documentation
 about: Tasks related to documentation
 title: "[DOC]"
 labels: documentation

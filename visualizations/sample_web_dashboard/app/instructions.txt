@@ -2,9 +2,9 @@ docker build -t titanic:1 .
 
 docker images
 
-docker run -d -p 3000:3000 titanic:1
+docker run -d -p 8080:8080 titanic:1
 
-check: https:localhost:3000
+check: https:localhost:8080
 
 az account set --subscription ES-INT-MCS DAI ML-DEV-daimsolac
 

@@ -53,6 +53,4 @@ if __name__ == "__main__":
     path_data = r"data/titanic/dataset.csv"
     df = pd.read_csv(os.path.join(os.getcwd(), path_data))
     print("-->", df.shape)
-    app.run(host='0.0.0.0', port=os.environ.get('PORT', 3000), debug=True)
-
-
+    app.run(host='0.0.0.0', port=os.environ.get('PORT', 8080), debug=True)

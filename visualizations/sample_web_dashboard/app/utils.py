@@ -29,12 +29,13 @@ mappings1 = {
 
 
 def getCount(dict_, x, mappings_= mappings1):
-    pairs = { 'gender': ('checkMale', 'checkFemale'), 
-    'class': ('checkClass1', 'checkClass2', 'checkClass3'), 
-    'title' : ('checkMaster', 'checkMiss', 'checkMrs', 'checkMr', 'checkRare'), 
-    'familysize': ('checkMedium', 'checkLarge', 'checkAlone'), 
-    'embarkation': ('checkSouthampton', 'checkQueenstown', 'checkCherbourg'), 
-    'fare': ('checkLowFare', 'checkMediumFare', 'checkHighFare')}
+    pairs = { 
+        'gender': ('checkMale', 'checkFemale'), 
+        'class': ('checkClass1', 'checkClass2', 'checkClass3'), 
+        'title' : ('checkMaster', 'checkMiss', 'checkMrs', 'checkMr', 'checkRare'), 
+        'familysize': ('checkMedium', 'checkLarge', 'checkAlone'), 
+        'embarkation': ('checkSouthampton', 'checkQueenstown', 'checkCherbourg'), 
+        'fare': ('checkLowFare', 'checkMediumFare', 'checkHighFare')}
     vec_ = np.array([True]*x.shape[0])
     for p in pairs.keys():
         l_main = [False]*x.shape[0]
@@ -79,58 +80,55 @@ def getCount(dict_, x, mappings_= mappings1):
 
 def performMapping(inference_set):
     mappings_ = {
-    "class": {"first": "Pclass_1", "second": "Pclass_2", "third": "Pclass_3"},
-    "gender": {"male": "Sex_male", "female": "Sex_female"},
-    "age": {"age" :"Age"},
-    "title" : {
-        "Mr.": "Honorific_Mr.", 
-        "Mrs.": "MarriedWomen", 
-        "Master": "Honorific_Master.",
-        "Miss": "YoungWomen", 
-        "Others": "RareHonorific"} , 
-    "familySize": {
-        "Alone": "FamilySize_Alone",
-        "Medium": "FamilySize_Medium", 
-        "Large": "FamilySize_Large" 
-    },
-    "embarkation": {
-        "Queenstown": "Embarked_Q",
-        "Cherbourg": "Embarked_C",
-        "Southampton": "Embarked_S" 
-    },
-    "fare": {
-        "low": "FareGroup_LowFare" , 
-        "medium": "FareGroup_MediumFare" , 
-        "high" : "FareGroup_HighFare"
+        "class": {"first": "Pclass_1", "second": "Pclass_2", "third": "Pclass_3"},
+        "gender": {"male": "Sex_male", "female": "Sex_female"},
+        "age": {"age" :"Age"},
+        "title" : {
+            "Mr.": "Honorific_Mr.", 
+            "Mrs.": "MarriedWomen", 
+            "Master": "Honorific_Master.",
+            "Miss": "YoungWomen", 
+            "Others": "RareHonorific"} , 
+        "familySize": {
+            "Alone": "FamilySize_Alone",
+            "Medium": "FamilySize_Medium", 
+            "Large": "FamilySize_Large" 
+        },
+        "embarkation": {
+            "Queenstown": "Embarked_Q",
+            "Cherbourg": "Embarked_C",
+            "Southampton": "Embarked_S" 
+        },
+        "fare": {
+            "low": "FareGroup_LowFare" , 
+            "medium": "FareGroup_MediumFare" , 
+            "high" : "FareGroup_HighFare"
+        }
     }
 
-}
-
-    x_columns = ['Age', 'Survived_0', 'Survived_1', 'Pclass_1', 'Pclass_2', 'Pclass_3',
+    x_columns = (
+        'Age', 'Survived_0', 'Survived_1', 'Pclass_1', 'Pclass_2', 'Pclass_3',
         'Honorific_Master.', 'Honorific_Mr.', 'Sex_female', 'Sex_male',
         'FamilySize_Alone', 'FamilySize_Large', 'FamilySize_Medium',
         'FareGroup_HighFare', 'FareGroup_LowFare', 'FareGroup_MediumFare',
         'Embarked_C', 'Embarked_Q', 'Embarked_S', 'YoungWomen', 'MarriedWomen',
-        'RareHonorific']
+        'RareHonorific')
     inference_set_dic = {}
     for key_ in inference_set.keys():
         if not ((key_ == "model") or (key_ == "exact_age") or 
                 (key_ == "inference") or (key_ == "marital")):
             if key_ == "age":
-                # print(key_, "|-->", inference_set[key_], inference_set["exact_age"])
                 inference_set_dic["Age"] = [inference_set["exact_age"]]
             else:
                 sub_dic = mappings_[key_]
                 key_col_set_to_1 = sub_dic[inference_set[key_]]
-                # print(key_, "-->", inference_set[key_], "-->" , key_col_set_to_1)
                 inference_set_dic[key_col_set_to_1] = [1] 
                 # get all cols
                 all_cols = list(sub_dic.values())
-                all_cols = [i for i in all_cols if i != key_col_set_to_1]
-                for i in all_cols:
-                    inference_set_dic[i] = [0]
+                all_cols = [column_ for column_ in all_cols if column_ != key_col_set_to_1]
+                for column_ in all_cols:
+                    inference_set_dic[column_] = [0]
 
-    cols = [i for i in x_columns if "Survi" not in i]
+    cols = [column_ for column_ in x_columns if "Survi" not in column_]
     df_inference = pd.DataFrame(inference_set_dic)[cols]
     return df_inference
-

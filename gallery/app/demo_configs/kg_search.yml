@@ -1,0 +1,20 @@
+name: "Knowledge Graph Enabled Search"
+tagline: "Enrich the organic results of a general purpose search engine with a domain-specific knowledge graph"
+industry: "Horizontal solution that addresses cross-industry needs"
+use_case_type: "Search & Relevance"
+license: "MIT license"
+main_technology: "Flask"
+released: "2022-09-01"
+updated: "2022-09-01"
+author: "Andy He & Jin Yu"
+description: This demo implements a domain-aware search solution that uses knowledge graph to enrich the organic results of a general purpose search engine. The demo is implemented in the context of medical document retrieval. It uses a medical knowledge graph to expand the scope of search from the original query to semantically related queries to uncover relevant documents that may not contain the exact keywords specified in the original query. 
+feature_bullets:
+  - Modularized code template to implement a domain-aware search solution with knowledge graph
+  - An interactive frontend to compare the search results with and without knowledge graph 
+images:
+  screenshot_filename: "kg_search.png"
+  thumbnail_filename: "kg_search.png"
+links:
+  demo: "https://uikgsearch.azurewebsites.net/"
+  source_code: "https://github.com/microsoft/dstoolkit-kg-search"
+  download: '#'

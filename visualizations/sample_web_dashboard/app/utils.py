@@ -148,13 +148,12 @@ def perform_mapping(inference_set):
                 inference_set_dic["Age"] = [inference_set["exact_age"]]
             else:
                 sub_dic = MAPPINGS_[variable_]
-                key_col_set_to_1 = sub_dic[inference_set[variable_]]
-                inference_set_dic[key_col_set_to_1] = [1] 
+                df_column_True = sub_dic[inference_set[variable_]]
+                inference_set_dic[df_column_True] = [1] 
                 # get all cols
-                all_cols = list(sub_dic.values())
-                all_cols = [column_ for column_ in all_cols if column_ != key_col_set_to_1]
-                for column_ in all_cols:
-                    inference_set_dic[column_] = [0]
+                all_cols_False = [column_ for column_ in list(sub_dic.values()) if column_ != df_column_True]
+                for df_column_False in all_cols_False:
+                    inference_set_dic[df_column_False] = [0]
 
     cols = [column_ for column_ in df_columns if "Survi" not in column_]
     df_inference = pd.DataFrame(inference_set_dic)[cols]

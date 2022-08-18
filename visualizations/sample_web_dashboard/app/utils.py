@@ -1,6 +1,14 @@
 import pandas as pd
 import numpy as np
 
+"""
+Both the functions in this file help convert the data from the frontend (received in the 
+form of a json request) to the data names and format of the dataframe.
+
+These are mapping functions and depend on the naming convention used in the frontend vs backend.
+
+"""
+
 MAPPINGS = {
     'check_0_18': (0, 18),
     'check_18_35': (18, 35),
@@ -27,7 +35,15 @@ MAPPINGS = {
     'checkRare': 'RareHonorific'
     }
 
-def getCount(dict_, x, mappings_= MAPPINGS):
+def get_count(req_dict, df, mappings_= MAPPINGS):
+    """
+    - When request Data is received from the frontend, it needs to be mapped to data columns 
+        in the df. This is not a simple mapping becasue the frontend displays information 
+        that is meant to be user friendly, but the df does not curate information in that format.
+
+    - This function will perform this mapping and then also calculate the number of rows
+        for the selected checked values. 
+    """
     pairs = { 
         'gender': ('checkMale', 'checkFemale'), 
         'class': ('checkClass1', 'checkClass2', 'checkClass3'), 
@@ -35,43 +51,62 @@ def getCount(dict_, x, mappings_= MAPPINGS):
         'familysize': ('checkMedium', 'checkLarge', 'checkAlone'), 
         'embarkation': ('checkSouthampton', 'checkQueenstown', 'checkCherbourg'), 
         'fare': ('checkLowFare', 'checkMediumFare', 'checkHighFare')}
-    vec_ = np.array([True]*x.shape[0])
-    for p in pairs.keys():
-        l_main = [False]*x.shape[0]
-        for k in pairs[p]: #k_tuple:
-            if dict_['vals'][k]:
-                col_name = (mappings_[k])
-                l_ =  x[col_name] == dict_['vals'][k]
-                l_main = l_main | l_
-        vec_ = vec_ & l_main
-    json_keys = [i for i in dict_['vals'].keys() if ('check' in i) and ('_'  in i)]
-    vec_age = np.array([False]*x.shape[0])
-    for k in json_keys:
-        if dict_['vals'][k]:
+    ind_selected_vals = np.array([True]*df.shape[0])
+    # Find which checkBoxess in the above dictionary have been received in the 
+    # req_dict from the frontend
+    for variable_ in pairs.keys():
+        # For this variable_ go to every possible checkBox value and check if it is True
+        ind_vec = [False]*df.shape[0]
+        for variable_val in pairs[variable_]:
+            # For this checkBox check if it has been received as True in the req_dict
+            # If it has been set to True, select the corresponding rows from the data frame
+            if req_dict['vals'][variable_val]:
+                col_name = (mappings_[variable_val])
+                tmp_vec =  df[col_name] == req_dict['vals'][variable_val]
+                # An | operation between the different values of the same variable_
+                ind_vec = ind_vec | tmp_vec
+        # An & operation between variables
+        ind_selected_vals = ind_selected_vals & ind_vec
+    # Age is a more complicated variable as it is a range as in 0-18 while 
+    # the data in the df does not have ranges it has integer values. So, we need to select
+    # values from these ranges.
+    json_age_keys = [i for i in req_dict['vals'].keys() if ('check' in i) and ('_'  in i)]
+    vec_age = np.array([False]*df.shape[0])
+    for age_check in json_age_keys:
+        if req_dict['vals'][age_check]:
             # for the Age column
-            splits = k.split('_')
+            splits = age_check.split('_')
             start_ = int(splits[1])
             end_ = int(splits[2])
-            l_ = (x['Age'] > start_) & (x['Age'] <= end_)
-            vec_age = vec_age | l_
-    final_ = vec_age & vec_
-    number_died = sum(x.loc[final_, "Survived_0"])
-    number_survived = sum(x.loc[final_, "Survived_1"])
+            tmp_vec = (df['Age'] > start_) & (df['Age'] <= end_)
+            vec_age = vec_age | tmp_vec
+    # Perform and & operation as AGE is just another variable
+    final_indexes_selected_vals = vec_age & ind_selected_vals
+    number_died = sum(df.loc[final_indexes_selected_vals, "Survived_0"])
+    number_survived = sum(df.loc[final_indexes_selected_vals, "Survived_1"])
     # Survival by Age Group
     # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    ages = [(0, 18), (18, 35), (35, 55), (55, 100)]
-    df = x.loc[final_ , :]
+    AGES = ((0, 18), (18, 35), (35, 55), (55, 100))
+    df = df.loc[final_indexes_selected_vals , :]
     vec_survAge = []
     vec_diedAge = []
-    for age in ages:
+    for age in AGES:
         st_= age[0]
         en_= age[1]
         ind = (df['Age'] > st_) & (df['Age'] <= en_)
         vec_survAge.append(sum(df.loc[ind, 'Survived_1']))
         vec_diedAge.append(sum(df.loc[ind, 'Survived_0']))
-    return sum(final_), number_died, number_survived, vec_survAge, vec_diedAge
+    return sum(final_indexes_selected_vals), number_died, number_survived, vec_survAge, vec_diedAge
 
-def performMapping(inference_set):
+
+def perform_mapping(inference_set):
+    """
+    - This function received the inference request from the frontend
+    - Transforms this inference request data into a format that corresponds to the 
+        training data frame's features that were used to train the model.
+    - A data frame will be returned by this function.
+    - This data frame can then be passed to the model for inference
+    """
     MAPPINGS_ = {
             "class": {"first": "Pclass_1", "second": "Pclass_2", "third": "Pclass_3"},
             "gender": {"male": "Sex_male", "female": "Sex_female"},
@@ -99,7 +134,7 @@ def performMapping(inference_set):
             }
         }
 
-    x_columns = (
+    df_columns = (
         'Age', 'Survived_0', 'Survived_1', 'Pclass_1', 'Pclass_2', 'Pclass_3',
         'Honorific_Master.', 'Honorific_Mr.', 'Sex_female', 'Sex_male',
         'FamilySize_Alone', 'FamilySize_Large', 'FamilySize_Medium',
@@ -107,13 +142,13 @@ def performMapping(inference_set):
         'Embarked_C', 'Embarked_Q', 'Embarked_S', 'YoungWomen', 'MarriedWomen',
         'RareHonorific')
     inference_set_dic = {}
-    for key_ in inference_set.keys():
-        if not key_ in ("model", "exact_age", "inference", "marital"):
-            if key_ == "age":
+    for variable_ in inference_set.keys():
+        if not variable_ in ("model", "exact_age", "inference", "marital"):
+            if variable_ == "age":
                 inference_set_dic["Age"] = [inference_set["exact_age"]]
             else:
-                sub_dic = MAPPINGS_[key_]
-                key_col_set_to_1 = sub_dic[inference_set[key_]]
+                sub_dic = MAPPINGS_[variable_]
+                key_col_set_to_1 = sub_dic[inference_set[variable_]]
                 inference_set_dic[key_col_set_to_1] = [1] 
                 # get all cols
                 all_cols = list(sub_dic.values())
@@ -121,6 +156,6 @@ def performMapping(inference_set):
                 for column_ in all_cols:
                     inference_set_dic[column_] = [0]
 
-    cols = [column_ for column_ in x_columns if "Survi" not in column_]
+    cols = [column_ for column_ in df_columns if "Survi" not in column_]
     df_inference = pd.DataFrame(inference_set_dic)[cols]
     return df_inference

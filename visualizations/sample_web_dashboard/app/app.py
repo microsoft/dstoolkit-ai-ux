@@ -56,5 +56,5 @@ def get_insights():
 
 if __name__ == "__main__":
     data_path = os.path.join(__here__, "data", "titanic", "dataset.csv")
-    df = pd.read_csv(os.path.join(os.getcwd(), data_path))
+    df = pd.read_csv(data_path)
     app.run(host='0.0.0.0', port=os.environ.get('PORT', 8080), debug=True)

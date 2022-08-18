@@ -101,7 +101,7 @@ def get_count(req_dict, df, mappings_= MAPPINGS):
 
 def perform_mapping(inference_set):
     """
-    - This function received the inference request from the frontend
+    - This function receives the inference request from the frontend
     - Transforms this inference request data into a format that corresponds to the 
         training data frame's features that were used to train the model.
     - A data frame will be returned by this function.

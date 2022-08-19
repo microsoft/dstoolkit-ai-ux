@@ -35,7 +35,8 @@ MAPPINGS = {
     'checkRare': 'RareHonorific'
     }
 
-def get_count(req_dict, df, mappings_= MAPPINGS):
+
+def get_count(req_dict, df, column_to_checkbox_map= MAPPINGS):
     """
     - When request Data is received from the frontend, it needs to be mapped to data columns 
         in the df. This is not a simple mapping becasue the frontend displays information 
@@ -44,7 +45,7 @@ def get_count(req_dict, df, mappings_= MAPPINGS):
     - This function will perform this mapping and then also calculate the number of rows
         for the selected checked values. 
     """
-    pairs = { 
+    checkbox_categories = { 
         'gender': ('checkMale', 'checkFemale'), 
         'class': ('checkClass1', 'checkClass2', 'checkClass3'), 
         'title' : ('checkMaster', 'checkMiss', 'checkMrs', 'checkMr', 'checkRare'), 
@@ -54,16 +55,16 @@ def get_count(req_dict, df, mappings_= MAPPINGS):
     ind_selected_vals = np.array([True]*df.shape[0])
     # Find which checkBoxess in the above dictionary have been received in the 
     # req_dict from the frontend
-    for variable_ in pairs.keys():
-        # For this variable_ go to every possible checkBox value and check if it is True
+    for checkbox_category in checkbox_categories.keys():
+        # For this checkbox_category go to every possible checkBox value and check if it is True
         ind_vec = [False]*df.shape[0]
-        for variable_val in pairs[variable_]:
+        for checkbox in checkbox_categories[checkbox_category]:
             # For this checkBox check if it has been received as True in the req_dict
             # If it has been set to True, select the corresponding rows from the data frame
-            if req_dict['vals'][variable_val]:
-                col_name = (mappings_[variable_val])
-                tmp_vec =  df[col_name] == req_dict['vals'][variable_val]
-                # An | operation between the different values of the same variable_
+            if req_dict['vals'][checkbox]:
+                col_name = (column_to_checkbox_map[checkbox])
+                tmp_vec =  df[col_name] == req_dict['vals'][checkbox]
+                # An | operation between the different values of the same checkbox_category
                 ind_vec = ind_vec | tmp_vec
         # An & operation between variables
         ind_selected_vals = ind_selected_vals & ind_vec
@@ -91,9 +92,9 @@ def get_count(req_dict, df, mappings_= MAPPINGS):
     vec_survAge = []
     vec_diedAge = []
     for age in AGES:
-        st_= age[0]
-        en_= age[1]
-        ind = (df['Age'] > st_) & (df['Age'] <= en_)
+        start_age= age[0]
+        end_age= age[1]
+        ind = (df['Age'] > start_age) & (df['Age'] <= end_age)
         vec_survAge.append(sum(df.loc[ind, 'Survived_1']))
         vec_diedAge.append(sum(df.loc[ind, 'Survived_0']))
     return sum(final_indexes_selected_vals), number_died, number_survived, vec_survAge, vec_diedAge
@@ -142,13 +143,13 @@ def perform_mapping(inference_set):
         'Embarked_C', 'Embarked_Q', 'Embarked_S', 'YoungWomen', 'MarriedWomen',
         'RareHonorific')
     inference_set_dic = {}
-    for variable_ in inference_set.keys():
-        if not variable_ in ("model", "exact_age", "inference", "marital"):
-            if variable_ == "age":
+    for checkbox_category in inference_set.keys():
+        if not checkbox_category in ("model", "exact_age", "inference", "marital"):
+            if checkbox_category == "age":
                 inference_set_dic["Age"] = [inference_set["exact_age"]]
             else:
-                sub_dic = MAPPINGS_[variable_]
-                df_column_True = sub_dic[inference_set[variable_]]
+                sub_dic = MAPPINGS_[checkbox_category]
+                df_column_True = sub_dic[inference_set[checkbox_category]]
                 inference_set_dic[df_column_True] = [1] 
                 # get all cols
                 all_cols_False = [column_ for column_ in list(sub_dic.values()) if column_ != df_column_True]

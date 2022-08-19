@@ -37,11 +37,11 @@
                     <!-- Mashead text and app badges-->
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
                         <h1 class="display-8 lh-1 mb-3">Description</h1>
-                        <p class="lead fw-normal">
+                        <p class="fw-normal">
                             {{ data['demo_config']['description'] }}
                         </p>
                         <h1 class="display-8 lh-1 mb-3">Features</h1>
-                        <p class="lead fw-normal text-xs ">
+                        <p class="fw-normal text-xs ">
                             This UI features:
                             <ul>
                                 {% for feature in data['demo_config']['feature_bullets'] %}
@@ -55,28 +55,28 @@
                     {% if data['demo_config']['links']['demo'] %}
                     <div class="mb-4">
                         <a href="{{ data['demo_config']['links']['demo'] }}">
-                            <span class="btn form-control btn-danger">Live Demo</span>
+                            <span class="btn form-control btn-demo">Live Demo</span>
                         </a>
                     </div>
                     {% endif %}
                     {% if data['demo_config']['links']['source_code'] %}
                     <div class="mb-4">
                         <a href="{{ data['demo_config']['links']['source_code'] }}">
-                            <span class="btn form-control btn-dark">View Source Code</span>
+                            <span class="btn form-control btn-source-code">View Source Code</span>
                         </a>
                     </div>
                     {% endif %}
                     {% if data['demo_config']['links']['download'] %}
                     <div class="mb-4">
                         <a href="{{ data['demo_config']['links']['source_code'] }}">
-                            <span class="btn form-control btn-success">Download</span>
+                            <span class="btn form-control btn-download">Download</span>
                         </a>
                     </div>
                     {% endif %}
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">License</div>
+                                <div class="fw-500 descriptor-title">License</div>
                                 <div>
                                     {{ data['demo_config']['license'] }}
                                 </div>
@@ -84,42 +84,42 @@
                             <hr>
                             <!---->
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">Use Case Type</div>
+                                <div class="fw-500 descriptor-title">Use Case Type</div>
                                 <div>
                                     {{ data['demo_config']['use_case_type'] }}
                                 </div>
                             </div>
                             <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">Industry</div>
+                                <div class="fw-500 descriptor-title">Industry</div>
                                 <div>
                                     {{ data['demo_config']['industry'] }}
                                 </div>
                             </div>
                             <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">Technology</div>
+                                <div class="fw-500 descriptor-title">Technology</div>
                                 <div>
                                     {{ data['demo_config']['main_technology'] }}
                                 </div>
                             </div>
                             <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">Released</div>
+                                <div class="fw-500 descriptor-title">Released</div>
                                 <div>
                                     {{ data['demo_config']['released'] }}
                                 </div>
                             </div>
                             <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">Last Update</div>
+                                <div class="fw-500 descriptor-title">Last Update</div>
                                 <div>
                                     {{ data['demo_config']['updated'] }}
                                 </div>
                             </div>
                             <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500">Author</div>
+                                <div class="fw-500 descriptor-title">Author</div>
                                 <div>
                                     {{ data['demo_config']['author'] }}
                                 </div>

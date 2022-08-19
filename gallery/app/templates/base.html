@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+        <link href="{{url_for('static', filename='css/custom.css')}}" rel="stylesheet" />
         {% endblock %}
         {% block custom_css %}{% endblock %}
     </head>
@@ -39,7 +40,7 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#">Docs</a></li>
                     </ul>
                     <a href="https://github.com/microsoft/dstoolkit-ai-ux">
-                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0">
+                    <button class="btn btn-github rounded-pill px-3 mb-2 mb-lg-0">
                         <span class="d-flex align-items-center">
                             <i class="bi-github me-2"></i>
                             <span class="small">Github Repo</span>

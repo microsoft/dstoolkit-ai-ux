@@ -1,0 +1,80 @@
+.btn-github {
+  color: #fff;
+  background-color: #0078d4;
+  border-color: #0078d4;
+}
+
+.btn-optimization {
+  color: #fff;
+  background-color: #73262f;
+  border-color: #73262f;
+}
+
+.btn-regression {
+  color: #fff;
+  background-color: #702573;
+  border-color: #702573;
+;
+}
+
+.btn-classification {
+  color: #fff;
+  background-color: #107c10;
+  border-color: #107c10;
+}
+
+.btn-clustering {
+  color: #fff;
+  background-color: #7F5A1A;
+  border-color: #7F5A1A;
+}
+
+.btn-nlp {
+  color: #fff;
+  background-color: #008575;
+  border-color: #008575;
+}
+
+.btn-search {
+  color: #fff;
+  background-color: #243a5e;
+  border-color: #243a5e;
+}
+
+.btn-vision {
+  color: #fff;
+  background-color: #6a4b16;
+  border-color: #6a4b16;
+}
+
+.btn-other {
+  color: #fff;
+  background-color: #737373;
+  border-color: #737373;
+}
+
+.btn-demo {
+  color: #fff;
+  background-color: #702573;
+  border-color: #702573;
+}
+
+.btn-source-code {
+  color: #fff;
+  background-color: #2A446F;
+  border-color: #2A446F;
+}
+
+.btn-download {
+  color: #fff;
+  background-color: #0078D4;
+  border-color: #0078D4;
+}
+
+.descriptor-title {
+  font-family: "Segoe UI Semibold";
+}
+
+.btn {
+  font-family: "Segoe UI Semibold";
+}

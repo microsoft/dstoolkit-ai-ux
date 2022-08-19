@@ -17,5 +17,5 @@ images:
   thumbnail_filename: "consumer_analytics.png"
 links:
   demo: "https://consumer-analytics-demo.dstoolkit-gallery-dev.com"
-  source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/gallery-dev/visualizations/consumer_analytics'
+  source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/main/visualizations/consumer_analytics'
   download: '#'

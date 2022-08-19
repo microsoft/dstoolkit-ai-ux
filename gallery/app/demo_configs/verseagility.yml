@@ -1,6 +1,6 @@
 name: "Verseagility"
 tagline: "Text classification, named entity recognition and answer suggestions for support emails and attachments."
-industry: ""
+industry: "Cross-Industry"
 use_case_type: "NLP"
 license: "MIT license"
 main_technology: "Streamlit"

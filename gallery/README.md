@@ -7,7 +7,7 @@ To add your UI demo, the steps you need to take are:
 - Create your own branch: "your-name"/"your-demo"
 - Add a thumbnail of your UI (600 pixels x 400 pixels) to `static/assets/img/demo_thumbnails`
 - Add a screenshot of your UI (1600 pixels x 900 pixels) to `static/assets/img/demo_screenshots`
-- Add a new yaml file to `demo_configs`, following the yaml structure of the other demo configs
+- Add a new yaml file to `demo_configs`, following the yaml structure of the other demo configs as described below
 - Add the name of the `yml` file to the `demo_configs/.order` file in the position you'd like it to appear
 - Create a pull request
 
@@ -23,7 +23,7 @@ To add your UI demo, the steps you need to take are:
 | main_technology | The main technology(ies) used in this demo e.g. "Flask", "Streamlit", "Django", "node.js"               |
 | released        | The date this demo was released                                                                         |
 | updated         | The date this demo was last updated (optional)                                                          |
-| authors         | key-values of the authors names and github alias                                                        |
+| authors         | key-values of the authors' names and github alias                                                       |
 | description     | A description of your demo                                                                              |
 | feature_bullets | Bullets that describe in brief the feature components of your demo and the technologies that drive them |
 | images          | Filenames of the screenshot and thumbnail for your demo to be shown in the gallery                      |

@@ -6,7 +6,9 @@ license: "MIT license"
 main_technology: "Flask"
 released: "2022-06-01"
 updated: "2022-06-01"
-author: "Benjamin Keen"
+authors: 
+  - name: "Benjamin Keen"
+    github_alias: "benalexkeen"
 description: Learn more about your customers today, how likely are they to churn and what will their customer lifetime value be. As the churn probability of a customer increases, consider marketing intervention to prevent customer churn. This tool can be used to learn about the churn rate and customer lieftime value to determine how much you should consider spending on marketing.
 feature_bullets:
   - Self service to allow you to upload your own customer data or use sample data to see customer insights

@@ -24,13 +24,25 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          pip install -r gallery/app/requirements.txt
+      
+      - name: Test gallery
+        run: |
+          pytest -v ./gallery/tests/ --doctest-modules --junitxml=junit/test-results-gallery.xml
+      
+      - name: Upload gallery pytest test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: pytest-results-gallery
+          path: junit/test-results-gallery.xml
+        # Use always() to always run this step to publish test results when there are test failures
+        if: ${{ always() }}

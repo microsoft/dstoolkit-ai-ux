@@ -6,7 +6,11 @@ license: "MIT license"
 main_technology: "Flask"
 released: "2022-09-01"
 updated: "2022-09-01"
-author: "Andy He & Jin Yu"
+authors:
+  - name: "Andy He"
+    github_alias: "andyhemsft"
+  - name: "Jin Yu"
+    github_alias: "yuj18"
 description: This demo implements a domain-aware search solution that uses knowledge graph to enrich the organic results of a general purpose search engine. The demo is implemented in the context of medical document retrieval. It uses a medical knowledge graph to expand the scope of search from the original query to semantically related queries to uncover relevant documents that may not contain the exact keywords specified in the original query. 
 feature_bullets:
   - Modularized code template to implement a domain-aware search solution with knowledge graph

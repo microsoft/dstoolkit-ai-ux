@@ -105,6 +105,15 @@
                             </div>
                             <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
+                                <div class="fw-500 descriptor-title">Authors</div>
+                                <div>
+                                    {% for author in data['demo_config']['authors'] %}
+                                        <a href="https://github.com/{{author.github_alias}}">{{ author.name }}</a><br>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex align-items-center justify-content-between text-xs">
                                 <div class="fw-500 descriptor-title">Released</div>
                                 <div>
                                     {{ data['demo_config']['released'] }}
@@ -118,12 +127,6 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">Author</div>
-                                <div>
-                                    {{ data['demo_config']['author'] }}
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,9 @@ license: "MIT license"
 main_technology: "Streamlit"
 released: "2020-01-24"
 updated: "2021-12-09"
-author: "Timm Walz"
+authors: 
+  - name: "Timm Walz"
+    github_alias: "nonstoptimm"
 description: Verseagility is a Python-based toolkit to ramp up your custom natural language processing (NLP) task, allowing you to bring your own data, use your preferred frameworks and bring models into production. It is a central component of the Microsoft Data Science Toolkit.
 feature_bullets:
   - Binary, multi-class & multi-label classification

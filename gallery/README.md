@@ -39,7 +39,6 @@ Your demo can be "Cross-Industry" or it can be one of:
 - Energy
 - Healthcare
 - Insurance
-- Insurance
 - Life Sciences
 - Manufacturing
 - Media

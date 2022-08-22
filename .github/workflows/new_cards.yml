@@ -1,3 +1,5 @@
+name: Add New Card to Projects
+
 on:
   issues:
     types: [opened]

@@ -30,16 +30,22 @@
                         <p class="small text-muted mb-0">{{demo_config['tagline']}}</p>
                         <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
                         <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">{{demo_config['industry']}}</span></p>
-                        {% if demo_config['use_case_type'] == 'Optimisation' %}
-                            <span class="btn btn-danger px-3 rounded-pill font-weight-normal">{{demo_config['use_case_type']}}</span>
+                        {% if demo_config['use_case_type'] == 'Optimization' %}
+                            <span class="btn btn-optimization px-3 rounded-pill font-weight-normal">{{demo_config['use_case_type']}}</span>
                         {% elif demo_config['use_case_type'] == 'Regression' %}
-                            <span class="btn btn-success px-3 px-3 rounded-pill font-weight-normal">{{demo_config['use_case_type']}}</span>
+                            <span class="btn btn-regression px-3 px-3 rounded-pill font-weight-normal">{{demo_config['use_case_type']}}</span>
                         {% elif demo_config['use_case_type'] == 'Classification' %}
-                            <div class="btn btn-info px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                            <div class="btn btn-classification px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
                         {% elif demo_config['use_case_type'] == 'Clustering' %}
-                            <div class="btn btn-warning px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                            <div class="btn btn-clustering px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                        {% elif demo_config['use_case_type'] == 'Search' %}
+                            <div class="btn btn-search px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                        {% elif demo_config['use_case_type'] == 'Vision' %}
+                            <div class="btn btn-vision px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                            {% elif demo_config['use_case_type'] == 'NLP' %}
+                            <div class="btn btn-nlp px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
                         {% else %}
-                            <div class="btn btn-primary px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
+                            <div class="btn btn-other px-3 rounded-pill font-weight-normal text-white">{{demo_config['use_case_type']}}</div>
                         {% endif %}
                         </div>
                     </div>

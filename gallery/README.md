@@ -31,7 +31,7 @@ To add your UI demo, the steps you need to take are:
 
 ### Valid Industries
 
-Your demo can be "Cross-Industry" or it can be one of:
+Your demo can be "**Cross-Industry**" or it can be one of:
 - Agriculture
 - Automotive
 - Banking
@@ -50,7 +50,7 @@ Your demo can be "Cross-Industry" or it can be one of:
 
 ### Valid Use Case Types
 
-The valid use case types that you can assign your demo are:
+You may assign only **one** of the valid use case types to your demo:
 - Classification
 - Clustering
 - NLP

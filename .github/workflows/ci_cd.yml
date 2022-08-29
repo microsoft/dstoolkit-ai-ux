@@ -38,7 +38,8 @@ jobs:
           ls -a 
 
       - run: |
-          docker build . -t ${{ secrets.TEMP_REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest |  docker push ${{ secrets.TEMP_REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
+          docker build . -t ${{ secrets.TEMP_REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 
+          docker push ${{ secrets.TEMP_REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
          
 
   # Deploy_Stage:

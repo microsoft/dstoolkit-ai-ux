@@ -2,7 +2,7 @@ name: Docker Image CI
 on: 
   push:
     paths:
-      - './gallery/**'
+      - 'gallery/**'
     branches:
       # - "main"
       - "feature/*"

@@ -27,8 +27,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-          username: ${{ secrets.TEMP_REGISTRY_USERNAME }}
-          password: ${{ secrets.TEMP_REGISTRY_PASSWORD }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
 
       - name: Install dependencies
         run: |
@@ -42,21 +42,3 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: craigallerydev001.azurecr.io/dstoolkitaiux:latest
-         
-
-  # Deploy_Stage:
-  #   runs-on: ubuntu-latest
-  #   needs: Build_Stage
-  #   environment:
-  #     name: 'production'
-  #     url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
-  #   steps:
-  #   - name: Deploy to Azure Web App
-  #     id: deploy-to-webapp
-  #     uses: azure/webapps-deploy@v2
-  #     with:
-  #       app-name: 'app-aigallery-dev-001'
-  #       slot-name: 'production'
-  #       publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-  #       images: '${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest'

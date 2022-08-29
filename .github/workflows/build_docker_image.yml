@@ -44,7 +44,7 @@ jobs:
           ls -a 
 
       - run: |
-          docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 
+          docker build /gallery/. -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
 
   # Deploy_Stage:

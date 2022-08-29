@@ -41,7 +41,7 @@ jobs:
       #     docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/wgtest:latest
       #     docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/wgtest:latest
 
-      -name: Build and push
+      - name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: ./

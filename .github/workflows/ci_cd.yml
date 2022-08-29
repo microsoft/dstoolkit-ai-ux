@@ -38,8 +38,8 @@ jobs:
       #     ls -a 
 
       # - run: |
-      #     docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/wgtest:latest
-      #     docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/wgtest:latest
+      #     docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
+      #     docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
 
       - name: Build and push
         uses: docker/build-push-action@v2
@@ -48,7 +48,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/wgtest:latest
+          tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
          
 
   # Deploy_Stage:

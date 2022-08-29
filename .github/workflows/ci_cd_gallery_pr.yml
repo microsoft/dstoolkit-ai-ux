@@ -45,7 +45,7 @@ jobs:
     needs: Build_Push_Image_to_ACR
 
     environment:
-      name: 'production'
+      name: 'slot01'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:

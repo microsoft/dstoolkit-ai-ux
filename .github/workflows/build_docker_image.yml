@@ -40,7 +40,8 @@ jobs:
 
       - name: show path
         run: |
-          pwd 
+          pwd
+          ls -a 
 
       - run: |
           docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 

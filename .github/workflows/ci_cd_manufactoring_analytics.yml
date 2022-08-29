@@ -1,0 +1,44 @@
+name: Docker Image CI
+on: 
+  push:
+    paths:
+      - 'visualizations/manufacturing_analytics/**'
+    branches:
+      - "main"
+      # - "feature/*"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+      
+jobs:
+
+  Build_Stage:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Log in to registry
+        uses: docker/login-action@v1
+        with:
+          registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip 
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: ./visualizations/manufacturing_analytics
+          file: ./Dockerfile
+          builder: ${{ steps.buildx.outputs.name }}
+          push: true
+          tags: craigallerydev001.azurecr.io/viz-manufacturing:latest

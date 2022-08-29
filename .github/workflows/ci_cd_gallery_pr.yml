@@ -42,7 +42,7 @@ jobs:
 
   Deploy_to_Slot:
     runs-on: ubuntu-latest
-    needs: Build_Push
+    needs: Build_Push_Image_to_ACR
 
     environment:
       name: 'production'

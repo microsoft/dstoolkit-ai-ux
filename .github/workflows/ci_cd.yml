@@ -48,6 +48,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
+          tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/wgtest:latest
          
 
   # Deploy_Stage:

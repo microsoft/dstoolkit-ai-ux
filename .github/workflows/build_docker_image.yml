@@ -1,49 +1,49 @@
-name: Docker Image CI
-on: 
-  push:
-    branches:
-      - "main"
-    # paths-ignore:
-    # - '**/*.md'
-    # - '**/*.gitignore'
-    # - '**/*.gitattributes'
-    # - '**/translations.yaml'
+# name: Docker Image CI
+# on: 
+#   push:
+#     branches:
+#       - "main"
+#     # paths-ignore:
+#     # - '**/*.md'
+#     # - '**/*.gitignore'
+#     # - '**/*.gitattributes'
+#     # - '**/translations.yaml'
 
-jobs:
+# jobs:
 
-  Build_Stage:
+#   Build_Stage:
 
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./gallery
+#     runs-on: ubuntu-latest
+#     defaults:
+#       run:
+#         working-directory: ./gallery
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+#       - name: Set up Docker Buildx
+#         uses: docker/setup-buildx-action@v1
 
-      - name: Log in to registry
-        uses: docker/login-action@v1
-        with:
-          registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
+#       - name: Log in to registry
+#         uses: docker/login-action@v1
+#         with:
+#           registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+#           username: ${{ secrets.REGISTRY_USERNAME }}
+#           password: ${{ secrets.REGISTRY_PASSWORD }}
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip 
+#       - name: Install dependencies
+#         run: |
+#           python -m pip install --upgrade pip 
 
-      - name: show path
-        run: |
-          pwd
-          ls -a 
+#       - name: show path
+#         run: |
+#           pwd
+#           ls -a 
 
-      - run: |
-          docker build -f gallery/Dockerfile . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 
-          docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
+#       - run: |
+#           docker build -f gallery/Dockerfile . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 
+#           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
 
   # Deploy_Stage:
   #   runs-on: ubuntu-latest

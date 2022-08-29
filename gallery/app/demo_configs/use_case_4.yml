@@ -9,7 +9,7 @@ updated: "2022-01-01"
 authors:
   - name: "John Smith"
     github_alias: "benalexkeen"
-description: test ci - wg Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus augue, vulputate id elementum non, eleifend et ante. Nunc porttitor urna vel lectus vestibulum, nec blandit nibh pharetra. Cras pretium ligula at dolor ultrices, semper consequat sapien aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+description: test ci-cd  - wg Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus augue, vulputate id elementum non, eleifend et ante. Nunc porttitor urna vel lectus vestibulum, nec blandit nibh pharetra. Cras pretium ligula at dolor ultrices, semper consequat sapien aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 feature_bullets:
   - Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - Maecenas vestibulum sapien eget massa posuere, sed dapibus lectus tempor

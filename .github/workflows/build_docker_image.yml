@@ -3,11 +3,11 @@ on:
   push:
     branches:
       - "main"
-    paths-ignore:
-    - '**/*.md'
-    - '**/*.gitignore'
-    - '**/*.gitattributes'
-    - '**/translations.yaml'
+    # paths-ignore:
+    # - '**/*.md'
+    # - '**/*.gitignore'
+    # - '**/*.gitattributes'
+    # - '**/translations.yaml'
 
 jobs:
 

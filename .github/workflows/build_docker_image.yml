@@ -8,8 +8,8 @@ on:
     - '**/*.gitignore'
     - '**/*.gitattributes'
     - '**/translations.yaml'
-    paths:
-    - 'gallery/**'
+    # paths:
+    # - 'gallery/**'
 
 
 jobs:

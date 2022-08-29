@@ -8,17 +8,18 @@ on:
     - '**/*.gitignore'
     - '**/*.gitattributes'
     - '**/translations.yaml'
-  pull_request:
-    branches: [ "main" ]
+    paths:
+    - 'gallery/**'
+
 
 jobs:
 
   Build_Stage:
 
     runs-on: ubuntu-latest
-    # defaults:
-    #   run:
-    #     working-directory: ./gallery
+    defaults:
+      run:
+        working-directory: ./gallery
 
     steps:
       - name: Checkout

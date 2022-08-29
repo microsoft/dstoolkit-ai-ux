@@ -1,4 +1,4 @@
-name: Docker CI for Gallery
+name: Docker CI for Gallery Pull Request to 
 on: 
   pull_request:
     paths:

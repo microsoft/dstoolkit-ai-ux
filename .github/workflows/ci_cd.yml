@@ -48,7 +48,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
+          tags: craigallerydev001.azurecr.io/dstoolkitaiux:latest
          
 
   # Deploy_Stage:

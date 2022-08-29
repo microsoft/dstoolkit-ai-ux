@@ -38,8 +38,12 @@ jobs:
         run: |
           python -m pip install --upgrade pip 
 
+      - name: show path
+        run: |
+          pwd 
+
       - run: |
-          docker build -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest .
+          docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest 
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:latest
 
   # Deploy_Stage:

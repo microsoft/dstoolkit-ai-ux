@@ -1,6 +1,9 @@
 name: Docker Image CI
 on: 
   push:
+    paths:
+      - '.github/actions/**'
+      - './gallery/**'
     branches:
       - "main"
       - "feature/*"

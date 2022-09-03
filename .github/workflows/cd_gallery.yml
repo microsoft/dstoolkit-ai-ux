@@ -31,7 +31,8 @@ jobs:
           name: pytest-results-gallery
           path: junit/test-results-gallery.xml
         if: ${{ always() }}
-  Set-Dependencies:
+
+  Build_and_Push:
     needs:
       - Unit-Test
     runs-on: ubuntu-latest

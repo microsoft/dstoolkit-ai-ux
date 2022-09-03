@@ -35,7 +35,7 @@ jobs:
           python -m pip install --upgrade pip 
 
       - name: Unit Test CI for Gallery
-        uses: ./.github/actions/unit_test_ci_gallery
+        uses: .github/actions/unit_test_ci_gallery
 
       - name: Build and push
         uses: docker/build-push-action@v2

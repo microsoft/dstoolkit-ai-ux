@@ -1,3 +1,4 @@
+
 name: Docker CI/CD for Gallery for branches
 on:
   pull_request:
@@ -6,11 +7,8 @@ on:
       - '*'
     paths:
       - gallery/**
-
-# env:
-#   # branch_name: ${GITHUB_REF##*/}
-#   # url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
+env:
+  branch_name: ${{ github.head_ref || github.ref_name }}
 jobs:
   Unit-Test:
     runs-on: ubuntu-latest
@@ -62,23 +60,4 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${GITHUB_REF##*/} 
-
-  # Release_changes:
-  #   needs:
-  #     - Unit-Test
-  #     - Build_and_Push
-  #   environment:
-  #     url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-  #     - name: Deploy to Azure Web App
-  #       id: deploy-to-webapp
-  #       uses: azure/webapps-deploy@v2
-  #       with:
-  #         app-name: app-aigallery-dev-001
-  #         slot-name: slot01
-  #         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_SLOT01 }}
-  #         images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:dev_${{env.branch_name }}
+          tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{env.branch_name }}

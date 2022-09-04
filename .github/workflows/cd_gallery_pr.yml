@@ -7,7 +7,7 @@ on:
     paths:
       - gallery/**
 env:
-  branch_name: feauture_test
+  branch_name: dev
 jobs:
   # Unit-Test:
   #   runs-on: ubuntu-latest

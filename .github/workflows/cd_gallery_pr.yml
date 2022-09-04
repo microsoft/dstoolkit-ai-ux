@@ -7,9 +7,9 @@ on:
     paths:
       - gallery/**
 
-# environment:
-#   # name: ${{GITHUB_BASE_REF }}
-#   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+environment:
+  branch_name: ${{GITHUB_BASE_REF }}
+  url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
 jobs:
   Unit-Test:
@@ -62,8 +62,8 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{env.GITHUB_BASE_REF }}
-          
+          tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{env.branch_name }}
+
   # Release_changes:
   #   needs:
   #     - Unit-Test

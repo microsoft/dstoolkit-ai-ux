@@ -59,7 +59,7 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:dev_${{env.branch_name }}
+          tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{env.branch_name }}
 
   Release_changes:
     needs:

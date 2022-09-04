@@ -9,7 +9,7 @@ on:
 
 env:
   branch_name: ${{env.GITHUB_BASE_REF }}
-  url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+  # url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
 jobs:
   Unit-Test:

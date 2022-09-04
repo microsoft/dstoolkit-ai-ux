@@ -8,7 +8,7 @@ on:
       - gallery/**
 
 env:
-  branch_name: ${{env.GITHUB_BASE_REF }}
+  branch_name: ${GITHUB_REF##*/}
   # url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
 jobs:

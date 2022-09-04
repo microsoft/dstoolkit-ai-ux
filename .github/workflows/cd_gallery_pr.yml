@@ -61,7 +61,7 @@ jobs:
           push: true
           tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{env.branch_name }}
 
-  Release_changes:
+  Releases_Branch:
     needs:
       - Unit-Test
       - Build_and_Push
@@ -76,6 +76,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'app-aigallery-dev-001'
-          slot-name: slot01
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_SLOT01 }}
+          slot-name: production
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:dev_${{env.branch_name }}

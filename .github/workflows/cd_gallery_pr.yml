@@ -6,9 +6,11 @@ on:
       - '*'
     paths:
       - gallery/**
+
 environment:
-  name: ${{GITHUB_BASE_REF }}
+  # name: ${{GITHUB_BASE_REF }}
   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
 jobs:
   Unit-Test:
     runs-on: ubuntu-latest

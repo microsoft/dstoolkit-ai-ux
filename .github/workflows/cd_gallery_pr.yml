@@ -65,8 +65,8 @@ jobs:
     needs:
       - Unit-Test
       - Build_and_Push
-    env:
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    # env:
+    #   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

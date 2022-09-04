@@ -1,33 +1,33 @@
 
-# name: Continuous Integration
-# on:
-#   pull_request:
-#     branches:
-#       - main
-#       - '*'
-#     paths:
-#       - gallery/**
-#   workflow_dispatch: null
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v3
-#       - name: Set up Python 3.9
-#         uses: actions/setup-python@v4
-#         with:
-#           python-version: '3.9'
-#       - name: Install dependencies
-#         run: |
-#           python -m pip install --upgrade pip
-#           pip install flake8 pytest requests
-#           pip install -r gallery/app/requirements.txt
-#       - name: Test gallery
-#         run: |
-#           pytest -v ./gallery/tests/ --doctest-modules --junitxml=junit/test-results-gallery.xml
-#       - name: Upload gallery pytest test results
-#         uses: actions/upload-artifact@v3
-#         with:
-#           name: pytest-results-gallery
-#           path: junit/test-results-gallery.xml
-#         if: ${{ always() }}
+name: Continuous Integration
+on:
+  pull_request:
+    branches:
+      - main
+      - '*'
+    paths:
+      - gallery/**
+  workflow_dispatch: null
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 pytest requests
+          pip install -r gallery/app/requirements.txt
+      - name: Test gallery
+        run: |
+          pytest -v ./gallery/tests/ --doctest-modules --junitxml=junit/test-results-gallery.xml
+      - name: Upload gallery pytest test results
+        uses: actions/upload-artifact@v3
+        with:
+          name: pytest-results-gallery
+          path: junit/test-results-gallery.xml
+        if: ${{ always() }}

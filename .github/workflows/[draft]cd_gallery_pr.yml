@@ -1,0 +1,141 @@
+# name: Docker CI/CD for Gallery for branches
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#       - '*'
+#     paths:
+#       - gallery/**
+# env:
+#   branch_name: dev
+# jobs:
+#   # Unit_Test:
+#   #   runs-on: ubuntu-latest
+#   #   steps:
+#   #     - name: Checkout
+#   #       uses: actions/checkout@v3
+#   #     - name: Install dependencies
+#   #       run: |
+#   #         python -m pip install --upgrade pip 
+#   #     - name: Set up Python 3.9
+#   #       uses: actions/setup-python@v4
+#   #       with:
+#   #         python-version: '3.9'
+#   #     - name: Install dependencies
+#   #       run: |
+#   #         pip install flake8 pytest requests
+#   #         pip install -r ./gallery/app/requirements.txt
+#   #     - name: Test gallery
+#   #       run: |
+#   #         pytest -v gallery/tests/ --doctest-modules --junitxml=junit/test-results-gallery.xml
+#   #     - name: Upload gallery pytest test results
+#   #       uses: actions/upload-artifact@v3
+#   #       with:
+#   #         name: pytest-results-gallery
+#   #         path: junit/test-results-gallery.xml
+
+
+#   Create_Web_App_for_Testing:
+#     needs:
+#       - Unit_Test
+#     env:
+#       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#     - name: Azure Login
+#       uses: azure/login@v1
+#       with:
+#         creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+#     # - name: Azure CLI script
+#     #   uses: azure/CLI@v1
+#     #   with:
+#     #     azcliversion: 2.30.0
+#     #     inlineScript: |
+#     #       az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --is-linux
+#     #       az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app-name> --deployment-container-image-name <registry-name>.azurecr.io/appsvc-tutorial-custom-image:latest
+#     #       az webapp config appsettings set --resource-group myResourceGroup --name <app-name> --settings 
+
+
+#   Build_and_Push:
+#     # needs:
+#     #   - Unit_Test
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#       - name: Set up Docker Buildx
+#         uses: docker/setup-buildx-action@v2
+
+#       - name: Inspect builder
+#         run: |
+#           echo "Name:      ${{ steps.buildx.outputs.name }}"
+#           echo "Endpoint:  ${{ steps.buildx.outputs.endpoint }}"
+#           echo "Status:    ${{ steps.buildx.outputs.status }}"
+#           echo "Flags:     ${{ steps.buildx.outputs.flags }}"
+#           echo "Platforms: ${{ steps.buildx.outputs.platforms }}"
+
+#       - name: Log in to registry
+#         uses: docker/login-action@v1
+#         with:
+#           registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+#           username: ${{ secrets.REGISTRY_USERNAME }}
+#           password: ${{ secrets.REGISTRY_PASSWORD }}
+#       - name: Install dependencies
+#         run: |
+#           python -m pip install --upgrade pip 
+#       - name: Build and push
+#         uses: docker/build-push-action@v2
+#         with:
+#           context: ./gallery
+#           file: ./gallery/Dockerfile
+#           builder: ${{ steps.buildx.outputs.name }}
+#           push: true
+#           tags: craigallerydev001.azurecr.io/dstoolkitaiux:${{env.branch_name }}
+
+#   Create_Webhook:
+#     needs:
+#       - Unit_Test
+#     env:
+#       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+
+#     - name: Azure Login
+#       uses: azure/login@v1
+#       with:
+#         creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+#     - name: Azure CLI script
+#       uses: azure/CLI@v1
+#       with:
+#         azcliversion: 2.30.0
+#         inlineScript: |
+#           az acr webhook create -n MyWebhook -r MyRegistry --uri http://myservice.com --actions push delete
+#           az acr webhook create -n MyWebhook -r MyRegistry --uri http://myservice.com --actions push --headers "Authorization=Basic 000000"
+#           az acr webhook create -n MyWebhook -r MyRegistry --uri http://myservice.com --actions chart_push chart_delete
+
+#   Releases_Branch:
+#     needs:
+#       - Unit_Test
+#       - Build_and_Push
+#     env:
+#       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#       - name: Deploy to Azure Web App
+#         id: deploy-to-webapp
+#         uses: azure/webapps-deploy@v2
+#         with:
+#           app-name: 'app-aigallery-dev-001-features'
+#           slot-name: 'production'
+#           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_FEATURES }}
+#           images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:${{env.branch_name }}

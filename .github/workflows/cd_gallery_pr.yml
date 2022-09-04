@@ -42,8 +42,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
-        uses: actions/setup-buildx-action@v1
+      # - name: Set up Docker Buildx
+      #   uses: actions/setup-buildx-action@v1
 
       # - name: Unit test
       #   uses: DSTOOLKIT-AI-UX/unit_test_ci_gallery@main

@@ -7,7 +7,7 @@ on:
     paths:
       - gallery/**
 
-environment:
+env:
   branch_name: ${{GITHUB_BASE_REF }}
   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 

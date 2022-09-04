@@ -7,9 +7,9 @@ on:
     paths:
       - gallery/**
 
-environment:
-  # name: ${{GITHUB_BASE_REF }}
-  url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+# environment:
+#   # name: ${{GITHUB_BASE_REF }}
+#   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
 jobs:
   Unit-Test:

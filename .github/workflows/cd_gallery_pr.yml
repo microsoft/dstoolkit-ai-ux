@@ -71,21 +71,23 @@ jobs:
           push: true
           tags: craigallerydev001.azurecr.io/dstoolkitaiux:${{env.branch_name }}
 
-  # Releases_Branch:
-  #   # needs:
-  #   #   - Unit_Test
-  #     # - Build_and_Push
-  #   # env:
-  #   #   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-  #     - name: Deploy to Azure Web App
-  #       id: deploy-to-webapp
-  #       uses: azure/webapps-deploy@v2
-  #       with:
-  #         app-name: 'app-aigallery-dev-001-features'
-  #         slot-name: 'production'
-  #         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_FEATURES }}
-  #         images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:${{env.branch_name }}
+  
+
+  Releases_Branch:
+    # needs:
+    #   - Unit_Test
+      # - Build_and_Push
+    # env:
+    #   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'app-aigallery-dev-001-features'
+          slot-name: 'production'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_FEATURES }}
+          images: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:${{env.branch_name }}

@@ -60,12 +60,12 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{env.branch_name }}
-          
+
   Release_changes:
     needs:
       - Unit-Test
       - Build_and_Push
-    environment:
+    env:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     runs-on: ubuntu-latest
     steps:

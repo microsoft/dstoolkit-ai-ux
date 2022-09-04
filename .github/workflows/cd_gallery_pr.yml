@@ -6,11 +6,9 @@ on:
       - '*'
     paths:
       - gallery/**
-
 environment:
   name: ${{GITHUB_BASE_REF }}
   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
 jobs:
   Unit-Test:
     runs-on: ubuntu-latest
@@ -37,7 +35,6 @@ jobs:
           name: pytest-results-gallery
           path: junit/test-results-gallery.xml
         if: ${{ always() }}
-
   Build_and_Push:
     needs:
       - Unit-Test
@@ -64,7 +61,6 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: craigallerydev001.azurecr.io/dstoolkitaiux:dev_${{GITHUB_BASE_REF }}
-
   Release_changes:
     needs:
       - Unit-Test
@@ -75,10 +71,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      # - name: Set up Docker Buildx
-      #   uses: docker/setup-buildx-action@v1
-
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2

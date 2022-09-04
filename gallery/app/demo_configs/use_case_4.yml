@@ -1,14 +1,15 @@
-name: "Use Case 4 test: slot01"
-tagline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-industry: "Retail"
-use_case_type: "Regression"
-license: "MIT license"
-main_technology: "Django"
-released: "2022-01-01"
-updated: "2022-01-01"
+---
+name: 'Use Case 4 test: slot01'
+tagline: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+industry: Retail
+use_case_type: Regression
+license: MIT license
+main_technology: Django
+released: '2022-01-01'
+updated: '2022-01-01'
 authors:
-  - name: "John Smith"
-    github_alias: "benalexkeen"
+  - name: John Smith
+    github_alias: benalexkeen
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus augue, vulputate id elementum non, eleifend et ante. Nunc porttitor urna vel lectus vestibulum, nec blandit nibh pharetra. Cras pretium ligula at dolor ultrices, semper consequat sapien aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 feature_bullets:
   - Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -16,9 +17,9 @@ feature_bullets:
   - Nullam id sem semper, ullamcorper ligula eget, iaculis ligula
   - Curabitur efficitur erat sit amet laoreet hendrerit
 images:
-  thumbnail_filename: "use_case_4.jpg"
-  screenshot_filename: "placeholder_screenshot.png"
+  thumbnail_filename: use_case_4.jpg
+  screenshot_filename: placeholder_screenshot.png
 links:
-  demo: "#"
+  demo: '#'
   source_code: '#'
   download: '#'

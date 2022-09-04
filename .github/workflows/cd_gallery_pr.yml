@@ -8,6 +8,7 @@ on:
       - gallery/**
 env:
   branch_name: dev
+  acr_server : ${{ secrets.REGISTRY_LOGIN_SERVER }}
 jobs:
   # Unit_Test:
   #   runs-on: ubuntu-latest
@@ -69,7 +70,7 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.REGISTRY_LOGIN_SERVER }}/dstoolkitaiux:${{env.branch_name }}
+          tags: ${{env.acr_server }}/dstoolkitaiux:${{env.branch_name }}
 
   # Releases_Branch:
   #   # needs:

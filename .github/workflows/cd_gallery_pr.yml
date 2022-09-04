@@ -9,7 +9,7 @@ on:
 env:
   branch_name: dev
 jobs:
-  Unit-Test:
+  Unit_Test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
 
   Build_and_Push:
     needs:
-      - Unit-Test
+      - Unit_Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -67,11 +67,11 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: craigallerydev001.azurecr.io/dstoolkitaiux:{{env.branch_name }}
+          tags: craigallerydev001.azurecr.io/dstoolkitaiux:${{env.branch_name }}
 
   Releases_Branch:
     needs:
-      - Unit-Test
+      - Unit_Test
       - Build_and_Push
     # env:
     #   url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}

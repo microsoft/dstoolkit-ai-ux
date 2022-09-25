@@ -4,7 +4,7 @@ on:
     paths:
       - 'visualizations/consumer_analytics/**'
     branches:
-      - "main"
+      - develop
       # - "feature/*"
 
   # Allows you to run this workflow manually from the Actions tab
@@ -26,9 +26,9 @@ jobs:
       - name: Log in to registry
         uses: docker/login-action@v1
         with:
-          registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
+          registry: ${{ secrets.REGISTRY_LOGIN_SERVER_DEV }}
+          username: ${{ secrets.REGISTRY_USERNAME_DEV }}
+          password: ${{ secrets.REGISTRY_PASSWORD_DEV }}
 
       - name: Install dependencies
         run: |
@@ -41,4 +41,4 @@ jobs:
           file: ./consumer_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: crdstoolkitaigallerypro001.azurecr.io/viz-consumer:latest
+          tags: craigallerydev001.azurecr.io/viz-manufacturing:latest

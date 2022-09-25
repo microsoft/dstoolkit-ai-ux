@@ -33,6 +33,7 @@ jobs:
         if: ${{ always() }}
 
   Build_and_Push:
+    environment: dev
     needs:
       - Unit-Test
     runs-on: ubuntu-latest

@@ -13,7 +13,7 @@ on:
 jobs:
 
   Build_Push:
-
+    environment: production
     runs-on: ubuntu-latest
 
     steps:
@@ -41,4 +41,4 @@ jobs:
           file: ./consumer_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: craigallerydev001.azurecr.io/viz-consumer:latest
+          tags: crdstoolkitaigallerypro001.azurecr.io/viz-consumer:latest

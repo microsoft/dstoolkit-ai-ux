@@ -12,12 +12,13 @@ __here__ = os.path.dirname(__file__)
 DEMO_CONFIG_PATH = os.path.join(__here__, 'demo_configs')
 DEMO_CONFIG_ORDER = os.path.join(DEMO_CONFIG_PATH, '.order')
 # App Insights Instrumentation Key from Env Variable
-APP_INSIGHTS_CONN_STR = os.environ['APP_INSIGHTS_CONN_STR']
-middleware = FlaskMiddleware(
-    app,
-    exporter=AzureExporter(connection_string=APP_INSIGHTS_CONN_STR),
-    sampler=ProbabilitySampler(rate=1.0)
-)
+APP_INSIGHTS_CONN_STR = os.environ.get('APP_INSIGHTS_CONN_STR')
+if APP_INSIGHTS_CONN_STR is not None:
+    middleware = FlaskMiddleware(
+        app,
+        exporter=AzureExporter(connection_string=APP_INSIGHTS_CONN_STR),
+        sampler=ProbabilitySampler(rate=1.0)
+    )
 
 
 @app.route('/', methods=['GET'])

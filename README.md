@@ -2,7 +2,7 @@
 
 Welcome to the AI Gallery. This repo hosts multiple demos for AI use-cases across multiple industries. The purpose of this repository is to collect, share, and improve demos developped for AI products/solutions/services which have been proven impactful. 
 
-## Adding your demo to the gallery
+## 🚀 Adding your demo to the gallery
 
 Currently, the onboarding process of new demos handles demos that are self hosted in your own project subscription. In other words, if your demo can be accessed via an URL, you can follow the steps below. If you need to host your demos in Azure, you may contact one of the contributor and we will help you onboard it. 
 
@@ -66,6 +66,9 @@ You may assign only **one** of the valid use case types to your demo:
 - Search
 - Vision
 - Other
+
+## 🔔 (Coming Soon) 
+We are working on the infrastructure to enable you to host your demo on our subscription (MSFT employees only for now). With this feature, you will only have to provide your app folder and a docker image. 
 
 
 ## Contributing

@@ -17,7 +17,7 @@ To add your UI demo, the steps you need to take are:
 6. Create a pull request from your branch to "dev" branch. Once accepted, you will be able to view your demo here: https://dstoolkit-gallery-dev.com/gallery. 
 7. If your demos is working correctly and all the information is correct, create a new pull request from "dev" to "prod" to push the demo to the main page. 
 
-## yml file structure
+### yml file structure
 
 | yml key         | Description of Value                                                                                    |
 |-----------------|---------------------------------------------------------------------------------------------------------|
@@ -68,7 +68,7 @@ You may assign only **one** of the valid use case types to your demo:
 - Other
 
 ## 🔔 (Coming Soon) 
-We are working on the infrastructure to enable you to host your demo on our subscription (MSFT employees only for now). With this feature, you will only have to provide your app folder and a docker image. 
+- We are working on the infrastructure to enable you to host your demo on our subscription (MSFT employees only for now). With this feature, you will only have to provide your app folder and a docker image. 
 
 
 ## Contributing

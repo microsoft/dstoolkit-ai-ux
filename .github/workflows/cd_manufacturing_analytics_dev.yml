@@ -1,4 +1,4 @@
-name: Docker CI/CDfor Manufacturing Analytics
+name: Docker CI/CD for Manufacturing Analytics
 on: 
   push:
     paths:

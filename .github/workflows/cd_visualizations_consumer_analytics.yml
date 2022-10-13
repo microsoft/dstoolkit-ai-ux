@@ -1,14 +1,13 @@
-name: Docker CI/CD for Visualizations Analytics
+name: Docker Visualizations Analytics [PRO]
 on: 
   push:
     paths:
       - 'visualizations/consumer_analytics/**'
     branches:
       - "main"
-      # - "feature/*"
 
   # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+  workflow_dispatch:
       
 jobs:
 
@@ -38,7 +37,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./visualizations
-          file: ./consumer_analytics/Dockerfile
+          file: ./visualizations/consumer_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: crdstoolkitaigallerypro001.azurecr.io/viz-consumer:latest

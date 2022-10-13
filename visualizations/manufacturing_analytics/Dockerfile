@@ -7,7 +7,7 @@ COPY app app
 
 WORKDIR /app
 
-ENV PORT 8080
-EXPOSE 8080
+ENV PORT 8081
+EXPOSE 8081
 
 ENTRYPOINT [ "streamlit", "run", "dashboard.py", "--server.port", "8080" ]

@@ -5,10 +5,9 @@ on:
       - 'visualizations/manufacturing_analytics/**'
     branches:
       - "main"
-      # - "feature/*"
 
   # Allows you to run this workflow manually from the Actions tab
-  #workflow_dispatch:
+  workflow_dispatch:
       
 jobs:
 
@@ -38,7 +37,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./visualizations/manufacturing_analytics
-          file: ./Dockerfile
+          file: ./visualizations/manufacturing_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: crdstoolkitaigallerypro001.azurecr.io/viz-manufacturing:latest

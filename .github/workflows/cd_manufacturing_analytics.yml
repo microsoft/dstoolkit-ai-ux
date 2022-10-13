@@ -1,4 +1,4 @@
-name: Docker Manufacturing Analytics [PRO]
+name: Docker Manufacturing [PRO]
 on: 
   push:
     paths:

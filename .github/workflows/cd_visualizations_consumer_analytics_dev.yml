@@ -1,4 +1,4 @@
-name: Docker Visualizations Analytics [DEV]
+name: Docker Visualizations [DEV]
 on: 
   push:
     paths:

@@ -1,4 +1,4 @@
-name: Docker Visualizations Analytics [PRO]
+name: Docker Visualizations [PRO]
 on: 
   push:
     paths:
@@ -36,7 +36,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: ./visualizations
+          context: ./visualizations/consumer_analytics
           file: ./visualizations/consumer_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true

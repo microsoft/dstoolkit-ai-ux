@@ -32,22 +32,110 @@
 </div>
 <div class="container-fluid">
         <div class="container px-8">
-            <div class="row gx-8 align-items-center">
+            <div class="row gx-8">
                 <div class="col-lg-8">
                     <!-- Mashead text and app badges-->
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="display-8 lh-1 mb-3">Description</h1>
+                        <h2 class="display-8 lh-1 mb-3">Business Problem</h2>
+                        {% if data.demo_config.business_problem is string %}
                         <p class="fw-normal">
-                            {{ data['demo_config']['description'] }}
+                            {{ data.demo_config.business_problem }}
                         </p>
-                        <h1 class="display-8 lh-1 mb-3">Features</h1>
+                        {% else %}
                         <p class="fw-normal text-xs ">
-                            This UI features:
                             <ul>
-                                {% for feature in data['demo_config']['feature_bullets'] %}
-                                <li>{{ feature }}</li>
+                                {% for item in data.demo_config.business_problem %}
+                                <li>{{ item }}</li>
                                 {% endfor %}
                             </ul>
+                        </p>
+                        {% endif %}
+                        <h2 class="display-8 lh-1 mb-3">Business Value</h2>
+                        {% if data.demo_config.business_value is string %}
+                        <p class="fw-normal">
+                            {{ data.demo_config.business_value }}
+                        </p>
+                        {% else %}
+                        <p class="fw-normal text-xs ">
+                            <ul>
+                                {% for item in data.demo_config.business_value %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                        {% endif %}
+                        <h2 class="display-8 lh-1 mb-3">Accelerator Description</h2>
+                        {% if data.demo_config.accelerator_description is string %}
+                        <p class="fw-normal">
+                            {{ data.demo_config.accelerator_description }}
+                        </p>
+                        {% else %}
+                        <p class="fw-normal text-xs ">
+                            <ul>
+                                {% for item in data.demo_config.accelerator_description %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                        {% endif %}
+                        <h2 class="display-8 lh-1 mb-3">Modeling Approach & Training</h2>
+                        {% if data.demo_config.modeling_approach_and_training is string %}
+                        <p class="fw-normal">
+                            {{ data.demo_config.modeling_approach_and_training }}
+                        </p>
+                        {% else %}
+                        <p class="fw-normal text-xs ">
+                            <ul>
+                                {% for item in data.demo_config.modeling_approach_and_training %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                        {% endif %}
+                        <h2 class="display-8 lh-1 mb-3">Value</h2>
+                        {% if data.demo_config.value is string %}
+                        <p class="fw-normal">
+                            {{ data.demo_config.value }}
+                        </p>
+                        {% else %}
+                        <p class="fw-normal text-xs ">
+                            <ul>
+                                {% for item in data.demo_config.value %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                        {% endif %}
+                        <h2 class="display-8 lh-1 mb-3">Data</h2>
+                        {% if data.demo_config.data is string %}
+                        <p class="fw-normal">
+                            {{ data.demo_config.data }}
+                        </p>
+                        {% else %}
+                        <p class="fw-normal text-xs ">
+                            <ul>
+                                {% for item in data.demo_config.data %}
+                                <li>{{ item }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                        {% endif %}
+                        <h2 class="display-8 lh-1 mb-3">Architecture</h2>
+                        <p class="fw-normal text-xs ">
+                            This accelerator implements the following technologies:
+                            {% if data.demo_config.architecture is string %}
+                            <p class="fw-normal">
+                                {{ data.demo_config.architecture }}
+                            </p>
+                            {% else %}
+                            <p class="fw-normal text-xs ">
+                                <ul>
+                                    {% for item in data.demo_config.architecture %}
+                                    <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </p>
+                            {% endif %}
                         </p>
                     </div>
                 </div>
@@ -66,44 +154,15 @@
                         </a>
                     </div>
                     {% endif %}
-                    {% if data['demo_config']['links']['download'] %}
+                    {% if data['demo_config']['links']['arm_template'] %}
                     <div class="mb-4">
-                        <a href="{{ data['demo_config']['links']['source_code'] }}">
-                            <span class="btn form-control btn-download">Download</span>
+                        <a href="{{ data['demo_config']['links']['arm_template'] }}">
+                            <span class="btn form-control btn-download"><img src="{{url_for('static', filename='assets/img/azure_icon_white.png')}}" height="25px" style="margin-right: 10px;">Deploy to Azure</span>
                         </a>
                     </div>
                     {% endif %}
                     <div class="card">
                         <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">License</div>
-                                <div>
-                                    {{ data['demo_config']['license'] }}
-                                </div>
-                            </div>
-                            <hr>
-                            <!---->
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">Use Case Type</div>
-                                <div>
-                                    {{ data['demo_config']['use_case_type'] }}
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">Industry</div>
-                                <div>
-                                    {{ data['demo_config']['industry'] }}
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">Technology</div>
-                                <div>
-                                    {{ data['demo_config']['main_technology'] }}
-                                </div>
-                            </div>
-                            <hr>
                             <div class="d-flex align-items-center justify-content-between text-xs">
                                 <div class="fw-500 descriptor-title">Authors</div>
                                 <div>
@@ -112,21 +171,6 @@
                                     {% endfor %}
                                 </div>
                             </div>
-                            <hr>
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">Released</div>
-                                <div>
-                                    {{ data['demo_config']['released'] }}
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="d-flex align-items-center justify-content-between text-xs">
-                                <div class="fw-500 descriptor-title">Last Update</div>
-                                <div>
-                                    {{ data['demo_config']['updated'] }}
-                                </div>
-                            </div>
-                            <hr>
                         </div>
                     </div>
                 </div>

@@ -1,20 +1,22 @@
-name: "Use Case 11"
+name: "Use Case 11 test"
 tagline: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-industry: "Energy"
-use_case_type: "Classification"
-license: "MIT license"
-main_technology: "Flask"
-released: "2022-01-01"
-updated: "2022-01-01"
 authors:
   - name: "John Smith"
     github_alias: "benalexkeen"
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus augue, vulputate id elementum non, eleifend et ante. Nunc porttitor urna vel lectus vestibulum, nec blandit nibh pharetra. Cras pretium ligula at dolor ultrices, semper consequat sapien aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-feature_bullets:
-  - Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - Maecenas vestibulum sapien eget massa posuere, sed dapibus lectus tempor
-  - Nullam id sem semper, ullamcorper ligula eget, iaculis ligula
-  - Curabitur efficitur erat sit amet laoreet hendrerit
+business_problem: Forecast future business metrics against a timeseries (daily, weekly, quarterly, monthly etc) example revenue forecast, energy demand forecast, headcount forecast, stock level forecast.
+business_value: 
+  - More accurate and timely forecasting help to reduce cost and increase operational efficiencies​
+  - Estimated Price / ACR. Examples of customers were this has been harvested / used / implemented.
+accelerator_description: This accelerator helps to forecast multiple time series by building models based on time-series profiling, performing accurate data preparation and by training and forecasting multiple time series with models created ad-hoc for each profile.
+modeling_approach_and_training: Choose explanatory variables or regressors - which variables help me in explaining the target variable I want to forecast? Choose forecasting algorithm - which algorithm do I use to produce my forecast? Arima, Linear regression, Boosting model? The accelerator helps the user to choose the training data set. Number of observations to train the model and produce the forecast.
+value:
+  - This accelerator performs profiling of the data series, which helps match algorithms to data segments, making the forecast more accurate. 
+data: This accelerator deals with so-called panel data. In statistics and econometrics, panel data or longitudinal data is a collection of data that contains observations about different cross sections (groups or ids) that is assembled over intervals in time and ordered chronologically. Examples of groups that may make up panel data series include countries, firms, individuals, or demographic groups. How does the data science toolkit product integrate with Data Strategy, and what services do I need to enable it?​
+architecture:
+  - Azure Machine Learning​
+  - Azure Synapse
+  - Azure Databricks
+  - Azure DevOps
 images:
   thumbnail_filename: "use_case_3.jpg"
   screenshot_filename: "placeholder_screenshot.png"

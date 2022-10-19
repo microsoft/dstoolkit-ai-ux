@@ -20,7 +20,7 @@ To add your UI demo, the steps you need to take are:
 |-------------------------|------------------------------------------------------------------------------------------------|
 | name                    | Descriptive name of your demo                                                                  |
 | tagline                 | Short tagline to be shown on the gallery front page                                            |
-| authors                 | The specific main industry (e.g. "Energy", "Retail") or "Cross-Industry"                       |
+| authors                 | The name and github alias of the author(s)                                                     |
 | business_problem        | The business problem that your accelerator seeks to solve as a string or list of bullet points |
 | business_value          | The value provided to the business in using this accelerator                                   |
 | accelerator_description | A description of your accelerator and how it solves the business problem                       |

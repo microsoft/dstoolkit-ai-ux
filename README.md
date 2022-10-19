@@ -20,55 +20,19 @@ To add your UI demo, the steps you need to take are:
 
 ### yml file structure
 
-| yml key         | Description of Value                                                                                    |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
-| name            | Descriptive name of your demo                                                                           |
-| tagline         | Short tagline to be shown on the gallery front page                                                     |
-| industry        | The specific main industry (e.g. "Energy", "Retail") or "Cross-Industry"                                |
-| use_case_type   | The data science use case of your demo                                                                  |
-| license         | The licence of the code associated with this demo                                                       |
-| main_technology | The main technology(ies) used in this demo e.g. "Flask", "Streamlit", "Django", "node.js"               |
-| released        | The date this demo was released                                                                         |
-| updated         | The date this demo was last updated (optional)                                                          |
-| authors         | key-values of the authors' names and github alias                                                       |
-| description     | A description of your demo                                                                              |
-| feature_bullets | Bullets that describe in brief the feature components of your demo and the technologies that drive them |
-| images          | Filenames of the screenshot and thumbnail for your demo to be shown in the gallery                      |
-| links           | Links to the demo, source code and [optionally] download link for the code                              |
+| yml key                 | Description of Value                                                                           |
+|-------------------------|------------------------------------------------------------------------------------------------|
+| name                    | Descriptive name of your demo                                                                  |
+| tagline                 | Short tagline to be shown on the gallery front page                                            |
+| authors                 | Update yml file structure doc                                                                  |
+| business_problem        | The business problem that your accelerator seeks to solve as a string or list of bullet points |
+| business_value          | The value provided to the business in using this accelerator                                   |
+| accelerator_description | A description of your accelerator and how it solves the business problem                       |
+| value                   | The value provided to the user/data scientist that is using this accelerator                   |
+| architecture            | Bulleted list of technologies this accelerator leverages                                       |
+| images                  | Filenames of the screenshot and thumbnail for your demo to be shown in the gallery             |
+| links                   | Links to the demo, source code and [optionally] ARM template to deploy the solution            |
 
-### Valid Industries
-
-You may assign only **one** of the valid use case types to your demo:
-
-- Cross-Industry
-- Agriculture
-- Automotive
-- Banking
-- Defense
-- Energy
-- Healthcare
-- Insurance
-- Life Sciences
-- Manufacturing
-- Media
-- Mining
-- Public Sector
-- Retail
-- Telecomms
-- Travel
-
-### Valid Use Case Types
-
-You may assign only **one** of the valid use case types to your demo:
-
-- Classification
-- Clustering
-- NLP
-- Optimization
-- Regression
-- Search
-- Vision
-- Other
 
 ## 🔔 (Coming Soon)
 

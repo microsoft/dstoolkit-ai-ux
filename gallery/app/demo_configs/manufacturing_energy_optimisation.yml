@@ -1,24 +1,22 @@
 name: "Manufacturing Energy Optimization"
 tagline: "Conserve energy and improve sustainability"
-industry: "Manufacturing"
-use_case_type: "Optimization"
-license: "MIT license"
-main_technology: "Streamlit"
-released: "2022-05-31"
-updated: "2022-05-31"
 authors:
   - name: "Florian Pydde"
     github_alias: "FlorianPydde"
-description: Energy optimization across a day for different pieces of manufacturing equipment. The aim of this project was to use linear programming to optimise the energy consumption of manufacturing equipment by creating an optimal task schedule.
-feature_bullets:
-  - An analytics page to drill down into the current status of the manufacturing equipment schedule
-  - An AI Service page to examine how your model performs against baselines
-  - The ability to bring your own data so you can try it out yourself
-  - An MLOps status page so you can track how your model performance has changed over time
+business_problem: <placeholder>
+business_value: 
+  - <placeholder>
+accelerator_description: <placeholder>
+modeling_approach_and_training: <placeholder>
+value:
+  - <placeholder>
+data: <placeholder>
+architecture:
+  - Azure App Services
+  - Streamlit
 images:
   screenshot_filename: "manufacturing_energy_optimization.png"
   thumbnail_filename: "manufacturing_energy_optimization.png"
 links:
   demo: "https://manufacturing-analytics-demo.dstoolkit-gallery-dev.com/"
   source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/main/visualizations/manufacturing_analytics'
-  download: '#'

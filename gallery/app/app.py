@@ -1,4 +1,5 @@
 import os
+import urllib
 
 import yaml
 from flask import Flask, redirect, render_template, url_for
@@ -38,6 +39,11 @@ def use_case(use_case_name):
     filepath = os.path.join(DEMO_CONFIG_PATH, use_case_config_filename)
     with open(filepath, 'r') as f:
         demo_config = yaml.safe_load(f)
+    if demo_config['links'].get('arm_template'):
+        demo_config['links']['arm_template'] = (
+            "https://portal.azure.com/#create/Microsoft.Template/uri/"
+            + urllib.parse.quote_plus(demo_config['links']['arm_template'])
+        )
     data = {
         'demo_config': demo_config
     }

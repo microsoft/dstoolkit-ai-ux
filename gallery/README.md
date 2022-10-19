@@ -1,3 +1,4 @@
+# Front-end page
 
 # Adding your demo to the gallery
 
@@ -25,3 +26,5 @@ To add your UI demo, the steps you need to take are:
 | architecture            | Bulleted list of technologies this accelerator leverages                                       |
 | images                  | Filenames of the screenshot and thumbnail for your demo to be shown in the gallery             |
 | links                   | Links to the demo, source code and [optionally] ARM template to deploy the solution            |
+=======
+this folder contains the configuration files for all the demos and the web app for the AI-gallery landing page.

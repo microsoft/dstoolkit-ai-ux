@@ -1,24 +1,25 @@
 name: "Manufacturing Energy Optimization"
 tagline: "Conserve energy and improve sustainability"
-industry: "Manufacturing"
-use_case_type: "Optimization"
-license: "MIT license"
-main_technology: "Streamlit"
-released: "2022-05-31"
-updated: "2022-05-31"
 authors:
   - name: "Florian Pydde"
     github_alias: "FlorianPydde"
-description: Energy optimization across a day for different pieces of manufacturing equipment. The aim of this project was to use linear programming to optimise the energy consumption of manufacturing equipment by creating an optimal task schedule.
-feature_bullets:
-  - An analytics page to drill down into the current status of the manufacturing equipment schedule
-  - An AI Service page to examine how your model performs against baselines
-  - The ability to bring your own data so you can try it out yourself
-  - An MLOps status page so you can track how your model performance has changed over time
+business_problem: A common challenges in manufacturing is energy optimisation. Client demand has to be met while trying to optmise the manufacturing process. Each manufacturing job (a job is a planned operation to produce specific material or objects like aluminium, metal eyelets, etc) is usually scheduled on a specific machine at a specific time with a specific set of configuration. With this data, we can understand how much energy the machine will require to run a job with some setup, and eventually optimise the job schedule to avoid energy peak load.
+business_value: 
+  - Insights into energy consumptions of machines
+  - Target KPI is energy Savings
+accelerator_description: This demos shows (1) an AI model assessment to enable plant operator to review how the model is performing (2) the energy profile for a job schedule (3) how changes in machine configuration impact the energy consumption
+modeling_approach_and_training: The model is a simple linear regression as the energy consumption is mostly affected linearly by factors such as machine power, speed, etc.
+value:
+  - Quickly setup a demo for operators to review your model's performances
+  - Enable operators to experiment with new configurations to evaluate 
+  - Once the energy of a specific job is known, an extension for this demo would be to show an optimised week schedule.
+data: the data represents typical machinery configuration (pressure, speed, etc) and the energy consumption in KWH.
+architecture:
+  - Azure App Services
+  - Streamlit
 images:
   screenshot_filename: "manufacturing_energy_optimization.png"
   thumbnail_filename: "manufacturing_energy_optimization.png"
 links:
   demo: "https://manufacturing-analytics-demo.dstoolkit-gallery-dev.com/"
   source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/main/visualizations/manufacturing_analytics'
-  download: '#'

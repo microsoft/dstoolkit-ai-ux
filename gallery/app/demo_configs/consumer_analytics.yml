@@ -20,6 +20,6 @@ images:
   screenshot_filename: "consumer_analytics.png"
   thumbnail_filename: "consumer_analytics.png"
 links:
-  demo: "https://consumer-analytics-demo.dstoolkit-gallery-dev.com"
+  demo: "http://demos.dstoolkit-gallery.com/consumer"
   source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/main/visualizations/consumer_analytics'
   arm_template: 'https://raw.githubusercontent.com/microsoft/dstoolkit-ai-ux/main/visualizations/consumer_analytics/app/azuredeploy.json'

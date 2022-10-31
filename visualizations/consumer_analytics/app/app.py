@@ -104,9 +104,9 @@ def customer_analytics():
     return render_template('/customer_analytics.html', data=data)
 
 
-@app.route('/consumer/', methods=['GET'])
+@app.route('/consumer', methods=['GET'])
 def home():
-    return render_template('/home.html')
+    return render_template('home.html')
 
 
 def main():

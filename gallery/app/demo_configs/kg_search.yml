@@ -1,24 +1,25 @@
 name: "Knowledge Graph Enabled Search"
 tagline: "Enrich the organic results of a general purpose search engine with a domain-specific knowledge graph"
-industry: "Cross-Industry"
-use_case_type: "Search"
-license: "MIT license"
-main_technology: "Flask"
-released: "2022-09-01"
-updated: "2022-09-01"
 authors:
   - name: "Andy He"
     github_alias: "andyhemsft"
   - name: "Jin Yu"
     github_alias: "yuj18"
-description: This demo implements a domain-aware search solution that uses knowledge graph to enrich the organic results of a general purpose search engine. The demo is implemented in the context of medical document retrieval. It uses a medical knowledge graph to expand the scope of search from the original query to semantically related queries to uncover relevant documents that may not contain the exact keywords specified in the original query. 
-feature_bullets:
-  - Modularized code template to implement a domain-aware search solution with knowledge graph
-  - An interactive frontend to compare the search results with and without knowledge graph 
+business_problem: Most organizations have large amount of information residing in multiple systems. When information is required by the organization's employees, they rely on querying different systems with different search mechanisms, and/or reaching out to different SMEs in the organization. This trial-and-error exercise relies on the search capabilities of each system and is time consuming. 
+business_value: Technology has advanced and much of our focus has been on consolidating the data into Data Lakes, whereas, bringing meaningful information is the key to democratizing knowledge, and ultimately improving the overall efficiency and consistency of business operations.
+accelerator_description: This accelerator provides the code template to implement a domain-aware search solution that uses knowledge graph (KG) to enrich the organic results of a general-purpose search engine, with the goal of reducing the time to information and improving productivity of users by bringing forth the most relevant search result beyond the specified search keywords.
+modeling_approach_and_training: |
+  Building domain-specific Named Entity Recognition (NER) model to detect entities of interest that are present in search queries. Leveraging Knowledge Graph for: Search refinement - Refine search results by recognizing different meanings of a search term. Search expansion - Expand search results through the relationships of the detected entities
+value: This accelerator is based on an actual implementation of a KG-enabled search solution for a leading Oil and Gas customer in Asia. The implementation has been deployed into production, tested and used by real users.
+data: This accelerator supports structured and unstructured data that can be indexed by a general-purpose search engine, e.g., text, image, video, etc. The accelerator assumes that a knowledge graph is available, and it contains the entities and relationships that can be used to support targeted search refinement or/and search expansion scenarios.
+architecture:
+  - Azure Cognitive Search
+  - Azure Cosmos DB
+  - Azure App Service
+  - Azure Machine Learning
 images:
   screenshot_filename: "kg_search.png"
   thumbnail_filename: "kg_search.png"
 links:
   demo: "https://uikgsearch.azurewebsites.net/"
   source_code: "https://github.com/microsoft/dstoolkit-kg-search"
-  download: '#'

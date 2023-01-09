@@ -59,4 +59,4 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: craigallerydev001.azurecr.io/dstoolkitaiux:latest
+          tags: acrdstoolkitdemodev.azurecr.io/dstoolkitaiux:latest

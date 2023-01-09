@@ -5,7 +5,7 @@ on:
       - gallery/**
     branches:
       - develop
-  workflow_dispatch:
+  # workflow_dispatch:
 jobs:
   Unit-Test:
     runs-on: ubuntu-latest

@@ -11,19 +11,9 @@ CONFIGS_DIR = os.path.join(__here__, '..', 'app', 'demo_configs')
 IMG_DIR = os.path.join(__here__, '..', 'app', 'static', 'assets', 'img')
 
 EXPECTED_YML_KEYS = (
-    'name', 'tagline', 'industry', 'use_case_type', 'license',
-    'main_technology', 'released', 'updated', 'authors', 'description',
-    'feature_bullets', 'images', 'links'
-)
-VALID_INDSUTRIES = (
-    'Agriculture', 'Automotive', 'Banking', 'Energy', 'Insurance', 'Media',
-    'Retail', 'Telecomms', 'Public Sector', 'Defense', 'Manufacturing',
-    'Healthcare', 'Life Sciences', 'Insurance', 'Mining', 'Travel',
-    'Cross-Industry'
-)
-VALID_USE_CASE_TYPES = (
-    'Optimization', 'Regression', 'Classification', 'Clustering',
-    'Search', 'Vision', 'NLP', 'Other'
+    'name', 'tagline', 'authors', 'business_problem', 'business_value',
+    'accelerator_description', 'modeling_approach_and_training', 'value',
+    'data', 'architecture', 'images', 'links'
 )
 EXPECTED_AUTHOR_KEYS = ('name', 'github_alias')
 EXPECTED_IMAGE_KEYS = ('thumbnail_filename', 'screenshot_filename')
@@ -83,44 +73,6 @@ class TestDemoConfigs(TestCase):
                 if key not in yml_data:
                     msg = f'{key} not found in {yml_file} demo config'
                     raise KeyError(msg)
-    
-    def test_industry_is_valid(self):
-        for yml_file, yml_data in self.yml_file_data.items():
-            industry = yml_data['industry']
-            if industry not in VALID_INDSUTRIES:
-                msg = f'"{industry}" Industry given for {yml_file} not valid. '
-                msg += 'Valid industries: {}'.format(
-                    ', '.join(VALID_INDSUTRIES)
-                )
-                raise ValueError(msg)
-
-    def test_use_case_is_valid(self):
-        for yml_file, yml_data in self.yml_file_data.items():
-            use_case_type = yml_data['use_case_type']
-            if use_case_type not in VALID_USE_CASE_TYPES:
-                msg = f'Use Case Type "{use_case_type}" given for {yml_file}'
-                msg += ' not valid. '
-                msg += 'Valid Use Case Types: {}'.format(
-                    ', '.join(VALID_USE_CASE_TYPES)
-                )
-                raise ValueError(msg)
-
-    def test_date_format(self):
-        for yml_file, yml_data in self.yml_file_data.items():
-            released = yml_data['released']
-            updated = yml_data['updated']
-            try:
-                datetime.datetime.strptime(released, '%Y-%m-%d')
-            except ValueError:
-                msg = f'Released date "{released}" for {yml_file}'
-                msg += " doesn't match format '%Y-%m-%d'"
-                raise ValueError(msg)
-            try:
-                datetime.datetime.strptime(updated, '%Y-%m-%d')
-            except ValueError:
-                msg = f'Released date "{updated}" for {yml_file}'
-                msg += " doesn't match format '%Y-%m-%d'"
-                raise ValueError(msg)
 
     def test_valid_authors(self):
         for yml_file, yml_data in self.yml_file_data.items():
@@ -137,11 +89,6 @@ class TestDemoConfigs(TestCase):
                     msg = f"Github Alias '{github_alias}' from {yml_file}"
                     msg += " not found."
                     raise ValueError(msg)
-    
-    def test_feature_bullets(self):
-        for yml_file, yml_data in self.yml_file_data.items():
-            if not len(yml_data['feature_bullets']):
-                raise ValueError(f'No feature bullets found for {yml_file}')
 
     def test_images_present(self):
         demo_screenshot_files, demo_thumbnail_files = get_image_files()
@@ -168,8 +115,12 @@ class TestDemoConfigs(TestCase):
                 if link == '#':
                     continue
                 # Currently our repo is private so these links return 404
-                ds_toolkit_url = 'https://github.com/microsoft/dstoolkit-ai-ux'
-                if link.startswith(ds_toolkit_url):
+                repo_name = 'microsoft/dstoolkit-ai-ux'
+                github_url = 'https://github.com/'
+                if link.startswith(github_url + repo_name):
+                    continue
+                raw_file_url = 'https://raw.githubusercontent.com/'
+                if link.startswith(raw_file_url + repo_name):
                     continue
                 response = requests.get(link)
                 try:

@@ -1,23 +1,25 @@
 name: "Consumer Analytics"
 tagline: "Analyse customer lifetime value and customer churn rates"
-industry: "Retail"
-use_case_type: "Regression"
-license: "MIT license"
-main_technology: "Flask"
-released: "2022-06-01"
-updated: "2022-06-01"
-authors: 
+authors:
   - name: "Benjamin Keen"
     github_alias: "benalexkeen"
-description: Learn more about your customers today, how likely are they to churn and what will their customer lifetime value be. As the churn probability of a customer increases, consider marketing intervention to prevent customer churn. This tool can be used to learn about the churn rate and customer lieftime value to determine how much you should consider spending on marketing.
-feature_bullets:
-  - Self service to allow you to upload your own customer data or use sample data to see customer insights
-  - A quick overview of customer churn rate at different purchase recency and frequencies
-  - An interactive tool to allow you to determine customer lifetime value given a customer's spending habits
+business_problem: It can be difficult to determine how much you spend on marketing when targeting customers. In this accelerator you can learn more about your customers with regards to how likely they are to churn and what their customer lifetime value will be. As the churn probability of a customer increases, consider marketing intervention to prevent customer churn.
+business_value: 
+  - New insights into customer spending habits
+  - More effective apportioning of marketing budgets
+accelerator_description: This is a self service tool to allow you to upload your own customer data or use sample data to see customer insights with an interactive tool to allow you to determine customer lifetime value given a customer's spending habits
+modeling_approach_and_training: This is a simple flask application that wraps python's lifetimes library. It uses a Beta-Geometric to determine customer churn and combines this with a Gamma-Gamma model of monetary value to determine Customer Lifetime Value. Models are trained as data is uploaded and currently there is no caching of data.
+value:
+  - Easy and immediate insights into customers
+  - Deploy to your own subscription to ensure your data never leaves your tenant
+data: The data required for this accelerator is the frequency (number of transactions), the recency in weeks (how recently did they last purchase), the time since their first purchase in weeks, and the average monetary value of their transactions.
+architecture:
+  - Azure App Services
+  - flask
 images:
   screenshot_filename: "consumer_analytics.png"
   thumbnail_filename: "consumer_analytics.png"
 links:
-  demo: "https://consumer-analytics-demo.dstoolkit-gallery-dev.com"
+  demo: "http://demos.dstoolkit-gallery.com/consumer"
   source_code: 'https://github.com/microsoft/dstoolkit-ai-ux/tree/main/visualizations/consumer_analytics'
-  download: '#'
+  arm_template: 'https://raw.githubusercontent.com/microsoft/dstoolkit-ai-ux/main/visualizations/consumer_analytics/app/azuredeploy.json'

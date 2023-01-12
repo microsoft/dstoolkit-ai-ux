@@ -40,4 +40,4 @@ jobs:
           file: ./visualizations/manufacturing_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: crdstoolkitaigallerypro001.azurecr.io/viz-manufacturing:latest
+          tags: acrdstoolkitdemowepro.azurecr.io/viz-manufacturing:latest

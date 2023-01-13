@@ -17,12 +17,12 @@ def load_data(path=''):
         return pd.read_csv('./datasets/energy_consumption.csv')
 
 
-@st.cache
+@st.cache(allow_output_mutation=False)
 def load_models():
     return joblib.load('list_models.pkl')
 
-@st.cache()
-def generate_plan():
+@st.cache(allow_output_mutation=True)
+def generate_plan(df):
     import random
     import datetime
 
@@ -46,6 +46,7 @@ def generate_plan():
 @st.cache
 def generate_default_values(df):
     return df.sample(1)[info].values.tolist()[0]
+
 
 df = load_data()
 df = df[['machine_id','energy','speed','volume','weight']].copy()
@@ -74,8 +75,10 @@ st.sidebar.title("Select View")
 
 genre = st.sidebar.radio(
      "Wireframe",
-     ('Analytics', 'AI Service', 'Data I/O'))
-
+     ('Analytics', 
+     'AI Service', 
+    #  'Data I/O'
+     ))
 
 
 if genre == "Analytics":
@@ -118,7 +121,7 @@ if genre == "Analytics":
 
     with col3:
         st.markdown('#### Correlation Map')
-        corr = df_machine.corr()
+        corr = df_machine.select_dtypes(include=np.number).corr()
         mask = np.triu(np.ones_like(corr, dtype=bool))
         fig_heatmap = go.Figure(data=go.Heatmap(z=corr.mask(mask),x=corr.columns,y=corr.columns,zmin=-1,zmax=1))
         fig_heatmap.update_xaxes(side="top")
@@ -146,14 +149,13 @@ elif genre == 'AI Service':
     st.write('# AI Service Wireframe')
     st.write("Predict the hourly total energy consumption for a week")
 
-
-    df_plan = generate_plan()
+    df_plan = generate_plan(df=df)
     
     st.dataframe(df_plan)
 
     st.write('')
-    st.write('Show 5-day plan')
-    df_agg = df_plan.groupby('date').sum().reset_index()
+    st.write('Show 5-days energy consumption based on scheduling')
+    df_agg = df_plan.groupby('date').sum(numeric_only=True).reset_index()
     df_max = df_agg.loc[df_agg['energy_prediction'].idxmax()]
     
     max_energy = df_max['energy_prediction'].round(1)
@@ -182,10 +184,12 @@ elif genre == 'AI Service':
 
     if st.button('Refresh plan'):
         st.legacy_caching.clear_cache()
+        st.experimental_rerun()
+
     st.markdown("""---""")
 
-    st.write('## Choose operation parameters')
-
+    st.write('## Predict the energy consumption')
+    st.write ('##### Choose your operation parameters:')
     info = ["volume","weight","speed"]
     
     cols = st.columns(len(info)+1)
@@ -211,12 +215,13 @@ elif genre == 'AI Service':
 
     st.metric("Energy Consumption (kWh)", np.round(prediction,1))
 
-else:
-    st.write("")
-    st.write('# Data I/O Wireframe')
-    st.write("Import your own data")
-    uploaded_file = st.file_uploader("Choose a file")
+# else:
+#     st.write("")
+#     st.write('# Data I/O Wireframe')
+#     st.write(f"Import your own data. The dataset file needs to contain the following columns: {df.columns.tolist()}")
+#     uploaded_file = st.file_uploader("Choose a file")
 
-    if uploaded_file is not None:
-        dataframe = pd.read_csv(uploaded_file)
-        st.dataframe(dataframe)
+#     if uploaded_file is not None:
+#         df = pd.read_csv(uploaded_file)
+#         st.dataframe(df)
+#         st.write("You can now go back to previous page and review your plan")

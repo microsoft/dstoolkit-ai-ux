@@ -68,7 +68,8 @@ st.write(
 
 st.write("")
 
-st.sidebar.image("./microsoft.png", use_column_width=True) 
+# st.sidebar.image("./microsoft.png", use_column_width=True) 
+st.sidebar.image("./ds-toolkit-logo.png", use_column_width=True) 
 
 st.sidebar.title("Select View")
 

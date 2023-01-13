@@ -110,7 +110,7 @@ if genre == "Analytics":
     with col2:
         st.markdown('#### Scatter')
         # fig_scatter = px.scatter(df_machine, x="speed", y='energy',title='Energy consumption based on machine speed')
-        fig_scatter = px.scatter_matrix(df,
+        fig_scatter = px.scatter_matrix(df_machine,
             dimensions=["speed", "weight", "volume"],
             color="energy",
             title="Feature interaction",

@@ -41,4 +41,3 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: acrdstoolkitdemowedev.azurecr.io/viz-consumer:latest
-

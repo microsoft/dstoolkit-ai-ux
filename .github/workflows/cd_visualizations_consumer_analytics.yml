@@ -7,7 +7,7 @@ on:
       - "main"
 
   # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+  workflow_dispatch:
       
 jobs:
 
@@ -40,4 +40,4 @@ jobs:
           file: ./visualizations/consumer_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: crdstoolkitaigallerypro001.azurecr.io/viz-consumer:latest
+          tags: acrdstoolkitdemowepro.azurecr.io/viz-consumer:latest

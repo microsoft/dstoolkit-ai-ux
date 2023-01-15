@@ -101,10 +101,10 @@ def customer_analytics():
         'clv_data': json.dumps(clv_data)
     }
 
-    return render_template('customer_analytics.html', data=data)
+    return render_template('/customer_analytics.html', data=data)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return render_template('home.html')
 

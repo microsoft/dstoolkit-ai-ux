@@ -40,4 +40,4 @@ jobs:
           file: ./visualizations/consumer_analytics/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: acrdstoolkitdemodev.azurecr.io/viz-consumer:latest
+          tags: acrdstoolkitdemowedev.azurecr.io/viz-consumer:latest

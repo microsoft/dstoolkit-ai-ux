@@ -10,7 +10,7 @@ st.set_page_config(layout="wide")
 
 
 @st.cache
-def load_data(path='./'):
+def load_data(path='/'):
     if path:
         return pd.read_csv(path)
     else:

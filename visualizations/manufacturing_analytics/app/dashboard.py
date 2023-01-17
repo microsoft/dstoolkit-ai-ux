@@ -14,12 +14,12 @@ def load_data(path='./'):
     if path:
         return pd.read_csv(path)
     else:
-        return pd.read_csv('./datasets/energy_consumption.csv')
+        return pd.read_csv('/datasets/energy_consumption.csv')
 
 
 @st.cache
 def load_models():
-    return joblib.load('./list_models.pkl')
+    return joblib.load('/list_models.pkl')
 
 @st.cache()
 def generate_plan():

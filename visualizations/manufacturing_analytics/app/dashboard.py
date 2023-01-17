@@ -17,12 +17,12 @@ def load_data(path=''):
         return pd.read_csv('./datasets/energy_consumption.csv')
 
 
-@st.cache
+@st.cache(allow_output_mutation=False)
 def load_models():
-    return joblib.load('./list_models.pkl')
+    return joblib.load('list_models.pkl')
 
-@st.cache()
-def generate_plan():
+@st.cache(allow_output_mutation=True)
+def generate_plan(df):
     import random
     import datetime
 
@@ -47,6 +47,7 @@ def generate_plan():
 def generate_default_values(df):
     return df.sample(1)[info].values.tolist()[0]
 
+
 df = load_data()
 df = df[['machine_id','energy','speed','volume','weight']].copy()
 list_machines = df['machine_id'].unique()
@@ -67,22 +68,30 @@ st.write(
 
 st.write("")
 
-st.sidebar.image("./microsoft.png", use_column_width=True) 
+# st.sidebar.image("./microsoft.png", use_column_width=True) 
+st.sidebar.image("./ds-toolkit-logo.png", use_column_width=True) 
 
 st.sidebar.title("Select View")
 
 
 genre = st.sidebar.radio(
      "Wireframe",
-     ('Analytics', 'AI Service', 'Data I/O'))
-
+     ('Analytics', 
+     'AI Service', 
+    #  'Data I/O'
+     ))
 
 
 if genre == "Analytics":
 
     st.write("")
     st.write('# Analytics Wireframe')
-    st.write("")
+    st.write("The dataset provides an example of the type of measurement required to predict the energy consumptions of different machines:")
+    st.markdown("- machine_id: represents the different machines in a plant, e.g, furnace, forge, drilling machines, gear shapers, etc.")
+    st.markdown("- energy: shows the energy consumption when the machine runs with the following parameters")
+    st.markdown("- speed: is at which speed the machine is working")
+    st.markdown("- volume: indicates the size of the item handled by the machine")
+    st.markdown("- weight: indicates the weight of the item handled by the machine.")
     st.dataframe(df)
 
     st.markdown("""---""")
@@ -100,25 +109,25 @@ if genre == "Analytics":
     col3, col4 = st.columns(2)
 
     with col1:
-        st.markdown('#### Histogram')
-        fig_hist = px.histogram(df_machine, x='energy',title='Energy Distribution')
+        st.markdown('#### Energy Consumption Distribution')
+        fig_hist = px.histogram(df_machine, x='energy',title='Total energy consumption distribution based on a single machine')
         st.plotly_chart(fig_hist, use_container_width=True)
 
     with col2:
-        st.markdown('#### Scatter')
+        st.markdown('#### Feature Interaction')
         # fig_scatter = px.scatter(df_machine, x="speed", y='energy',title='Energy consumption based on machine speed')
-        fig_scatter = px.scatter_matrix(df,
+        fig_scatter = px.scatter_matrix(df_machine,
             dimensions=["speed", "weight", "volume"],
             color="energy",
-            title="Feature interaction",
+            title="Impact on energy consumption",
             ) 
 
         fig_scatter.update_traces(diagonal_visible=False)
         st.plotly_chart(fig_scatter, use_container_width=True)
 
     with col3:
-        st.markdown('#### Correlation Map')
-        corr = df_machine.corr()
+        st.markdown('#### Feature Correlation')
+        corr = df_machine.select_dtypes(include=np.number).corr()
         mask = np.triu(np.ones_like(corr, dtype=bool))
         fig_heatmap = go.Figure(data=go.Heatmap(z=corr.mask(mask),x=corr.columns,y=corr.columns,zmin=-1,zmax=1))
         fig_heatmap.update_xaxes(side="top")
@@ -134,7 +143,7 @@ if genre == "Analytics":
 
 
     with col4:
-        st.markdown('#### 3D Scatter')
+        st.markdown('#### 3D Feature Scatter')
         fig_3dscatter = px.scatter_3d(df_machine, x='speed', y='volume', z='weight',
               color='energy', size_max=18,#size='energy', 
               opacity=0.7)
@@ -144,16 +153,15 @@ elif genre == 'AI Service':
 
     st.write("")
     st.write('# AI Service Wireframe')
-    st.write("Predict the hourly total energy consumption for a week")
+    st.write('Predict the hourly total energy consumption for a week. This dataframe shows the "real energy" consumed and the predicted energy consumption by the model')
 
-
-    df_plan = generate_plan()
+    df_plan = generate_plan(df=df)
     
     st.dataframe(df_plan)
 
     st.write('')
-    st.write('Show 5-day plan')
-    df_agg = df_plan.groupby('date').sum().reset_index()
+    st.write('Based on the schedule and the ML model, one can analyze the expected energy consumption over the next 5 days. This helps in identifying energy peaks and take appropriate actions to optimize the schedule.')
+    df_agg = df_plan.groupby('date').sum(numeric_only=True).reset_index()
     df_max = df_agg.loc[df_agg['energy_prediction'].idxmax()]
     
     max_energy = df_max['energy_prediction'].round(1)
@@ -182,19 +190,21 @@ elif genre == 'AI Service':
 
     if st.button('Refresh plan'):
         st.legacy_caching.clear_cache()
+        st.experimental_rerun()
+
     st.markdown("""---""")
 
-    st.write('## Choose operation parameters')
-
+    st.write('## Predict Energy Consumption')
+    st.write ('Choose the parameters to predict the energy consumption: machine id, volume and weight of item produced by the machine, and machine speed.')
     info = ["volume","weight","speed"]
     
     cols = st.columns(len(info)+1)
-    option = cols[0].selectbox('Select machine',list_machines)
+    option = cols[0].selectbox('Select the machine',list_machines)
     default_val = generate_default_values(df)
     result_input = []
     for i in range(len(info)):
         user_input = cols[i+1].slider(
-            label=info[i],
+            label=info[i] ,
             value=int(default_val[i]),
             min_value=int(df[info[i]].min()),
             max_value=int(df[info[i]].max()),
@@ -211,12 +221,13 @@ elif genre == 'AI Service':
 
     st.metric("Energy Consumption (kWh)", np.round(prediction,1))
 
-else:
-    st.write("")
-    st.write('# Data I/O Wireframe')
-    st.write("Import your own data")
-    uploaded_file = st.file_uploader("Choose a file")
+# else:
+#     st.write("")
+#     st.write('# Data I/O Wireframe')
+#     st.write(f"Import your own data. The dataset file needs to contain the following columns: {df.columns.tolist()}")
+#     uploaded_file = st.file_uploader("Choose a file")
 
-    if uploaded_file is not None:
-        dataframe = pd.read_csv(uploaded_file)
-        st.dataframe(dataframe)
+#     if uploaded_file is not None:
+#         df = pd.read_csv(uploaded_file)
+#         st.dataframe(df)
+#         st.write("You can now go back to previous page and review your plan")

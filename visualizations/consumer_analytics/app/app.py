@@ -79,7 +79,7 @@ def format_clv_data(clv_data):
     return clv_data_dict
 
 
-@app.route('/customer-analytics', methods=['GET'])
+@app.route('/consumer/customer-analytics', methods=['GET'])
 def customer_analytics():
     bgf = get_trained_beta_geo_fitter()
     churn_probability = pd.DataFrame(

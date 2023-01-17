@@ -1,4 +1,5 @@
 import json
+import os
 from collections import defaultdict
 
 import numpy as np
@@ -10,6 +11,14 @@ from lifetimes.datasets import (
 
 
 app = Flask(__name__)
+__here__ = os.path.dirname(__file__)
+CACHE_DIR = os.path.join(__here__, 'cached_data')
+CHURN_PROBABILITY_CACHE_PATH = os.path.join(
+    CACHE_DIR, 'churn_probability.json'
+)
+CLV_CACHE_PATH = os.path.join(
+    CACHE_DIR, 'clv_data.json'
+)
 
 
 def get_trained_beta_geo_fitter():
@@ -79,29 +88,44 @@ def format_clv_data(clv_data):
     return clv_data_dict
 
 
-@app.route('/customer-analytics', methods=['GET'])
-def customer_analytics():
-    bgf = get_trained_beta_geo_fitter()
-    churn_probability = pd.DataFrame(
-        bgf.conditional_probability_alive_matrix()
-    ).apply(lambda x: 1 - x)
-    churn_probability.index = list(range(churn_probability.index.max(), -1, -1))
-    churn_probability = churn_probability.stack().reset_index()
-    churn_probability.columns = ['y', 'x', 'churn_probability']
-    churn_probability['churn_probability'] = round(churn_probability[
-        'churn_probability'
-    ] * 100, 3)
-    customer_data = get_customer_data()
-    ggf = get_trained_gamma_gamma_fitter()
-    clv_data = get_clv(bgf, ggf, customer_data)
-    clv_data = format_clv_data(clv_data)
-    churn_probability = churn_probability.to_dict(orient='records')
+def get_data(use_cached=True):
+    if use_cached:
+        with open(CHURN_PROBABILITY_CACHE_PATH, 'r') as f:
+            churn_probability = json.load(f)
+        with open(CLV_CACHE_PATH, 'r') as f:
+            clv_data = json.load(f)
+    else:
+        bgf = get_trained_beta_geo_fitter()
+        churn_probability = pd.DataFrame(
+            bgf.conditional_probability_alive_matrix()
+        ).apply(lambda x: 1 - x)
+        churn_probability.index = list(
+            range(
+                churn_probability.index.max(), -1, -1
+            )
+        )
+        churn_probability = churn_probability.stack().reset_index()
+        churn_probability.columns = ['y', 'x', 'churn_probability']
+        churn_probability['churn_probability'] = round(
+            churn_probability['churn_probability'] * 100,
+            3
+        )
+        customer_data = get_customer_data()
+        ggf = get_trained_gamma_gamma_fitter()
+        clv_data = get_clv(bgf, ggf, customer_data)
+        clv_data = format_clv_data(clv_data)
+        churn_probability = churn_probability.to_dict(orient='records')
     data = {
         'churn_probability': json.dumps(churn_probability, indent=2),
         'clv_data': json.dumps(clv_data)
     }
+    return data
 
-    return render_template('/customer_analytics.html', data=data)
+
+@app.route('/customer-analytics', methods=['GET'])
+def customer_analytics():
+    data = get_data(use_cached=True)
+    return render_template('customer_analytics.html', data=data)
 
 
 @app.route('/')

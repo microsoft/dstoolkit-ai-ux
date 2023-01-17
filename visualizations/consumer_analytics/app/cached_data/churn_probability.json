@@ -1,0 +1,5852 @@
+[
+  {
+    "y": 38,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 38,
+    "x": 1,
+    "churn_probability": 84.469
+  },
+  {
+    "y": 38,
+    "x": 2,
+    "churn_probability": 97.369
+  },
+  {
+    "y": 38,
+    "x": 3,
+    "churn_probability": 99.638
+  },
+  {
+    "y": 38,
+    "x": 4,
+    "churn_probability": 99.954
+  },
+  {
+    "y": 38,
+    "x": 5,
+    "churn_probability": 99.994
+  },
+  {
+    "y": 38,
+    "x": 6,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 38,
+    "x": 7,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 8,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 9,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 10,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 38,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 37,
+    "x": 1,
+    "churn_probability": 80.841
+  },
+  {
+    "y": 37,
+    "x": 2,
+    "churn_probability": 95.903
+  },
+  {
+    "y": 37,
+    "x": 3,
+    "churn_probability": 99.301
+  },
+  {
+    "y": 37,
+    "x": 4,
+    "churn_probability": 99.89
+  },
+  {
+    "y": 37,
+    "x": 5,
+    "churn_probability": 99.983
+  },
+  {
+    "y": 37,
+    "x": 6,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 37,
+    "x": 7,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 8,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 9,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 10,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 37,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 36,
+    "x": 1,
+    "churn_probability": 77.366
+  },
+  {
+    "y": 36,
+    "x": 2,
+    "churn_probability": 94.12
+  },
+  {
+    "y": 36,
+    "x": 3,
+    "churn_probability": 98.794
+  },
+  {
+    "y": 36,
+    "x": 4,
+    "churn_probability": 99.774
+  },
+  {
+    "y": 36,
+    "x": 5,
+    "churn_probability": 99.959
+  },
+  {
+    "y": 36,
+    "x": 6,
+    "churn_probability": 99.993
+  },
+  {
+    "y": 36,
+    "x": 7,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 36,
+    "x": 8,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 9,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 10,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 36,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 35,
+    "x": 1,
+    "churn_probability": 74.06
+  },
+  {
+    "y": 35,
+    "x": 2,
+    "churn_probability": 92.042
+  },
+  {
+    "y": 35,
+    "x": 3,
+    "churn_probability": 98.085
+  },
+  {
+    "y": 35,
+    "x": 4,
+    "churn_probability": 99.583
+  },
+  {
+    "y": 35,
+    "x": 5,
+    "churn_probability": 99.913
+  },
+  {
+    "y": 35,
+    "x": 6,
+    "churn_probability": 99.983
+  },
+  {
+    "y": 35,
+    "x": 7,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 35,
+    "x": 8,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 35,
+    "x": 9,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 10,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 35,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 34,
+    "x": 1,
+    "churn_probability": 70.927
+  },
+  {
+    "y": 34,
+    "x": 2,
+    "churn_probability": 89.7
+  },
+  {
+    "y": 34,
+    "x": 3,
+    "churn_probability": 97.141
+  },
+  {
+    "y": 34,
+    "x": 4,
+    "churn_probability": 99.289
+  },
+  {
+    "y": 34,
+    "x": 5,
+    "churn_probability": 99.832
+  },
+  {
+    "y": 34,
+    "x": 6,
+    "churn_probability": 99.961
+  },
+  {
+    "y": 34,
+    "x": 7,
+    "churn_probability": 99.991
+  },
+  {
+    "y": 34,
+    "x": 8,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 34,
+    "x": 9,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 10,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 34,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 33,
+    "x": 1,
+    "churn_probability": 67.968
+  },
+  {
+    "y": 33,
+    "x": 2,
+    "churn_probability": 87.129
+  },
+  {
+    "y": 33,
+    "x": 3,
+    "churn_probability": 95.936
+  },
+  {
+    "y": 33,
+    "x": 4,
+    "churn_probability": 98.861
+  },
+  {
+    "y": 33,
+    "x": 5,
+    "churn_probability": 99.698
+  },
+  {
+    "y": 33,
+    "x": 6,
+    "churn_probability": 99.922
+  },
+  {
+    "y": 33,
+    "x": 7,
+    "churn_probability": 99.98
+  },
+  {
+    "y": 33,
+    "x": 8,
+    "churn_probability": 99.995
+  },
+  {
+    "y": 33,
+    "x": 9,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 33,
+    "x": 10,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 33,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 32,
+    "x": 1,
+    "churn_probability": 65.177
+  },
+  {
+    "y": 32,
+    "x": 2,
+    "churn_probability": 84.37
+  },
+  {
+    "y": 32,
+    "x": 3,
+    "churn_probability": 94.45
+  },
+  {
+    "y": 32,
+    "x": 4,
+    "churn_probability": 98.262
+  },
+  {
+    "y": 32,
+    "x": 5,
+    "churn_probability": 99.488
+  },
+  {
+    "y": 32,
+    "x": 6,
+    "churn_probability": 99.854
+  },
+  {
+    "y": 32,
+    "x": 7,
+    "churn_probability": 99.959
+  },
+  {
+    "y": 32,
+    "x": 8,
+    "churn_probability": 99.989
+  },
+  {
+    "y": 32,
+    "x": 9,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 32,
+    "x": 10,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 32,
+    "x": 11,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 32,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 31,
+    "x": 1,
+    "churn_probability": 62.548
+  },
+  {
+    "y": 31,
+    "x": 2,
+    "churn_probability": 81.463
+  },
+  {
+    "y": 31,
+    "x": 3,
+    "churn_probability": 92.669
+  },
+  {
+    "y": 31,
+    "x": 4,
+    "churn_probability": 97.457
+  },
+  {
+    "y": 31,
+    "x": 5,
+    "churn_probability": 99.175
+  },
+  {
+    "y": 31,
+    "x": 6,
+    "churn_probability": 99.742
+  },
+  {
+    "y": 31,
+    "x": 7,
+    "churn_probability": 99.921
+  },
+  {
+    "y": 31,
+    "x": 8,
+    "churn_probability": 99.976
+  },
+  {
+    "y": 31,
+    "x": 9,
+    "churn_probability": 99.993
+  },
+  {
+    "y": 31,
+    "x": 10,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 31,
+    "x": 11,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 31,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 31,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 30,
+    "x": 1,
+    "churn_probability": 60.074
+  },
+  {
+    "y": 30,
+    "x": 2,
+    "churn_probability": 78.449
+  },
+  {
+    "y": 30,
+    "x": 3,
+    "churn_probability": 90.59
+  },
+  {
+    "y": 30,
+    "x": 4,
+    "churn_probability": 96.407
+  },
+  {
+    "y": 30,
+    "x": 5,
+    "churn_probability": 98.725
+  },
+  {
+    "y": 30,
+    "x": 6,
+    "churn_probability": 99.565
+  },
+  {
+    "y": 30,
+    "x": 7,
+    "churn_probability": 99.855
+  },
+  {
+    "y": 30,
+    "x": 8,
+    "churn_probability": 99.953
+  },
+  {
+    "y": 30,
+    "x": 9,
+    "churn_probability": 99.985
+  },
+  {
+    "y": 30,
+    "x": 10,
+    "churn_probability": 99.995
+  },
+  {
+    "y": 30,
+    "x": 11,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 30,
+    "x": 12,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 30,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 29,
+    "x": 1,
+    "churn_probability": 57.744
+  },
+  {
+    "y": 29,
+    "x": 2,
+    "churn_probability": 75.367
+  },
+  {
+    "y": 29,
+    "x": 3,
+    "churn_probability": 88.219
+  },
+  {
+    "y": 29,
+    "x": 4,
+    "churn_probability": 95.077
+  },
+  {
+    "y": 29,
+    "x": 5,
+    "churn_probability": 98.098
+  },
+  {
+    "y": 29,
+    "x": 6,
+    "churn_probability": 99.296
+  },
+  {
+    "y": 29,
+    "x": 7,
+    "churn_probability": 99.746
+  },
+  {
+    "y": 29,
+    "x": 8,
+    "churn_probability": 99.91
+  },
+  {
+    "y": 29,
+    "x": 9,
+    "churn_probability": 99.969
+  },
+  {
+    "y": 29,
+    "x": 10,
+    "churn_probability": 99.989
+  },
+  {
+    "y": 29,
+    "x": 11,
+    "churn_probability": 99.996
+  },
+  {
+    "y": 29,
+    "x": 12,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 29,
+    "x": 13,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 29,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 28,
+    "x": 1,
+    "churn_probability": 55.55
+  },
+  {
+    "y": 28,
+    "x": 2,
+    "churn_probability": 72.253
+  },
+  {
+    "y": 28,
+    "x": 3,
+    "churn_probability": 85.572
+  },
+  {
+    "y": 28,
+    "x": 4,
+    "churn_probability": 93.437
+  },
+  {
+    "y": 28,
+    "x": 5,
+    "churn_probability": 97.251
+  },
+  {
+    "y": 28,
+    "x": 6,
+    "churn_probability": 98.902
+  },
+  {
+    "y": 28,
+    "x": 7,
+    "churn_probability": 99.574
+  },
+  {
+    "y": 28,
+    "x": 8,
+    "churn_probability": 99.838
+  },
+  {
+    "y": 28,
+    "x": 9,
+    "churn_probability": 99.939
+  },
+  {
+    "y": 28,
+    "x": 10,
+    "churn_probability": 99.977
+  },
+  {
+    "y": 28,
+    "x": 11,
+    "churn_probability": 99.992
+  },
+  {
+    "y": 28,
+    "x": 12,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 28,
+    "x": 13,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 28,
+    "x": 14,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 28,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 27,
+    "x": 1,
+    "churn_probability": 53.483
+  },
+  {
+    "y": 27,
+    "x": 2,
+    "churn_probability": 69.139
+  },
+  {
+    "y": 27,
+    "x": 3,
+    "churn_probability": 82.674
+  },
+  {
+    "y": 27,
+    "x": 4,
+    "churn_probability": 91.461
+  },
+  {
+    "y": 27,
+    "x": 5,
+    "churn_probability": 96.137
+  },
+  {
+    "y": 27,
+    "x": 6,
+    "churn_probability": 98.34
+  },
+  {
+    "y": 27,
+    "x": 7,
+    "churn_probability": 99.309
+  },
+  {
+    "y": 27,
+    "x": 8,
+    "churn_probability": 99.718
+  },
+  {
+    "y": 27,
+    "x": 9,
+    "churn_probability": 99.886
+  },
+  {
+    "y": 27,
+    "x": 10,
+    "churn_probability": 99.955
+  },
+  {
+    "y": 27,
+    "x": 11,
+    "churn_probability": 99.982
+  },
+  {
+    "y": 27,
+    "x": 12,
+    "churn_probability": 99.993
+  },
+  {
+    "y": 27,
+    "x": 13,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 27,
+    "x": 14,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 27,
+    "x": 15,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 27,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 26,
+    "x": 1,
+    "churn_probability": 51.536
+  },
+  {
+    "y": 26,
+    "x": 2,
+    "churn_probability": 66.052
+  },
+  {
+    "y": 26,
+    "x": 3,
+    "churn_probability": 79.558
+  },
+  {
+    "y": 26,
+    "x": 4,
+    "churn_probability": 89.134
+  },
+  {
+    "y": 26,
+    "x": 5,
+    "churn_probability": 94.709
+  },
+  {
+    "y": 26,
+    "x": 6,
+    "churn_probability": 97.562
+  },
+  {
+    "y": 26,
+    "x": 7,
+    "churn_probability": 98.915
+  },
+  {
+    "y": 26,
+    "x": 8,
+    "churn_probability": 99.527
+  },
+  {
+    "y": 26,
+    "x": 9,
+    "churn_probability": 99.797
+  },
+  {
+    "y": 26,
+    "x": 10,
+    "churn_probability": 99.914
+  },
+  {
+    "y": 26,
+    "x": 11,
+    "churn_probability": 99.964
+  },
+  {
+    "y": 26,
+    "x": 12,
+    "churn_probability": 99.985
+  },
+  {
+    "y": 26,
+    "x": 13,
+    "churn_probability": 99.994
+  },
+  {
+    "y": 26,
+    "x": 14,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 26,
+    "x": 15,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 26,
+    "x": 16,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 17,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 26,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 25,
+    "x": 1,
+    "churn_probability": 49.699
+  },
+  {
+    "y": 25,
+    "x": 2,
+    "churn_probability": 63.018
+  },
+  {
+    "y": 25,
+    "x": 3,
+    "churn_probability": 76.262
+  },
+  {
+    "y": 25,
+    "x": 4,
+    "churn_probability": 86.455
+  },
+  {
+    "y": 25,
+    "x": 5,
+    "churn_probability": 92.921
+  },
+  {
+    "y": 25,
+    "x": 6,
+    "churn_probability": 96.512
+  },
+  {
+    "y": 25,
+    "x": 7,
+    "churn_probability": 98.344
+  },
+  {
+    "y": 25,
+    "x": 8,
+    "churn_probability": 99.233
+  },
+  {
+    "y": 25,
+    "x": 9,
+    "churn_probability": 99.65
+  },
+  {
+    "y": 25,
+    "x": 10,
+    "churn_probability": 99.842
+  },
+  {
+    "y": 25,
+    "x": 11,
+    "churn_probability": 99.929
+  },
+  {
+    "y": 25,
+    "x": 12,
+    "churn_probability": 99.969
+  },
+  {
+    "y": 25,
+    "x": 13,
+    "churn_probability": 99.986
+  },
+  {
+    "y": 25,
+    "x": 14,
+    "churn_probability": 99.994
+  },
+  {
+    "y": 25,
+    "x": 15,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 25,
+    "x": 16,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 25,
+    "x": 17,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 25,
+    "x": 18,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 25,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 24,
+    "x": 1,
+    "churn_probability": 47.966
+  },
+  {
+    "y": 24,
+    "x": 2,
+    "churn_probability": 60.056
+  },
+  {
+    "y": 24,
+    "x": 3,
+    "churn_probability": 72.831
+  },
+  {
+    "y": 24,
+    "x": 4,
+    "churn_probability": 83.434
+  },
+  {
+    "y": 24,
+    "x": 5,
+    "churn_probability": 90.737
+  },
+  {
+    "y": 24,
+    "x": 6,
+    "churn_probability": 95.128
+  },
+  {
+    "y": 24,
+    "x": 7,
+    "churn_probability": 97.539
+  },
+  {
+    "y": 24,
+    "x": 8,
+    "churn_probability": 98.789
+  },
+  {
+    "y": 24,
+    "x": 9,
+    "churn_probability": 99.415
+  },
+  {
+    "y": 24,
+    "x": 10,
+    "churn_probability": 99.721
+  },
+  {
+    "y": 24,
+    "x": 11,
+    "churn_probability": 99.868
+  },
+  {
+    "y": 24,
+    "x": 12,
+    "churn_probability": 99.938
+  },
+  {
+    "y": 24,
+    "x": 13,
+    "churn_probability": 99.971
+  },
+  {
+    "y": 24,
+    "x": 14,
+    "churn_probability": 99.987
+  },
+  {
+    "y": 24,
+    "x": 15,
+    "churn_probability": 99.994
+  },
+  {
+    "y": 24,
+    "x": 16,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 24,
+    "x": 17,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 24,
+    "x": 18,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 24,
+    "x": 19,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 24,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 23,
+    "x": 1,
+    "churn_probability": 46.328
+  },
+  {
+    "y": 23,
+    "x": 2,
+    "churn_probability": 57.18
+  },
+  {
+    "y": 23,
+    "x": 3,
+    "churn_probability": 69.308
+  },
+  {
+    "y": 23,
+    "x": 4,
+    "churn_probability": 80.097
+  },
+  {
+    "y": 23,
+    "x": 5,
+    "churn_probability": 88.129
+  },
+  {
+    "y": 23,
+    "x": 6,
+    "churn_probability": 93.349
+  },
+  {
+    "y": 23,
+    "x": 7,
+    "churn_probability": 96.432
+  },
+  {
+    "y": 23,
+    "x": 8,
+    "churn_probability": 98.14
+  },
+  {
+    "y": 23,
+    "x": 9,
+    "churn_probability": 99.05
+  },
+  {
+    "y": 23,
+    "x": 10,
+    "churn_probability": 99.521
+  },
+  {
+    "y": 23,
+    "x": 11,
+    "churn_probability": 99.761
+  },
+  {
+    "y": 23,
+    "x": 12,
+    "churn_probability": 99.882
+  },
+  {
+    "y": 23,
+    "x": 13,
+    "churn_probability": 99.942
+  },
+  {
+    "y": 23,
+    "x": 14,
+    "churn_probability": 99.971
+  },
+  {
+    "y": 23,
+    "x": 15,
+    "churn_probability": 99.986
+  },
+  {
+    "y": 23,
+    "x": 16,
+    "churn_probability": 99.993
+  },
+  {
+    "y": 23,
+    "x": 17,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 23,
+    "x": 18,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 23,
+    "x": 19,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 23,
+    "x": 20,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 21,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 23,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 22,
+    "x": 1,
+    "churn_probability": 44.78
+  },
+  {
+    "y": 22,
+    "x": 2,
+    "churn_probability": 54.402
+  },
+  {
+    "y": 22,
+    "x": 3,
+    "churn_probability": 65.739
+  },
+  {
+    "y": 22,
+    "x": 4,
+    "churn_probability": 76.481
+  },
+  {
+    "y": 22,
+    "x": 5,
+    "churn_probability": 85.086
+  },
+  {
+    "y": 22,
+    "x": 6,
+    "churn_probability": 91.117
+  },
+  {
+    "y": 22,
+    "x": 7,
+    "churn_probability": 94.945
+  },
+  {
+    "y": 22,
+    "x": 8,
+    "churn_probability": 97.213
+  },
+  {
+    "y": 22,
+    "x": 9,
+    "churn_probability": 98.497
+  },
+  {
+    "y": 22,
+    "x": 10,
+    "churn_probability": 99.201
+  },
+  {
+    "y": 22,
+    "x": 11,
+    "churn_probability": 99.58
+  },
+  {
+    "y": 22,
+    "x": 12,
+    "churn_probability": 99.781
+  },
+  {
+    "y": 22,
+    "x": 13,
+    "churn_probability": 99.887
+  },
+  {
+    "y": 22,
+    "x": 14,
+    "churn_probability": 99.942
+  },
+  {
+    "y": 22,
+    "x": 15,
+    "churn_probability": 99.97
+  },
+  {
+    "y": 22,
+    "x": 16,
+    "churn_probability": 99.985
+  },
+  {
+    "y": 22,
+    "x": 17,
+    "churn_probability": 99.992
+  },
+  {
+    "y": 22,
+    "x": 18,
+    "churn_probability": 99.996
+  },
+  {
+    "y": 22,
+    "x": 19,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 22,
+    "x": 20,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 22,
+    "x": 21,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 22,
+    "x": 22,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 22,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 21,
+    "x": 1,
+    "churn_probability": 43.316
+  },
+  {
+    "y": 21,
+    "x": 2,
+    "churn_probability": 51.732
+  },
+  {
+    "y": 21,
+    "x": 3,
+    "churn_probability": 62.166
+  },
+  {
+    "y": 21,
+    "x": 4,
+    "churn_probability": 72.638
+  },
+  {
+    "y": 21,
+    "x": 5,
+    "churn_probability": 81.617
+  },
+  {
+    "y": 21,
+    "x": 6,
+    "churn_probability": 88.385
+  },
+  {
+    "y": 21,
+    "x": 7,
+    "churn_probability": 92.999
+  },
+  {
+    "y": 21,
+    "x": 8,
+    "churn_probability": 95.922
+  },
+  {
+    "y": 21,
+    "x": 9,
+    "churn_probability": 97.681
+  },
+  {
+    "y": 21,
+    "x": 10,
+    "churn_probability": 98.703
+  },
+  {
+    "y": 21,
+    "x": 11,
+    "churn_probability": 99.284
+  },
+  {
+    "y": 21,
+    "x": 12,
+    "churn_probability": 99.608
+  },
+  {
+    "y": 21,
+    "x": 13,
+    "churn_probability": 99.787
+  },
+  {
+    "y": 21,
+    "x": 14,
+    "churn_probability": 99.885
+  },
+  {
+    "y": 21,
+    "x": 15,
+    "churn_probability": 99.938
+  },
+  {
+    "y": 21,
+    "x": 16,
+    "churn_probability": 99.967
+  },
+  {
+    "y": 21,
+    "x": 17,
+    "churn_probability": 99.982
+  },
+  {
+    "y": 21,
+    "x": 18,
+    "churn_probability": 99.991
+  },
+  {
+    "y": 21,
+    "x": 19,
+    "churn_probability": 99.995
+  },
+  {
+    "y": 21,
+    "x": 20,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 21,
+    "x": 21,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 21,
+    "x": 22,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 21,
+    "x": 23,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 24,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 21,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 20,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 20,
+    "x": 1,
+    "churn_probability": 41.929
+  },
+  {
+    "y": 20,
+    "x": 2,
+    "churn_probability": 49.173
+  },
+  {
+    "y": 20,
+    "x": 3,
+    "churn_probability": 58.628
+  },
+  {
+    "y": 20,
+    "x": 4,
+    "churn_probability": 68.626
+  },
+  {
+    "y": 20,
+    "x": 5,
+    "churn_probability": 77.753
+  },
+  {
+    "y": 20,
+    "x": 6,
+    "churn_probability": 85.126
+  },
+  {
+    "y": 20,
+    "x": 7,
+    "churn_probability": 90.516
+  },
+  {
+    "y": 20,
+    "x": 8,
+    "churn_probability": 94.167
+  },
+  {
+    "y": 20,
+    "x": 9,
+    "churn_probability": 96.506
+  },
+  {
+    "y": 20,
+    "x": 10,
+    "churn_probability": 97.946
+  },
+  {
+    "y": 20,
+    "x": 11,
+    "churn_probability": 98.809
+  },
+  {
+    "y": 20,
+    "x": 12,
+    "churn_probability": 99.317
+  },
+  {
+    "y": 20,
+    "x": 13,
+    "churn_probability": 99.611
+  },
+  {
+    "y": 20,
+    "x": 14,
+    "churn_probability": 99.78
+  },
+  {
+    "y": 20,
+    "x": 15,
+    "churn_probability": 99.876
+  },
+  {
+    "y": 20,
+    "x": 16,
+    "churn_probability": 99.93
+  },
+  {
+    "y": 20,
+    "x": 17,
+    "churn_probability": 99.961
+  },
+  {
+    "y": 20,
+    "x": 18,
+    "churn_probability": 99.978
+  },
+  {
+    "y": 20,
+    "x": 19,
+    "churn_probability": 99.988
+  },
+  {
+    "y": 20,
+    "x": 20,
+    "churn_probability": 99.993
+  },
+  {
+    "y": 20,
+    "x": 21,
+    "churn_probability": 99.996
+  },
+  {
+    "y": 20,
+    "x": 22,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 20,
+    "x": 23,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 20,
+    "x": 24,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 20,
+    "x": 25,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 20,
+    "x": 26,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 20,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 20,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 20,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 19,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 19,
+    "x": 1,
+    "churn_probability": 40.614
+  },
+  {
+    "y": 19,
+    "x": 2,
+    "churn_probability": 46.731
+  },
+  {
+    "y": 19,
+    "x": 3,
+    "churn_probability": 55.159
+  },
+  {
+    "y": 19,
+    "x": 4,
+    "churn_probability": 64.509
+  },
+  {
+    "y": 19,
+    "x": 5,
+    "churn_probability": 73.546
+  },
+  {
+    "y": 19,
+    "x": 6,
+    "churn_probability": 81.337
+  },
+  {
+    "y": 19,
+    "x": 7,
+    "churn_probability": 87.433
+  },
+  {
+    "y": 19,
+    "x": 8,
+    "churn_probability": 91.848
+  },
+  {
+    "y": 19,
+    "x": 9,
+    "churn_probability": 94.859
+  },
+  {
+    "y": 19,
+    "x": 10,
+    "churn_probability": 96.825
+  },
+  {
+    "y": 19,
+    "x": 11,
+    "churn_probability": 98.07
+  },
+  {
+    "y": 19,
+    "x": 12,
+    "churn_probability": 98.84
+  },
+  {
+    "y": 19,
+    "x": 13,
+    "churn_probability": 99.308
+  },
+  {
+    "y": 19,
+    "x": 14,
+    "churn_probability": 99.591
+  },
+  {
+    "y": 19,
+    "x": 15,
+    "churn_probability": 99.759
+  },
+  {
+    "y": 19,
+    "x": 16,
+    "churn_probability": 99.859
+  },
+  {
+    "y": 19,
+    "x": 17,
+    "churn_probability": 99.917
+  },
+  {
+    "y": 19,
+    "x": 18,
+    "churn_probability": 99.952
+  },
+  {
+    "y": 19,
+    "x": 19,
+    "churn_probability": 99.972
+  },
+  {
+    "y": 19,
+    "x": 20,
+    "churn_probability": 99.984
+  },
+  {
+    "y": 19,
+    "x": 21,
+    "churn_probability": 99.991
+  },
+  {
+    "y": 19,
+    "x": 22,
+    "churn_probability": 99.995
+  },
+  {
+    "y": 19,
+    "x": 23,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 19,
+    "x": 24,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 19,
+    "x": 25,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 19,
+    "x": 26,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 19,
+    "x": 27,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 19,
+    "x": 28,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 19,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 18,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 18,
+    "x": 1,
+    "churn_probability": 39.367
+  },
+  {
+    "y": 18,
+    "x": 2,
+    "churn_probability": 44.405
+  },
+  {
+    "y": 18,
+    "x": 3,
+    "churn_probability": 51.786
+  },
+  {
+    "y": 18,
+    "x": 4,
+    "churn_probability": 60.35
+  },
+  {
+    "y": 18,
+    "x": 5,
+    "churn_probability": 69.067
+  },
+  {
+    "y": 18,
+    "x": 6,
+    "churn_probability": 77.047
+  },
+  {
+    "y": 18,
+    "x": 7,
+    "churn_probability": 83.712
+  },
+  {
+    "y": 18,
+    "x": 8,
+    "churn_probability": 88.866
+  },
+  {
+    "y": 18,
+    "x": 9,
+    "churn_probability": 92.612
+  },
+  {
+    "y": 18,
+    "x": 10,
+    "churn_probability": 95.209
+  },
+  {
+    "y": 18,
+    "x": 11,
+    "churn_probability": 96.946
+  },
+  {
+    "y": 18,
+    "x": 12,
+    "churn_probability": 98.079
+  },
+  {
+    "y": 18,
+    "x": 13,
+    "churn_probability": 98.803
+  },
+  {
+    "y": 18,
+    "x": 14,
+    "churn_probability": 99.26
+  },
+  {
+    "y": 18,
+    "x": 15,
+    "churn_probability": 99.545
+  },
+  {
+    "y": 18,
+    "x": 16,
+    "churn_probability": 99.722
+  },
+  {
+    "y": 18,
+    "x": 17,
+    "churn_probability": 99.83
+  },
+  {
+    "y": 18,
+    "x": 18,
+    "churn_probability": 99.897
+  },
+  {
+    "y": 18,
+    "x": 19,
+    "churn_probability": 99.938
+  },
+  {
+    "y": 18,
+    "x": 20,
+    "churn_probability": 99.962
+  },
+  {
+    "y": 18,
+    "x": 21,
+    "churn_probability": 99.977
+  },
+  {
+    "y": 18,
+    "x": 22,
+    "churn_probability": 99.986
+  },
+  {
+    "y": 18,
+    "x": 23,
+    "churn_probability": 99.992
+  },
+  {
+    "y": 18,
+    "x": 24,
+    "churn_probability": 99.995
+  },
+  {
+    "y": 18,
+    "x": 25,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 18,
+    "x": 26,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 18,
+    "x": 27,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 18,
+    "x": 28,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 18,
+    "x": 29,
+    "churn_probability": 100.0
+  },
+  {
+    "y": 17,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 17,
+    "x": 1,
+    "churn_probability": 38.183
+  },
+  {
+    "y": 17,
+    "x": 2,
+    "churn_probability": 42.195
+  },
+  {
+    "y": 17,
+    "x": 3,
+    "churn_probability": 48.533
+  },
+  {
+    "y": 17,
+    "x": 4,
+    "churn_probability": 56.212
+  },
+  {
+    "y": 17,
+    "x": 5,
+    "churn_probability": 64.401
+  },
+  {
+    "y": 17,
+    "x": 6,
+    "churn_probability": 72.319
+  },
+  {
+    "y": 17,
+    "x": 7,
+    "churn_probability": 79.351
+  },
+  {
+    "y": 17,
+    "x": 8,
+    "churn_probability": 85.147
+  },
+  {
+    "y": 17,
+    "x": 9,
+    "churn_probability": 89.637
+  },
+  {
+    "y": 17,
+    "x": 10,
+    "churn_probability": 92.944
+  },
+  {
+    "y": 17,
+    "x": 11,
+    "churn_probability": 95.286
+  },
+  {
+    "y": 17,
+    "x": 12,
+    "churn_probability": 96.897
+  },
+  {
+    "y": 17,
+    "x": 13,
+    "churn_probability": 97.98
+  },
+  {
+    "y": 17,
+    "x": 14,
+    "churn_probability": 98.696
+  },
+  {
+    "y": 17,
+    "x": 15,
+    "churn_probability": 99.164
+  },
+  {
+    "y": 17,
+    "x": 16,
+    "churn_probability": 99.467
+  },
+  {
+    "y": 17,
+    "x": 17,
+    "churn_probability": 99.662
+  },
+  {
+    "y": 17,
+    "x": 18,
+    "churn_probability": 99.786
+  },
+  {
+    "y": 17,
+    "x": 19,
+    "churn_probability": 99.865
+  },
+  {
+    "y": 17,
+    "x": 20,
+    "churn_probability": 99.915
+  },
+  {
+    "y": 17,
+    "x": 21,
+    "churn_probability": 99.947
+  },
+  {
+    "y": 17,
+    "x": 22,
+    "churn_probability": 99.967
+  },
+  {
+    "y": 17,
+    "x": 23,
+    "churn_probability": 99.979
+  },
+  {
+    "y": 17,
+    "x": 24,
+    "churn_probability": 99.987
+  },
+  {
+    "y": 17,
+    "x": 25,
+    "churn_probability": 99.992
+  },
+  {
+    "y": 17,
+    "x": 26,
+    "churn_probability": 99.995
+  },
+  {
+    "y": 17,
+    "x": 27,
+    "churn_probability": 99.997
+  },
+  {
+    "y": 17,
+    "x": 28,
+    "churn_probability": 99.998
+  },
+  {
+    "y": 17,
+    "x": 29,
+    "churn_probability": 99.999
+  },
+  {
+    "y": 16,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 16,
+    "x": 1,
+    "churn_probability": 37.058
+  },
+  {
+    "y": 16,
+    "x": 2,
+    "churn_probability": 40.099
+  },
+  {
+    "y": 16,
+    "x": 3,
+    "churn_probability": 45.417
+  },
+  {
+    "y": 16,
+    "x": 4,
+    "churn_probability": 52.149
+  },
+  {
+    "y": 16,
+    "x": 5,
+    "churn_probability": 59.639
+  },
+  {
+    "y": 16,
+    "x": 6,
+    "churn_probability": 67.248
+  },
+  {
+    "y": 16,
+    "x": 7,
+    "churn_probability": 74.396
+  },
+  {
+    "y": 16,
+    "x": 8,
+    "churn_probability": 80.66
+  },
+  {
+    "y": 16,
+    "x": 9,
+    "churn_probability": 85.825
+  },
+  {
+    "y": 16,
+    "x": 10,
+    "churn_probability": 89.87
+  },
+  {
+    "y": 16,
+    "x": 11,
+    "churn_probability": 92.907
+  },
+  {
+    "y": 16,
+    "x": 12,
+    "churn_probability": 95.114
+  },
+  {
+    "y": 16,
+    "x": 13,
+    "churn_probability": 96.677
+  },
+  {
+    "y": 16,
+    "x": 14,
+    "churn_probability": 97.762
+  },
+  {
+    "y": 16,
+    "x": 15,
+    "churn_probability": 98.505
+  },
+  {
+    "y": 16,
+    "x": 16,
+    "churn_probability": 99.007
+  },
+  {
+    "y": 16,
+    "x": 17,
+    "churn_probability": 99.344
+  },
+  {
+    "y": 16,
+    "x": 18,
+    "churn_probability": 99.568
+  },
+  {
+    "y": 16,
+    "x": 19,
+    "churn_probability": 99.717
+  },
+  {
+    "y": 16,
+    "x": 20,
+    "churn_probability": 99.815
+  },
+  {
+    "y": 16,
+    "x": 21,
+    "churn_probability": 99.879
+  },
+  {
+    "y": 16,
+    "x": 22,
+    "churn_probability": 99.921
+  },
+  {
+    "y": 16,
+    "x": 23,
+    "churn_probability": 99.949
+  },
+  {
+    "y": 16,
+    "x": 24,
+    "churn_probability": 99.967
+  },
+  {
+    "y": 16,
+    "x": 25,
+    "churn_probability": 99.979
+  },
+  {
+    "y": 16,
+    "x": 26,
+    "churn_probability": 99.986
+  },
+  {
+    "y": 16,
+    "x": 27,
+    "churn_probability": 99.991
+  },
+  {
+    "y": 16,
+    "x": 28,
+    "churn_probability": 99.994
+  },
+  {
+    "y": 16,
+    "x": 29,
+    "churn_probability": 99.996
+  },
+  {
+    "y": 15,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 15,
+    "x": 1,
+    "churn_probability": 35.987
+  },
+  {
+    "y": 15,
+    "x": 2,
+    "churn_probability": 38.115
+  },
+  {
+    "y": 15,
+    "x": 3,
+    "churn_probability": 42.449
+  },
+  {
+    "y": 15,
+    "x": 4,
+    "churn_probability": 48.21
+  },
+  {
+    "y": 15,
+    "x": 5,
+    "churn_probability": 54.875
+  },
+  {
+    "y": 15,
+    "x": 6,
+    "churn_probability": 61.95
+  },
+  {
+    "y": 15,
+    "x": 7,
+    "churn_probability": 68.944
+  },
+  {
+    "y": 15,
+    "x": 8,
+    "churn_probability": 75.432
+  },
+  {
+    "y": 15,
+    "x": 9,
+    "churn_probability": 81.113
+  },
+  {
+    "y": 15,
+    "x": 10,
+    "churn_probability": 85.842
+  },
+  {
+    "y": 15,
+    "x": 11,
+    "churn_probability": 89.611
+  },
+  {
+    "y": 15,
+    "x": 12,
+    "churn_probability": 92.51
+  },
+  {
+    "y": 15,
+    "x": 13,
+    "churn_probability": 94.677
+  },
+  {
+    "y": 15,
+    "x": 14,
+    "churn_probability": 96.259
+  },
+  {
+    "y": 15,
+    "x": 15,
+    "churn_probability": 97.395
+  },
+  {
+    "y": 15,
+    "x": 16,
+    "churn_probability": 98.199
+  },
+  {
+    "y": 15,
+    "x": 17,
+    "churn_probability": 98.762
+  },
+  {
+    "y": 15,
+    "x": 18,
+    "churn_probability": 99.153
+  },
+  {
+    "y": 15,
+    "x": 19,
+    "churn_probability": 99.423
+  },
+  {
+    "y": 15,
+    "x": 20,
+    "churn_probability": 99.608
+  },
+  {
+    "y": 15,
+    "x": 21,
+    "churn_probability": 99.734
+  },
+  {
+    "y": 15,
+    "x": 22,
+    "churn_probability": 99.821
+  },
+  {
+    "y": 15,
+    "x": 23,
+    "churn_probability": 99.879
+  },
+  {
+    "y": 15,
+    "x": 24,
+    "churn_probability": 99.919
+  },
+  {
+    "y": 15,
+    "x": 25,
+    "churn_probability": 99.945
+  },
+  {
+    "y": 15,
+    "x": 26,
+    "churn_probability": 99.963
+  },
+  {
+    "y": 15,
+    "x": 27,
+    "churn_probability": 99.975
+  },
+  {
+    "y": 15,
+    "x": 28,
+    "churn_probability": 99.984
+  },
+  {
+    "y": 15,
+    "x": 29,
+    "churn_probability": 99.989
+  },
+  {
+    "y": 14,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 14,
+    "x": 1,
+    "churn_probability": 34.968
+  },
+  {
+    "y": 14,
+    "x": 2,
+    "churn_probability": 36.239
+  },
+  {
+    "y": 14,
+    "x": 3,
+    "churn_probability": 39.639
+  },
+  {
+    "y": 14,
+    "x": 4,
+    "churn_probability": 44.432
+  },
+  {
+    "y": 14,
+    "x": 5,
+    "churn_probability": 50.195
+  },
+  {
+    "y": 14,
+    "x": 6,
+    "churn_probability": 56.556
+  },
+  {
+    "y": 14,
+    "x": 7,
+    "churn_probability": 63.135
+  },
+  {
+    "y": 14,
+    "x": 8,
+    "churn_probability": 69.561
+  },
+  {
+    "y": 14,
+    "x": 9,
+    "churn_probability": 75.515
+  },
+  {
+    "y": 14,
+    "x": 10,
+    "churn_probability": 80.772
+  },
+  {
+    "y": 14,
+    "x": 11,
+    "churn_probability": 85.22
+  },
+  {
+    "y": 14,
+    "x": 12,
+    "churn_probability": 88.846
+  },
+  {
+    "y": 14,
+    "x": 13,
+    "churn_probability": 91.713
+  },
+  {
+    "y": 14,
+    "x": 14,
+    "churn_probability": 93.92
+  },
+  {
+    "y": 14,
+    "x": 15,
+    "churn_probability": 95.586
+  },
+  {
+    "y": 14,
+    "x": 16,
+    "churn_probability": 96.823
+  },
+  {
+    "y": 14,
+    "x": 17,
+    "churn_probability": 97.728
+  },
+  {
+    "y": 14,
+    "x": 18,
+    "churn_probability": 98.385
+  },
+  {
+    "y": 14,
+    "x": 19,
+    "churn_probability": 98.857
+  },
+  {
+    "y": 14,
+    "x": 20,
+    "churn_probability": 99.194
+  },
+  {
+    "y": 14,
+    "x": 21,
+    "churn_probability": 99.433
+  },
+  {
+    "y": 14,
+    "x": 22,
+    "churn_probability": 99.603
+  },
+  {
+    "y": 14,
+    "x": 23,
+    "churn_probability": 99.722
+  },
+  {
+    "y": 14,
+    "x": 24,
+    "churn_probability": 99.806
+  },
+  {
+    "y": 14,
+    "x": 25,
+    "churn_probability": 99.865
+  },
+  {
+    "y": 14,
+    "x": 26,
+    "churn_probability": 99.906
+  },
+  {
+    "y": 14,
+    "x": 27,
+    "churn_probability": 99.935
+  },
+  {
+    "y": 14,
+    "x": 28,
+    "churn_probability": 99.955
+  },
+  {
+    "y": 14,
+    "x": 29,
+    "churn_probability": 99.969
+  },
+  {
+    "y": 13,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 13,
+    "x": 1,
+    "churn_probability": 33.997
+  },
+  {
+    "y": 13,
+    "x": 2,
+    "churn_probability": 34.466
+  },
+  {
+    "y": 13,
+    "x": 3,
+    "churn_probability": 36.989
+  },
+  {
+    "y": 13,
+    "x": 4,
+    "churn_probability": 40.845
+  },
+  {
+    "y": 13,
+    "x": 5,
+    "churn_probability": 45.672
+  },
+  {
+    "y": 13,
+    "x": 6,
+    "churn_probability": 51.196
+  },
+  {
+    "y": 13,
+    "x": 7,
+    "churn_probability": 57.139
+  },
+  {
+    "y": 13,
+    "x": 8,
+    "churn_probability": 63.213
+  },
+  {
+    "y": 13,
+    "x": 9,
+    "churn_probability": 69.137
+  },
+  {
+    "y": 13,
+    "x": 10,
+    "churn_probability": 74.668
+  },
+  {
+    "y": 13,
+    "x": 11,
+    "churn_probability": 79.626
+  },
+  {
+    "y": 13,
+    "x": 12,
+    "churn_probability": 83.912
+  },
+  {
+    "y": 13,
+    "x": 13,
+    "churn_probability": 87.5
+  },
+  {
+    "y": 13,
+    "x": 14,
+    "churn_probability": 90.421
+  },
+  {
+    "y": 13,
+    "x": 15,
+    "churn_probability": 92.744
+  },
+  {
+    "y": 13,
+    "x": 16,
+    "churn_probability": 94.557
+  },
+  {
+    "y": 13,
+    "x": 17,
+    "churn_probability": 95.95
+  },
+  {
+    "y": 13,
+    "x": 18,
+    "churn_probability": 97.007
+  },
+  {
+    "y": 13,
+    "x": 19,
+    "churn_probability": 97.799
+  },
+  {
+    "y": 13,
+    "x": 20,
+    "churn_probability": 98.389
+  },
+  {
+    "y": 13,
+    "x": 21,
+    "churn_probability": 98.826
+  },
+  {
+    "y": 13,
+    "x": 22,
+    "churn_probability": 99.147
+  },
+  {
+    "y": 13,
+    "x": 23,
+    "churn_probability": 99.381
+  },
+  {
+    "y": 13,
+    "x": 24,
+    "churn_probability": 99.553
+  },
+  {
+    "y": 13,
+    "x": 25,
+    "churn_probability": 99.677
+  },
+  {
+    "y": 13,
+    "x": 26,
+    "churn_probability": 99.767
+  },
+  {
+    "y": 13,
+    "x": 27,
+    "churn_probability": 99.833
+  },
+  {
+    "y": 13,
+    "x": 28,
+    "churn_probability": 99.88
+  },
+  {
+    "y": 13,
+    "x": 29,
+    "churn_probability": 99.914
+  },
+  {
+    "y": 12,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 12,
+    "x": 1,
+    "churn_probability": 33.071
+  },
+  {
+    "y": 12,
+    "x": 2,
+    "churn_probability": 32.793
+  },
+  {
+    "y": 12,
+    "x": 3,
+    "churn_probability": 34.5
+  },
+  {
+    "y": 12,
+    "x": 4,
+    "churn_probability": 37.467
+  },
+  {
+    "y": 12,
+    "x": 5,
+    "churn_probability": 41.367
+  },
+  {
+    "y": 12,
+    "x": 6,
+    "churn_probability": 45.987
+  },
+  {
+    "y": 12,
+    "x": 7,
+    "churn_probability": 51.134
+  },
+  {
+    "y": 12,
+    "x": 8,
+    "churn_probability": 56.606
+  },
+  {
+    "y": 12,
+    "x": 9,
+    "churn_probability": 62.188
+  },
+  {
+    "y": 12,
+    "x": 10,
+    "churn_probability": 67.668
+  },
+  {
+    "y": 12,
+    "x": 11,
+    "churn_probability": 72.854
+  },
+  {
+    "y": 12,
+    "x": 12,
+    "churn_probability": 77.598
+  },
+  {
+    "y": 12,
+    "x": 13,
+    "churn_probability": 81.804
+  },
+  {
+    "y": 12,
+    "x": 14,
+    "churn_probability": 85.429
+  },
+  {
+    "y": 12,
+    "x": 15,
+    "churn_probability": 88.478
+  },
+  {
+    "y": 12,
+    "x": 16,
+    "churn_probability": 90.986
+  },
+  {
+    "y": 12,
+    "x": 17,
+    "churn_probability": 93.013
+  },
+  {
+    "y": 12,
+    "x": 18,
+    "churn_probability": 94.626
+  },
+  {
+    "y": 12,
+    "x": 19,
+    "churn_probability": 95.894
+  },
+  {
+    "y": 12,
+    "x": 20,
+    "churn_probability": 96.88
+  },
+  {
+    "y": 12,
+    "x": 21,
+    "churn_probability": 97.64
+  },
+  {
+    "y": 12,
+    "x": 22,
+    "churn_probability": 98.222
+  },
+  {
+    "y": 12,
+    "x": 23,
+    "churn_probability": 98.664
+  },
+  {
+    "y": 12,
+    "x": 24,
+    "churn_probability": 99.0
+  },
+  {
+    "y": 12,
+    "x": 25,
+    "churn_probability": 99.253
+  },
+  {
+    "y": 12,
+    "x": 26,
+    "churn_probability": 99.443
+  },
+  {
+    "y": 12,
+    "x": 27,
+    "churn_probability": 99.585
+  },
+  {
+    "y": 12,
+    "x": 28,
+    "churn_probability": 99.692
+  },
+  {
+    "y": 12,
+    "x": 29,
+    "churn_probability": 99.771
+  },
+  {
+    "y": 11,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 11,
+    "x": 1,
+    "churn_probability": 32.188
+  },
+  {
+    "y": 11,
+    "x": 2,
+    "churn_probability": 31.215
+  },
+  {
+    "y": 11,
+    "x": 3,
+    "churn_probability": 32.169
+  },
+  {
+    "y": 11,
+    "x": 4,
+    "churn_probability": 34.311
+  },
+  {
+    "y": 11,
+    "x": 5,
+    "churn_probability": 37.322
+  },
+  {
+    "y": 11,
+    "x": 6,
+    "churn_probability": 41.028
+  },
+  {
+    "y": 11,
+    "x": 7,
+    "churn_probability": 45.291
+  },
+  {
+    "y": 11,
+    "x": 8,
+    "churn_probability": 49.979
+  },
+  {
+    "y": 11,
+    "x": 9,
+    "churn_probability": 54.947
+  },
+  {
+    "y": 11,
+    "x": 10,
+    "churn_probability": 60.041
+  },
+  {
+    "y": 11,
+    "x": 11,
+    "churn_probability": 65.101
+  },
+  {
+    "y": 11,
+    "x": 12,
+    "churn_probability": 69.98
+  },
+  {
+    "y": 11,
+    "x": 13,
+    "churn_probability": 74.549
+  },
+  {
+    "y": 11,
+    "x": 14,
+    "churn_probability": 78.717
+  },
+  {
+    "y": 11,
+    "x": 15,
+    "churn_probability": 82.424
+  },
+  {
+    "y": 11,
+    "x": 16,
+    "churn_probability": 85.649
+  },
+  {
+    "y": 11,
+    "x": 17,
+    "churn_probability": 88.4
+  },
+  {
+    "y": 11,
+    "x": 18,
+    "churn_probability": 90.706
+  },
+  {
+    "y": 11,
+    "x": 19,
+    "churn_probability": 92.61
+  },
+  {
+    "y": 11,
+    "x": 20,
+    "churn_probability": 94.163
+  },
+  {
+    "y": 11,
+    "x": 21,
+    "churn_probability": 95.415
+  },
+  {
+    "y": 11,
+    "x": 22,
+    "churn_probability": 96.415
+  },
+  {
+    "y": 11,
+    "x": 23,
+    "churn_probability": 97.209
+  },
+  {
+    "y": 11,
+    "x": 24,
+    "churn_probability": 97.834
+  },
+  {
+    "y": 11,
+    "x": 25,
+    "churn_probability": 98.324
+  },
+  {
+    "y": 11,
+    "x": 26,
+    "churn_probability": 98.707
+  },
+  {
+    "y": 11,
+    "x": 27,
+    "churn_probability": 99.004
+  },
+  {
+    "y": 11,
+    "x": 28,
+    "churn_probability": 99.235
+  },
+  {
+    "y": 11,
+    "x": 29,
+    "churn_probability": 99.413
+  },
+  {
+    "y": 10,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 10,
+    "x": 1,
+    "churn_probability": 31.344
+  },
+  {
+    "y": 10,
+    "x": 2,
+    "churn_probability": 29.726
+  },
+  {
+    "y": 10,
+    "x": 3,
+    "churn_probability": 29.993
+  },
+  {
+    "y": 10,
+    "x": 4,
+    "churn_probability": 31.38
+  },
+  {
+    "y": 10,
+    "x": 5,
+    "churn_probability": 33.566
+  },
+  {
+    "y": 10,
+    "x": 6,
+    "churn_probability": 36.391
+  },
+  {
+    "y": 10,
+    "x": 7,
+    "churn_probability": 39.75
+  },
+  {
+    "y": 10,
+    "x": 8,
+    "churn_probability": 43.557
+  },
+  {
+    "y": 10,
+    "x": 9,
+    "churn_probability": 47.724
+  },
+  {
+    "y": 10,
+    "x": 10,
+    "churn_probability": 52.154
+  },
+  {
+    "y": 10,
+    "x": 11,
+    "churn_probability": 56.739
+  },
+  {
+    "y": 10,
+    "x": 12,
+    "churn_probability": 61.365
+  },
+  {
+    "y": 10,
+    "x": 13,
+    "churn_probability": 65.92
+  },
+  {
+    "y": 10,
+    "x": 14,
+    "churn_probability": 70.299
+  },
+  {
+    "y": 10,
+    "x": 15,
+    "churn_probability": 74.415
+  },
+  {
+    "y": 10,
+    "x": 16,
+    "churn_probability": 78.202
+  },
+  {
+    "y": 10,
+    "x": 17,
+    "churn_probability": 81.616
+  },
+  {
+    "y": 10,
+    "x": 18,
+    "churn_probability": 84.64
+  },
+  {
+    "y": 10,
+    "x": 19,
+    "churn_probability": 87.273
+  },
+  {
+    "y": 10,
+    "x": 20,
+    "churn_probability": 89.533
+  },
+  {
+    "y": 10,
+    "x": 21,
+    "churn_probability": 91.448
+  },
+  {
+    "y": 10,
+    "x": 22,
+    "churn_probability": 93.053
+  },
+  {
+    "y": 10,
+    "x": 23,
+    "churn_probability": 94.385
+  },
+  {
+    "y": 10,
+    "x": 24,
+    "churn_probability": 95.482
+  },
+  {
+    "y": 10,
+    "x": 25,
+    "churn_probability": 96.377
+  },
+  {
+    "y": 10,
+    "x": 26,
+    "churn_probability": 97.105
+  },
+  {
+    "y": 10,
+    "x": 27,
+    "churn_probability": 97.693
+  },
+  {
+    "y": 10,
+    "x": 28,
+    "churn_probability": 98.166
+  },
+  {
+    "y": 10,
+    "x": 29,
+    "churn_probability": 98.545
+  },
+  {
+    "y": 9,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 9,
+    "x": 1,
+    "churn_probability": 30.537
+  },
+  {
+    "y": 9,
+    "x": 2,
+    "churn_probability": 28.322
+  },
+  {
+    "y": 9,
+    "x": 3,
+    "churn_probability": 27.966
+  },
+  {
+    "y": 9,
+    "x": 4,
+    "churn_probability": 28.672
+  },
+  {
+    "y": 9,
+    "x": 5,
+    "churn_probability": 30.111
+  },
+  {
+    "y": 9,
+    "x": 6,
+    "churn_probability": 32.123
+  },
+  {
+    "y": 9,
+    "x": 7,
+    "churn_probability": 34.616
+  },
+  {
+    "y": 9,
+    "x": 8,
+    "churn_probability": 37.529
+  },
+  {
+    "y": 9,
+    "x": 9,
+    "churn_probability": 40.807
+  },
+  {
+    "y": 9,
+    "x": 10,
+    "churn_probability": 44.398
+  },
+  {
+    "y": 9,
+    "x": 11,
+    "churn_probability": 48.24
+  },
+  {
+    "y": 9,
+    "x": 12,
+    "churn_probability": 52.266
+  },
+  {
+    "y": 9,
+    "x": 13,
+    "churn_probability": 56.399
+  },
+  {
+    "y": 9,
+    "x": 14,
+    "churn_probability": 60.56
+  },
+  {
+    "y": 9,
+    "x": 15,
+    "churn_probability": 64.669
+  },
+  {
+    "y": 9,
+    "x": 16,
+    "churn_probability": 68.653
+  },
+  {
+    "y": 9,
+    "x": 17,
+    "churn_probability": 72.445
+  },
+  {
+    "y": 9,
+    "x": 18,
+    "churn_probability": 75.993
+  },
+  {
+    "y": 9,
+    "x": 19,
+    "churn_probability": 79.259
+  },
+  {
+    "y": 9,
+    "x": 20,
+    "churn_probability": 82.22
+  },
+  {
+    "y": 9,
+    "x": 21,
+    "churn_probability": 84.867
+  },
+  {
+    "y": 9,
+    "x": 22,
+    "churn_probability": 87.204
+  },
+  {
+    "y": 9,
+    "x": 23,
+    "churn_probability": 89.243
+  },
+  {
+    "y": 9,
+    "x": 24,
+    "churn_probability": 91.004
+  },
+  {
+    "y": 9,
+    "x": 25,
+    "churn_probability": 92.512
+  },
+  {
+    "y": 9,
+    "x": 26,
+    "churn_probability": 93.793
+  },
+  {
+    "y": 9,
+    "x": 27,
+    "churn_probability": 94.874
+  },
+  {
+    "y": 9,
+    "x": 28,
+    "churn_probability": 95.78
+  },
+  {
+    "y": 9,
+    "x": 29,
+    "churn_probability": 96.535
+  },
+  {
+    "y": 8,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 8,
+    "x": 1,
+    "churn_probability": 29.765
+  },
+  {
+    "y": 8,
+    "x": 2,
+    "churn_probability": 26.999
+  },
+  {
+    "y": 8,
+    "x": 3,
+    "churn_probability": 26.081
+  },
+  {
+    "y": 8,
+    "x": 4,
+    "churn_probability": 26.183
+  },
+  {
+    "y": 8,
+    "x": 5,
+    "churn_probability": 26.961
+  },
+  {
+    "y": 8,
+    "x": 6,
+    "churn_probability": 28.247
+  },
+  {
+    "y": 8,
+    "x": 7,
+    "churn_probability": 29.953
+  },
+  {
+    "y": 8,
+    "x": 8,
+    "churn_probability": 32.024
+  },
+  {
+    "y": 8,
+    "x": 9,
+    "churn_probability": 34.423
+  },
+  {
+    "y": 8,
+    "x": 10,
+    "churn_probability": 37.12
+  },
+  {
+    "y": 8,
+    "x": 11,
+    "churn_probability": 40.084
+  },
+  {
+    "y": 8,
+    "x": 12,
+    "churn_probability": 43.283
+  },
+  {
+    "y": 8,
+    "x": 13,
+    "churn_probability": 46.676
+  },
+  {
+    "y": 8,
+    "x": 14,
+    "churn_probability": 50.221
+  },
+  {
+    "y": 8,
+    "x": 15,
+    "churn_probability": 53.868
+  },
+  {
+    "y": 8,
+    "x": 16,
+    "churn_probability": 57.566
+  },
+  {
+    "y": 8,
+    "x": 17,
+    "churn_probability": 61.258
+  },
+  {
+    "y": 8,
+    "x": 18,
+    "churn_probability": 64.893
+  },
+  {
+    "y": 8,
+    "x": 19,
+    "churn_probability": 68.421
+  },
+  {
+    "y": 8,
+    "x": 20,
+    "churn_probability": 71.796
+  },
+  {
+    "y": 8,
+    "x": 21,
+    "churn_probability": 74.985
+  },
+  {
+    "y": 8,
+    "x": 22,
+    "churn_probability": 77.957
+  },
+  {
+    "y": 8,
+    "x": 23,
+    "churn_probability": 80.696
+  },
+  {
+    "y": 8,
+    "x": 24,
+    "churn_probability": 83.192
+  },
+  {
+    "y": 8,
+    "x": 25,
+    "churn_probability": 85.442
+  },
+  {
+    "y": 8,
+    "x": 26,
+    "churn_probability": 87.453
+  },
+  {
+    "y": 8,
+    "x": 27,
+    "churn_probability": 89.233
+  },
+  {
+    "y": 8,
+    "x": 28,
+    "churn_probability": 90.798
+  },
+  {
+    "y": 8,
+    "x": 29,
+    "churn_probability": 92.164
+  },
+  {
+    "y": 7,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 7,
+    "x": 1,
+    "churn_probability": 29.027
+  },
+  {
+    "y": 7,
+    "x": 2,
+    "churn_probability": 25.752
+  },
+  {
+    "y": 7,
+    "x": 3,
+    "churn_probability": 24.331
+  },
+  {
+    "y": 7,
+    "x": 4,
+    "churn_probability": 23.903
+  },
+  {
+    "y": 7,
+    "x": 5,
+    "churn_probability": 24.108
+  },
+  {
+    "y": 7,
+    "x": 6,
+    "churn_probability": 24.768
+  },
+  {
+    "y": 7,
+    "x": 7,
+    "churn_probability": 25.788
+  },
+  {
+    "y": 7,
+    "x": 8,
+    "churn_probability": 27.115
+  },
+  {
+    "y": 7,
+    "x": 9,
+    "churn_probability": 28.716
+  },
+  {
+    "y": 7,
+    "x": 10,
+    "churn_probability": 30.567
+  },
+  {
+    "y": 7,
+    "x": 11,
+    "churn_probability": 32.652
+  },
+  {
+    "y": 7,
+    "x": 12,
+    "churn_probability": 34.955
+  },
+  {
+    "y": 7,
+    "x": 13,
+    "churn_probability": 37.461
+  },
+  {
+    "y": 7,
+    "x": 14,
+    "churn_probability": 40.152
+  },
+  {
+    "y": 7,
+    "x": 15,
+    "churn_probability": 43.007
+  },
+  {
+    "y": 7,
+    "x": 16,
+    "churn_probability": 46.001
+  },
+  {
+    "y": 7,
+    "x": 17,
+    "churn_probability": 49.107
+  },
+  {
+    "y": 7,
+    "x": 18,
+    "churn_probability": 52.293
+  },
+  {
+    "y": 7,
+    "x": 19,
+    "churn_probability": 55.527
+  },
+  {
+    "y": 7,
+    "x": 20,
+    "churn_probability": 58.772
+  },
+  {
+    "y": 7,
+    "x": 21,
+    "churn_probability": 61.994
+  },
+  {
+    "y": 7,
+    "x": 22,
+    "churn_probability": 65.16
+  },
+  {
+    "y": 7,
+    "x": 23,
+    "churn_probability": 68.236
+  },
+  {
+    "y": 7,
+    "x": 24,
+    "churn_probability": 71.195
+  },
+  {
+    "y": 7,
+    "x": 25,
+    "churn_probability": 74.014
+  },
+  {
+    "y": 7,
+    "x": 26,
+    "churn_probability": 76.672
+  },
+  {
+    "y": 7,
+    "x": 27,
+    "churn_probability": 79.158
+  },
+  {
+    "y": 7,
+    "x": 28,
+    "churn_probability": 81.461
+  },
+  {
+    "y": 7,
+    "x": 29,
+    "churn_probability": 83.579
+  },
+  {
+    "y": 6,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 6,
+    "x": 1,
+    "churn_probability": 28.319
+  },
+  {
+    "y": 6,
+    "x": 2,
+    "churn_probability": 24.576
+  },
+  {
+    "y": 6,
+    "x": 3,
+    "churn_probability": 22.707
+  },
+  {
+    "y": 6,
+    "x": 4,
+    "churn_probability": 21.821
+  },
+  {
+    "y": 6,
+    "x": 5,
+    "churn_probability": 21.539
+  },
+  {
+    "y": 6,
+    "x": 6,
+    "churn_probability": 21.672
+  },
+  {
+    "y": 6,
+    "x": 7,
+    "churn_probability": 22.12
+  },
+  {
+    "y": 6,
+    "x": 8,
+    "churn_probability": 22.824
+  },
+  {
+    "y": 6,
+    "x": 9,
+    "churn_probability": 23.747
+  },
+  {
+    "y": 6,
+    "x": 10,
+    "churn_probability": 24.868
+  },
+  {
+    "y": 6,
+    "x": 11,
+    "churn_probability": 26.172
+  },
+  {
+    "y": 6,
+    "x": 12,
+    "churn_probability": 27.649
+  },
+  {
+    "y": 6,
+    "x": 13,
+    "churn_probability": 29.292
+  },
+  {
+    "y": 6,
+    "x": 14,
+    "churn_probability": 31.094
+  },
+  {
+    "y": 6,
+    "x": 15,
+    "churn_probability": 33.048
+  },
+  {
+    "y": 6,
+    "x": 16,
+    "churn_probability": 35.147
+  },
+  {
+    "y": 6,
+    "x": 17,
+    "churn_probability": 37.382
+  },
+  {
+    "y": 6,
+    "x": 18,
+    "churn_probability": 39.743
+  },
+  {
+    "y": 6,
+    "x": 19,
+    "churn_probability": 42.217
+  },
+  {
+    "y": 6,
+    "x": 20,
+    "churn_probability": 44.791
+  },
+  {
+    "y": 6,
+    "x": 21,
+    "churn_probability": 47.447
+  },
+  {
+    "y": 6,
+    "x": 22,
+    "churn_probability": 50.167
+  },
+  {
+    "y": 6,
+    "x": 23,
+    "churn_probability": 52.932
+  },
+  {
+    "y": 6,
+    "x": 24,
+    "churn_probability": 55.72
+  },
+  {
+    "y": 6,
+    "x": 25,
+    "churn_probability": 58.51
+  },
+  {
+    "y": 6,
+    "x": 26,
+    "churn_probability": 61.281
+  },
+  {
+    "y": 6,
+    "x": 27,
+    "churn_probability": 64.011
+  },
+  {
+    "y": 6,
+    "x": 28,
+    "churn_probability": 66.681
+  },
+  {
+    "y": 6,
+    "x": 29,
+    "churn_probability": 69.273
+  },
+  {
+    "y": 5,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 5,
+    "x": 1,
+    "churn_probability": 27.641
+  },
+  {
+    "y": 5,
+    "x": 2,
+    "churn_probability": 23.468
+  },
+  {
+    "y": 5,
+    "x": 3,
+    "churn_probability": 21.202
+  },
+  {
+    "y": 5,
+    "x": 4,
+    "churn_probability": 19.924
+  },
+  {
+    "y": 5,
+    "x": 5,
+    "churn_probability": 19.235
+  },
+  {
+    "y": 5,
+    "x": 6,
+    "churn_probability": 18.939
+  },
+  {
+    "y": 5,
+    "x": 7,
+    "churn_probability": 18.925
+  },
+  {
+    "y": 5,
+    "x": 8,
+    "churn_probability": 19.13
+  },
+  {
+    "y": 5,
+    "x": 9,
+    "churn_probability": 19.513
+  },
+  {
+    "y": 5,
+    "x": 10,
+    "churn_probability": 20.05
+  },
+  {
+    "y": 5,
+    "x": 11,
+    "churn_probability": 20.724
+  },
+  {
+    "y": 5,
+    "x": 12,
+    "churn_probability": 21.524
+  },
+  {
+    "y": 5,
+    "x": 13,
+    "churn_probability": 22.443
+  },
+  {
+    "y": 5,
+    "x": 14,
+    "churn_probability": 23.477
+  },
+  {
+    "y": 5,
+    "x": 15,
+    "churn_probability": 24.62
+  },
+  {
+    "y": 5,
+    "x": 16,
+    "churn_probability": 25.872
+  },
+  {
+    "y": 5,
+    "x": 17,
+    "churn_probability": 27.23
+  },
+  {
+    "y": 5,
+    "x": 18,
+    "churn_probability": 28.691
+  },
+  {
+    "y": 5,
+    "x": 19,
+    "churn_probability": 30.255
+  },
+  {
+    "y": 5,
+    "x": 20,
+    "churn_probability": 31.918
+  },
+  {
+    "y": 5,
+    "x": 21,
+    "churn_probability": 33.677
+  },
+  {
+    "y": 5,
+    "x": 22,
+    "churn_probability": 35.528
+  },
+  {
+    "y": 5,
+    "x": 23,
+    "churn_probability": 37.466
+  },
+  {
+    "y": 5,
+    "x": 24,
+    "churn_probability": 39.485
+  },
+  {
+    "y": 5,
+    "x": 25,
+    "churn_probability": 41.578
+  },
+  {
+    "y": 5,
+    "x": 26,
+    "churn_probability": 43.738
+  },
+  {
+    "y": 5,
+    "x": 27,
+    "churn_probability": 45.954
+  },
+  {
+    "y": 5,
+    "x": 28,
+    "churn_probability": 48.217
+  },
+  {
+    "y": 5,
+    "x": 29,
+    "churn_probability": 50.517
+  },
+  {
+    "y": 4,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 4,
+    "x": 1,
+    "churn_probability": 26.99
+  },
+  {
+    "y": 4,
+    "x": 2,
+    "churn_probability": 22.422
+  },
+  {
+    "y": 4,
+    "x": 3,
+    "churn_probability": 19.808
+  },
+  {
+    "y": 4,
+    "x": 4,
+    "churn_probability": 18.198
+  },
+  {
+    "y": 4,
+    "x": 5,
+    "churn_probability": 17.178
+  },
+  {
+    "y": 4,
+    "x": 6,
+    "churn_probability": 16.539
+  },
+  {
+    "y": 4,
+    "x": 7,
+    "churn_probability": 16.166
+  },
+  {
+    "y": 4,
+    "x": 8,
+    "churn_probability": 15.989
+  },
+  {
+    "y": 4,
+    "x": 9,
+    "churn_probability": 15.965
+  },
+  {
+    "y": 4,
+    "x": 10,
+    "churn_probability": 16.066
+  },
+  {
+    "y": 4,
+    "x": 11,
+    "churn_probability": 16.271
+  },
+  {
+    "y": 4,
+    "x": 12,
+    "churn_probability": 16.568
+  },
+  {
+    "y": 4,
+    "x": 13,
+    "churn_probability": 16.948
+  },
+  {
+    "y": 4,
+    "x": 14,
+    "churn_probability": 17.404
+  },
+  {
+    "y": 4,
+    "x": 15,
+    "churn_probability": 17.931
+  },
+  {
+    "y": 4,
+    "x": 16,
+    "churn_probability": 18.527
+  },
+  {
+    "y": 4,
+    "x": 17,
+    "churn_probability": 19.188
+  },
+  {
+    "y": 4,
+    "x": 18,
+    "churn_probability": 19.915
+  },
+  {
+    "y": 4,
+    "x": 19,
+    "churn_probability": 20.706
+  },
+  {
+    "y": 4,
+    "x": 20,
+    "churn_probability": 21.56
+  },
+  {
+    "y": 4,
+    "x": 21,
+    "churn_probability": 22.478
+  },
+  {
+    "y": 4,
+    "x": 22,
+    "churn_probability": 23.458
+  },
+  {
+    "y": 4,
+    "x": 23,
+    "churn_probability": 24.502
+  },
+  {
+    "y": 4,
+    "x": 24,
+    "churn_probability": 25.608
+  },
+  {
+    "y": 4,
+    "x": 25,
+    "churn_probability": 26.777
+  },
+  {
+    "y": 4,
+    "x": 26,
+    "churn_probability": 28.009
+  },
+  {
+    "y": 4,
+    "x": 27,
+    "churn_probability": 29.302
+  },
+  {
+    "y": 4,
+    "x": 28,
+    "churn_probability": 30.655
+  },
+  {
+    "y": 4,
+    "x": 29,
+    "churn_probability": 32.068
+  },
+  {
+    "y": 3,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 3,
+    "x": 1,
+    "churn_probability": 26.365
+  },
+  {
+    "y": 3,
+    "x": 2,
+    "churn_probability": 21.435
+  },
+  {
+    "y": 3,
+    "x": 3,
+    "churn_probability": 18.518
+  },
+  {
+    "y": 3,
+    "x": 4,
+    "churn_probability": 16.631
+  },
+  {
+    "y": 3,
+    "x": 5,
+    "churn_probability": 15.345
+  },
+  {
+    "y": 3,
+    "x": 6,
+    "churn_probability": 14.442
+  },
+  {
+    "y": 3,
+    "x": 7,
+    "churn_probability": 13.799
+  },
+  {
+    "y": 3,
+    "x": 8,
+    "churn_probability": 13.344
+  },
+  {
+    "y": 3,
+    "x": 9,
+    "churn_probability": 13.03
+  },
+  {
+    "y": 3,
+    "x": 10,
+    "churn_probability": 12.824
+  },
+  {
+    "y": 3,
+    "x": 11,
+    "churn_probability": 12.707
+  },
+  {
+    "y": 3,
+    "x": 12,
+    "churn_probability": 12.662
+  },
+  {
+    "y": 3,
+    "x": 13,
+    "churn_probability": 12.679
+  },
+  {
+    "y": 3,
+    "x": 14,
+    "churn_probability": 12.749
+  },
+  {
+    "y": 3,
+    "x": 15,
+    "churn_probability": 12.867
+  },
+  {
+    "y": 3,
+    "x": 16,
+    "churn_probability": 13.028
+  },
+  {
+    "y": 3,
+    "x": 17,
+    "churn_probability": 13.228
+  },
+  {
+    "y": 3,
+    "x": 18,
+    "churn_probability": 13.465
+  },
+  {
+    "y": 3,
+    "x": 19,
+    "churn_probability": 13.737
+  },
+  {
+    "y": 3,
+    "x": 20,
+    "churn_probability": 14.043
+  },
+  {
+    "y": 3,
+    "x": 21,
+    "churn_probability": 14.381
+  },
+  {
+    "y": 3,
+    "x": 22,
+    "churn_probability": 14.751
+  },
+  {
+    "y": 3,
+    "x": 23,
+    "churn_probability": 15.153
+  },
+  {
+    "y": 3,
+    "x": 24,
+    "churn_probability": 15.585
+  },
+  {
+    "y": 3,
+    "x": 25,
+    "churn_probability": 16.048
+  },
+  {
+    "y": 3,
+    "x": 26,
+    "churn_probability": 16.542
+  },
+  {
+    "y": 3,
+    "x": 27,
+    "churn_probability": 17.067
+  },
+  {
+    "y": 3,
+    "x": 28,
+    "churn_probability": 17.623
+  },
+  {
+    "y": 3,
+    "x": 29,
+    "churn_probability": 18.21
+  },
+  {
+    "y": 2,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 2,
+    "x": 1,
+    "churn_probability": 25.765
+  },
+  {
+    "y": 2,
+    "x": 2,
+    "churn_probability": 20.504
+  },
+  {
+    "y": 2,
+    "x": 3,
+    "churn_probability": 17.323
+  },
+  {
+    "y": 2,
+    "x": 4,
+    "churn_probability": 15.209
+  },
+  {
+    "y": 2,
+    "x": 5,
+    "churn_probability": 13.715
+  },
+  {
+    "y": 2,
+    "x": 6,
+    "churn_probability": 12.614
+  },
+  {
+    "y": 2,
+    "x": 7,
+    "churn_probability": 11.779
+  },
+  {
+    "y": 2,
+    "x": 8,
+    "churn_probability": 11.131
+  },
+  {
+    "y": 2,
+    "x": 9,
+    "churn_probability": 10.622
+  },
+  {
+    "y": 2,
+    "x": 10,
+    "churn_probability": 10.218
+  },
+  {
+    "y": 2,
+    "x": 11,
+    "churn_probability": 9.896
+  },
+  {
+    "y": 2,
+    "x": 12,
+    "churn_probability": 9.64
+  },
+  {
+    "y": 2,
+    "x": 13,
+    "churn_probability": 9.437
+  },
+  {
+    "y": 2,
+    "x": 14,
+    "churn_probability": 9.278
+  },
+  {
+    "y": 2,
+    "x": 15,
+    "churn_probability": 9.157
+  },
+  {
+    "y": 2,
+    "x": 16,
+    "churn_probability": 9.067
+  },
+  {
+    "y": 2,
+    "x": 17,
+    "churn_probability": 9.006
+  },
+  {
+    "y": 2,
+    "x": 18,
+    "churn_probability": 8.968
+  },
+  {
+    "y": 2,
+    "x": 19,
+    "churn_probability": 8.953
+  },
+  {
+    "y": 2,
+    "x": 20,
+    "churn_probability": 8.957
+  },
+  {
+    "y": 2,
+    "x": 21,
+    "churn_probability": 8.979
+  },
+  {
+    "y": 2,
+    "x": 22,
+    "churn_probability": 9.017
+  },
+  {
+    "y": 2,
+    "x": 23,
+    "churn_probability": 9.071
+  },
+  {
+    "y": 2,
+    "x": 24,
+    "churn_probability": 9.138
+  },
+  {
+    "y": 2,
+    "x": 25,
+    "churn_probability": 9.219
+  },
+  {
+    "y": 2,
+    "x": 26,
+    "churn_probability": 9.313
+  },
+  {
+    "y": 2,
+    "x": 27,
+    "churn_probability": 9.419
+  },
+  {
+    "y": 2,
+    "x": 28,
+    "churn_probability": 9.537
+  },
+  {
+    "y": 2,
+    "x": 29,
+    "churn_probability": 9.666
+  },
+  {
+    "y": 1,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 1,
+    "x": 1,
+    "churn_probability": 25.189
+  },
+  {
+    "y": 1,
+    "x": 2,
+    "churn_probability": 19.625
+  },
+  {
+    "y": 1,
+    "x": 3,
+    "churn_probability": 16.217
+  },
+  {
+    "y": 1,
+    "x": 4,
+    "churn_probability": 13.919
+  },
+  {
+    "y": 1,
+    "x": 5,
+    "churn_probability": 12.268
+  },
+  {
+    "y": 1,
+    "x": 6,
+    "churn_probability": 11.026
+  },
+  {
+    "y": 1,
+    "x": 7,
+    "churn_probability": 10.06
+  },
+  {
+    "y": 1,
+    "x": 8,
+    "churn_probability": 9.289
+  },
+  {
+    "y": 1,
+    "x": 9,
+    "churn_probability": 8.66
+  },
+  {
+    "y": 1,
+    "x": 10,
+    "churn_probability": 8.139
+  },
+  {
+    "y": 1,
+    "x": 11,
+    "churn_probability": 7.702
+  },
+  {
+    "y": 1,
+    "x": 12,
+    "churn_probability": 7.329
+  },
+  {
+    "y": 1,
+    "x": 13,
+    "churn_probability": 7.01
+  },
+  {
+    "y": 1,
+    "x": 14,
+    "churn_probability": 6.734
+  },
+  {
+    "y": 1,
+    "x": 15,
+    "churn_probability": 6.493
+  },
+  {
+    "y": 1,
+    "x": 16,
+    "churn_probability": 6.283
+  },
+  {
+    "y": 1,
+    "x": 17,
+    "churn_probability": 6.097
+  },
+  {
+    "y": 1,
+    "x": 18,
+    "churn_probability": 5.933
+  },
+  {
+    "y": 1,
+    "x": 19,
+    "churn_probability": 5.788
+  },
+  {
+    "y": 1,
+    "x": 20,
+    "churn_probability": 5.659
+  },
+  {
+    "y": 1,
+    "x": 21,
+    "churn_probability": 5.544
+  },
+  {
+    "y": 1,
+    "x": 22,
+    "churn_probability": 5.441
+  },
+  {
+    "y": 1,
+    "x": 23,
+    "churn_probability": 5.35
+  },
+  {
+    "y": 1,
+    "x": 24,
+    "churn_probability": 5.268
+  },
+  {
+    "y": 1,
+    "x": 25,
+    "churn_probability": 5.195
+  },
+  {
+    "y": 1,
+    "x": 26,
+    "churn_probability": 5.13
+  },
+  {
+    "y": 1,
+    "x": 27,
+    "churn_probability": 5.072
+  },
+  {
+    "y": 1,
+    "x": 28,
+    "churn_probability": 5.021
+  },
+  {
+    "y": 1,
+    "x": 29,
+    "churn_probability": 4.975
+  },
+  {
+    "y": 0,
+    "x": 0,
+    "churn_probability": 0.0
+  },
+  {
+    "y": 0,
+    "x": 1,
+    "churn_probability": 24.634
+  },
+  {
+    "y": 0,
+    "x": 2,
+    "churn_probability": 18.795
+  },
+  {
+    "y": 0,
+    "x": 3,
+    "churn_probability": 15.193
+  },
+  {
+    "y": 0,
+    "x": 4,
+    "churn_probability": 12.75
+  },
+  {
+    "y": 0,
+    "x": 5,
+    "churn_probability": 10.984
+  },
+  {
+    "y": 0,
+    "x": 6,
+    "churn_probability": 9.647
+  },
+  {
+    "y": 0,
+    "x": 7,
+    "churn_probability": 8.601
+  },
+  {
+    "y": 0,
+    "x": 8,
+    "churn_probability": 7.759
+  },
+  {
+    "y": 0,
+    "x": 9,
+    "churn_probability": 7.068
+  },
+  {
+    "y": 0,
+    "x": 10,
+    "churn_probability": 6.489
+  },
+  {
+    "y": 0,
+    "x": 11,
+    "churn_probability": 5.998
+  },
+  {
+    "y": 0,
+    "x": 12,
+    "churn_probability": 5.576
+  },
+  {
+    "y": 0,
+    "x": 13,
+    "churn_probability": 5.21
+  },
+  {
+    "y": 0,
+    "x": 14,
+    "churn_probability": 4.889
+  },
+  {
+    "y": 0,
+    "x": 15,
+    "churn_probability": 4.605
+  },
+  {
+    "y": 0,
+    "x": 16,
+    "churn_probability": 4.352
+  },
+  {
+    "y": 0,
+    "x": 17,
+    "churn_probability": 4.126
+  },
+  {
+    "y": 0,
+    "x": 18,
+    "churn_probability": 3.922
+  },
+  {
+    "y": 0,
+    "x": 19,
+    "churn_probability": 3.737
+  },
+  {
+    "y": 0,
+    "x": 20,
+    "churn_probability": 3.569
+  },
+  {
+    "y": 0,
+    "x": 21,
+    "churn_probability": 3.415
+  },
+  {
+    "y": 0,
+    "x": 22,
+    "churn_probability": 3.274
+  },
+  {
+    "y": 0,
+    "x": 23,
+    "churn_probability": 3.144
+  },
+  {
+    "y": 0,
+    "x": 24,
+    "churn_probability": 3.024
+  },
+  {
+    "y": 0,
+    "x": 25,
+    "churn_probability": 2.913
+  },
+  {
+    "y": 0,
+    "x": 26,
+    "churn_probability": 2.81
+  },
+  {
+    "y": 0,
+    "x": 27,
+    "churn_probability": 2.714
+  },
+  {
+    "y": 0,
+    "x": 28,
+    "churn_probability": 2.624
+  },
+  {
+    "y": 0,
+    "x": 29,
+    "churn_probability": 2.54
+  }
+]

@@ -19,7 +19,7 @@ def load_data(path=''):
 
 @st.cache
 def load_models():
-    return joblib.load('list_models.pkl')
+    return joblib.load('./list_models.pkl')
 
 @st.cache()
 def generate_plan():

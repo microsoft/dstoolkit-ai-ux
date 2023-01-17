@@ -1,24 +1,29 @@
 name: "Verseagility"
 tagline: "Text classification, named entity recognition and answer suggestions for support emails and attachments."
-industry: "Cross-Industry"
-use_case_type: "NLP"
-license: "MIT license"
-main_technology: "Streamlit"
-released: "2020-01-24"
-updated: "2021-12-09"
 authors: 
   - name: "Timm Walz"
     github_alias: "nonstoptimm"
-description: Verseagility is a Python-based toolkit to ramp up your custom natural language processing (NLP) task, allowing you to bring your own data, use your preferred frameworks and bring models into production. It is a central component of the Microsoft Data Science Toolkit.
-feature_bullets:
-  - Binary, multi-class & multi-label classification
-  - Named entity recognition
-  - Question answering
-  - Opinion mining
+  - name: "Christian Vorhemus"
+    github_alias: "christian-vorhemus"
+  - name: "Martin Kayser"
+    github_alias: "maknotavailable"
+  - name: "Timo Acquistapace"
+    github_alias: "TimoA89"
+business_problem: Building NLP solutions which cover all components from text classification, named entity recognition to answer suggestion, require testing and integration effort. For this purpose, we developed this toolkit, which serves to minimize the setup time of an end-to-end solution and maximizes the time for use case-specific enhancements and adjustments. On this way, first results should be made available in an accelerated way when bringing individual, pre-labeled text document data and allow more time for iterative improvements.
+business_value: 
+  - <placeholder>
+accelerator_description: Verseagility is a Python-based toolkit to ramp up your custom natural language processing (NLP) task, allowing you to bring your own data, use your preferred frameworks and bring models into production. It is a central component of the Microsoft Data Science Toolkit.
+modeling_approach_and_training: |
+  Verseagility is a modular toolkit that can be extended by further use-cases as needed. Following use-cases are already implemented and ready to be used: Binary, multi-class & multi-label classification. Named entity recognition. Question answering. Opinion mining.
+value:
+  - <placeholder>
+data: <placeholder>
+architecture:
+  - Azure App Services
+  - Streamlit
 images:
   thumbnail_filename: "verseagility.png"
   screenshot_filename: "verseagility.png"
 links:
   demo: "https://verseagility.azurewebsites.net/"
   source_code: 'https://github.com/microsoft/verseagility'
-  download: 'https://github.com/microsoft/verseagility/archive/refs/heads/main.zip'

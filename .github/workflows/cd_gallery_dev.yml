@@ -5,7 +5,7 @@ on:
       - gallery/**
     branches:
       - develop
-  workflow_dispatch:
+  # workflow_dispatch:
 jobs:
   Unit-Test:
     runs-on: ubuntu-latest
@@ -59,4 +59,4 @@ jobs:
           file: ./gallery/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: craigallerydev001.azurecr.io/dstoolkitaiux:latest
+          tags: acrdstoolkitdemodev.azurecr.io/dstoolkitaiux:latest

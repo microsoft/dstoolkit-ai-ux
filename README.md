@@ -15,7 +15,7 @@ To add your UI demo, the steps you need to take are:
 3. Add a screenshot of your UI (1600 pixels x 900 pixels) to `gallery/app/static/assets/img/demo_screenshots`
 4. Add a new yaml file to `gallery/app/demo_configs`, following the yaml structure of the other demo configs as described below
 5. Add the name of the `yml` file to the `gallery/app/demo_configs/.order` file in the position you'd like it to appear
-6. Create a pull request from your branch to "develop" branch. Once accepted, you will be able to view your demo here: https://dstoolkit-gallery-dev.com/gallery.
+6. Create a pull request from your branch to "develop" branch. Once accepted, you will be able to view your demo here: https://dev.ds-toolkit.com.
 7. If your demos is working correctly and all the information is correct, create a new pull request from "develop" to "main" to push the demo to the main page.
 
 ### yml file structure

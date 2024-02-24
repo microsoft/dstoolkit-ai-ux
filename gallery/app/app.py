@@ -3,12 +3,23 @@ import urllib
 
 import yaml
 from flask import Flask, redirect, render_template, url_for
+from opencensus.ext.azure.trace_exporter import AzureExporter
+from opencensus.ext.flask.flask_middleware import FlaskMiddleware
+from opencensus.trace.samplers import ProbabilitySampler
 
 
 app = Flask(__name__)
 __here__ = os.path.dirname(__file__)
 DEMO_CONFIG_PATH = os.path.join(__here__, 'demo_configs')
 DEMO_CONFIG_ORDER = os.path.join(DEMO_CONFIG_PATH, '.order')
+# App Insights Instrumentation Key from Env Variable
+APP_INSIGHTS_CONN_STR = os.environ.get('APP_INSIGHTS_CONN_STR')
+if APP_INSIGHTS_CONN_STR is not None:
+    middleware = FlaskMiddleware(
+        app,
+        exporter=AzureExporter(connection_string=APP_INSIGHTS_CONN_STR),
+        sampler=ProbabilitySampler(rate=1.0)
+    )
 
 
 @app.route('/', methods=['GET'])
@@ -28,7 +39,8 @@ def gallery():
             single_demo_config['filename'] = demo_config_filename
             demo_configs.append(single_demo_config)
     data = {
-        'demo_configs': demo_configs
+        'demo_configs': demo_configs,
+        'app_insights_conn_str': APP_INSIGHTS_CONN_STR,
     }
     return render_template('gallery.html', data=data)
 
@@ -45,7 +57,8 @@ def use_case(use_case_name):
             + urllib.parse.quote_plus(demo_config['links']['arm_template'])
         )
     data = {
-        'demo_config': demo_config
+        'demo_config': demo_config,
+        'app_insights_conn_str': APP_INSIGHTS_CONN_STR,
     }
     return render_template('use_case.html', data=data)
 

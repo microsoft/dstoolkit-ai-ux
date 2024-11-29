@@ -1,0 +1,13 @@
+docker build -t titanic:1 .
+
+docker images
+
+docker run -d -p 8080:8080 titanic:1
+
+check: https:localhost:8080
+
+az account set --subscription ES-INT-MCS DAI ML-DEV-daimsolac
+
+az account set --subscription 0b3f04a9-6375-4341-a513-dd53731a99a4
+
+az acr build --registry craigallerydev001.azurecr.io --image titanic .
